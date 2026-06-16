@@ -1,0 +1,6 @@
+question_id,user_id,history,question,choices,answer
+task1_001,user_001,"home > transit_station > office","What is the most likely next POI category?","restaurant|cafe|gym|home",restaurant
+task1_002,user_001,"office > restaurant > office","What is the most likely next POI category?","home|park|school|hotel",home
+task1_003,user_002,"home > school > cafe","What is the most likely next POI category?","office|library|gym|airport",library
+task1_004,user_003,"hotel > tourist_attraction > restaurant","What is the most likely next POI category?","bar|office|school|hospital",bar
+task1_005,user_004,"home > park > grocery_store","What is the most likely next POI category?","home|airport|museum|office",home

@@ -1,0 +1,9 @@
+user_id,venue_id,venue_category,timestamp,venue_city,latitude,longitude
+user_001,venue_001,home,2024-01-01T08:00:00,Sydney,-33.8688,151.2093
+user_001,venue_002,transit_station,2024-01-01T08:35:00,Sydney,-33.8731,151.2065
+user_001,venue_003,office,2024-01-01T09:00:00,Sydney,-33.8650,151.2094
+user_001,venue_004,restaurant,2024-01-01T12:20:00,Sydney,-33.8703,151.2087
+user_002,venue_005,home,2024-01-02T07:45:00,Melbourne,-37.8136,144.9631
+user_002,venue_006,school,2024-01-02T08:30:00,Melbourne,-37.8102,144.9650
+user_002,venue_007,cafe,2024-01-02T15:45:00,Melbourne,-37.8155,144.9661
+user_002,venue_008,library,2024-01-02T16:20:00,Melbourne,-37.8170,144.9670

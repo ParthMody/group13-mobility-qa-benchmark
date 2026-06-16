@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Task 1 Next-POI Category QA Record",
+  "type": "object",
+  "required": [
+    "question_id",
+    "task",
+    "city",
+    "user_id",
+    "context_sequence",
+    "target_time",
+    "question",
+    "choices",
+    "answer",
+    "rationale",
+    "source_dataset",
+    "metadata"
+  ],
+  "properties": {
+    "question_id": {
+      "type": "string",
+      "description": "Unique question identifier."
+    },
+    "task": {
+      "type": "string",
+      "description": "Task name, expected to be task1_next_poi_category."
+    },
+    "city": {
+      "type": "string",
+      "description": "City associated with the check-in sequence."
+    },
+    "user_id": {
+      "type": "string",
+      "description": "Anonymised user identifier."
+    },
+    "context_sequence": {
+      "type": "array",
+      "description": "Ordered previous check-ins used as context.",
+      "items": {
+        "type": "object"
+      },
+      "minItems": 1
+    },
+    "target_time": {
+      "type": "string",
+      "description": "Timestamp for the target next check-in."
+    },
+    "question": {
+      "type": "string",
+      "description": "Natural-language question."
+    },
+    "choices": {
+      "type": "array",
+      "description": "Candidate POI categories.",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 2
+    },
+    "answer": {
+      "type": "string",
+      "description": "Correct next POI category."
+    },
+    "rationale": {
+      "type": "string",
+      "description": "Short explanation for the answer."
+    },
+    "source_dataset": {
+      "type": "string",
+      "description": "Name of the source dataset or synthetic example source."
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Additional non-essential metadata."
+    }
+  },
+  "additionalProperties": true
+}
