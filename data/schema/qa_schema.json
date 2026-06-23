@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Task 1 Next-POI Category QA Record",
+  "title": "Shared Mobility QA Record",
   "type": "object",
   "required": [
     "question_id",
@@ -18,60 +18,62 @@
   ],
   "properties": {
     "question_id": {
-      "type": "string",
-      "description": "Unique question identifier."
+      "type": "string"
     },
     "task": {
-      "type": "string",
-      "description": "Task name, expected to be task1_next_poi_category."
+      "type": "string"
     },
     "city": {
-      "type": "string",
-      "description": "City associated with the check-in sequence."
+      "type": "string"
     },
     "user_id": {
-      "type": "string",
-      "description": "Anonymised user identifier."
+      "type": "string"
     },
     "context_sequence": {
       "type": "array",
-      "description": "Ordered previous check-ins used as context.",
       "items": {
         "type": "object"
       },
       "minItems": 1
     },
     "target_time": {
-      "type": "string",
-      "description": "Timestamp for the target next check-in."
+      "type": "string"
     },
     "question": {
-      "type": "string",
-      "description": "Natural-language question."
+      "type": "string"
     },
     "choices": {
       "type": "array",
-      "description": "Candidate POI categories.",
       "items": {
         "type": "string"
-      },
-      "minItems": 2
+      }
     },
     "answer": {
       "type": "string",
-      "description": "Correct next POI category."
+      "minLength": 1
     },
     "rationale": {
-      "type": "string",
-      "description": "Short explanation for the answer."
+      "type": "string"
     },
     "source_dataset": {
-      "type": "string",
-      "description": "Name of the source dataset or synthetic example source."
+      "const": "massive_steps"
     },
     "metadata": {
       "type": "object",
-      "description": "Additional non-essential metadata."
+      "required": ["answer_type", "eval_mode", "difficulty"],
+      "properties": {
+        "answer_type": {
+          "enum": ["closed", "open"]
+        },
+        "eval_mode": {
+          "type": "string",
+          "minLength": 1
+        },
+        "difficulty": {
+          "enum": ["easy", "medium", "hard"]
+        }
+      },
+      "additionalProperties": true
     }
   },
   "additionalProperties": true

@@ -1,36 +1,32 @@
 # Evaluation Plan
 
-## Initial Metric
+Closed tasks use accuracy first. This applies to Tasks 1, 2, and 5 where
+`metadata.answer_type = "closed"`.
 
-Use exact-match accuracy for Task 1:
+Open tasks use rubric-based evaluation later. This applies to Tasks 3 and 4
+where `metadata.answer_type = "open"`.
+
+## Task 1
+
+Task 1 current metric is exact-match accuracy:
 
 ```text
-accuracy = number of correct predicted categories / total examples
+accuracy = correct closed predictions / total closed examples
 ```
 
-Predictions should be compared against the `answer` field.
+Predictions should include:
 
-## Expected Prediction Format
+```text
+question_id, prediction
+```
 
-Use a simple CSV or JSONL file with:
-
-- `question_id`
-- `prediction`
-
-## Evaluation Rules
-
-- Match predictions to gold examples by `question_id`.
-- Compare normalised category strings.
-- Count missing predictions as incorrect.
-- Report total examples, correct examples, missing predictions, and accuracy.
+The evaluator matches by `question_id`, normalises whitespace and case, and
+counts missing predictions as incorrect.
 
 ## Future Metrics
 
-Possible later additions:
-
-- top-k accuracy
+- macro-F1 for category balance
+- top-k accuracy for ranked category predictions
 - per-category accuracy
 - confusion matrix
 - split-level reporting for train/dev/test
-
-These should only be added after the basic Task 1 generator and exact-match evaluator are working.
