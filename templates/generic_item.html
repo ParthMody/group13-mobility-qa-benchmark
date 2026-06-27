@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block body %}
+<p style="margin:0 0 14px"><a href="/task/{{ task.id }}">&larr; All items</a></p>
+
+<style>
+  .gq{font-size:17px;font-family:var(--fd);font-weight:600;max-width:64ch;margin:6px 0 18px}
+  .opts{list-style:none;margin:0 0 18px;padding:0;display:flex;flex-direction:column;gap:8px}
+  .opts li{padding:11px 14px;border:1px solid var(--line);border-radius:9px;background:var(--card);display:flex;align-items:center;gap:10px}
+  .opts li.correct{border-color:var(--mint);background:var(--mint-soft)}
+  .opts li.correct::before{content:"";width:16px;height:16px;flex:none;border-radius:4px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath d='M4 8.5l2.5 2.5L12 5.5' stroke='%230E7C70' stroke-width='1.7' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")}
+  .opts li.opt::before{content:"";width:16px;height:16px;flex:none;border:1.5px solid var(--line);border-radius:4px}
+  .key{padding:14px 18px;border-left:3px solid var(--mint);background:var(--mint-soft);border-radius:8px;margin:0 0 18px}
+  .key .k{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#0E7C70;font-weight:700;margin-bottom:4px}
+  .panel{padding:16px 18px;margin-bottom:14px}
+  .panel h3{font-family:var(--fd);font-size:13px;margin:0 0 8px}
+  .raw summary{cursor:pointer;color:var(--slate);font-size:13px;font-weight:500}
+</style>
+
+<p class="eyebrow">{{ item.city or task.name }}{% if item.metadata and item.metadata.answer_type %} · {{ item.metadata.answer_type }}{% endif %}</p>
+<p class="gq">{{ item.question }}</p>
+
+{% if item.choices and item.choices|length %}
+<ul class="opts">
+  {% for c in item.choices %}
+  <li class="{{ 'correct' if c == item.answer else 'opt' }}">{{ c }}</li>
+  {% endfor %}
+</ul>
+{% else %}
+<div class="key"><div class="k">Reference answer</div><div>{{ item.answer }}</div></div>
+{% endif %}
+
+{% if item.rationale %}
+<div class="card panel"><h3>Why this answer</h3><p style="color:var(--slate);margin:0">{{ item.rationale }}</p></div>
+{% endif %}
+
+{% if item.metadata and item.metadata.scoring_rubric %}
+<div class="card panel"><h3>Scoring rubric</h3>
+  <ul style="margin:0;padding-left:18px;color:var(--slate)">{% for r in item.metadata.scoring_rubric %}<li>{{ r }}</li>{% endfor %}</ul>
+</div>
+{% endif %}
+
+<details class="raw" style="margin-top:6px"><summary>View raw record</summary><pre style="margin-top:10px">{{ raw }}</pre></details>
+{% endblock %}

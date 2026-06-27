@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% block body %}
+<p style="margin:0 0 14px"><a href="/task/{{ task.id }}">&larr; All items</a></p>
+
+<style>
+  .head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:6px}
+  .head h1{font-family:var(--fd);font-weight:700;font-size:22px;margin:0}
+  .head .sub{color:var(--slate);font-size:13px;font-family:var(--fm)}
+  .q{font-size:16px;margin:10px 0 22px;max-width:64ch}
+
+  .cmp{padding:18px 18px 8px}
+  .cmp .hd,.cmp .r{display:grid;grid-template-columns:148px 1fr 1fr 72px;gap:14px;align-items:center}
+  .cmp .hd{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--slate);font-weight:600;padding-bottom:8px;border-bottom:1px solid var(--line);margin-bottom:6px}
+  .cmp .r{padding:7px 0}
+  .cmp .cat{font-weight:500;font-size:13.5px}
+  .track{position:relative;height:22px;background:var(--gray);border-radius:5px;overflow:hidden}
+  .track .fill{position:absolute;inset:0 auto 0 0;border-radius:5px}
+  .track.a .fill{background:#CBD5E1}
+  .track.b .fill{background:var(--indigo)}
+  .track .pct{position:absolute;right:7px;top:0;height:22px;display:flex;align-items:center;font-family:var(--fm);font-size:11px;color:var(--navy)}
+  .delta{font-family:var(--fm);font-size:12px;font-weight:500;text-align:right;color:var(--slate)}
+  .delta.up{color:#0E7C70}
+  .delta.down{color:var(--slate)}
+  .key{padding:14px 18px;border-left:3px solid var(--mint);background:var(--mint-soft);border-radius:8px;margin:18px 0}
+  .key .k{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#0E7C70;font-weight:700;margin-bottom:4px}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}
+  @media(max-width:680px){.two{grid-template-columns:1fr}.cmp .hd,.cmp .r{grid-template-columns:96px 1fr 56px}.cmp .a{display:none}}
+  .panel{padding:16px 18px}
+  .panel h3{font-family:var(--fd);font-size:13px;margin:0 0 10px;color:var(--navy)}
+  .rubric{list-style:none;margin:0;padding:0}
+  .rubric li{display:flex;gap:9px;padding:5px 0;color:var(--slate);font-size:13.5px}
+  .rubric li::before{content:"";flex:none;width:16px;height:16px;margin-top:2px;border-radius:4px;background:var(--mint-soft);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath d='M4 8.5l2.5 2.5L12 5.5' stroke='%230E7C70' stroke-width='1.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")}
+  .raw summary{cursor:pointer;color:var(--slate);font-size:13px;font-weight:500;padding:4px 0}
+</style>
+
+<div class="head">
+  <div>
+    <p class="eyebrow">{{ item.city }} · {{ item.metadata.unit }}-level</p>
+    <h1>{{ item.question_id }}</h1>
+  </div>
+  <span class="badge label" style="margin-top:4px">{{ item.metadata.change_label }}</span>
+</div>
+<p class="q">{{ item.question }}</p>
+
+<div class="card cmp">
+  <div class="hd"><span>Category</span><span class="a">{{ pa.replace('A_','').replace('_',' ') }}</span><span>{{ pb.replace('B_','').replace('_',' ') }}</span><span style="text-align:right">Change</span></div>
+  {% for r in rows %}
+  {% set up = r.delta >= 0.03 %}{% set down = r.delta <= -0.03 %}
+  <div class="r">
+    <span class="cat">{{ r.cat }}</span>
+    <span class="track a"><span class="fill" style="width:{{ (r.a/maxv*100)|round(1) }}%"></span><span class="pct">{{ (r.a*100)|round|int }}%</span></span>
+    <span class="track b"><span class="fill" style="width:{{ (r.b/maxv*100)|round(1) }}%"></span><span class="pct">{{ (r.b*100)|round|int }}%</span></span>
+    <span class="delta {{ 'up' if up }}{{ 'down' if down }}">{{ '+' if r.delta>0 }}{{ (r.delta*100)|round|int }} pp</span>
+  </div>
+  {% endfor %}
+</div>
+
+<div class="key">
+  <div class="k">Reference answer</div>
+  <div>{{ item.answer }}</div>
+</div>
+
+<div class="two">
+  <div class="card panel">
+    <h3>Scoring rubric · open answer</h3>
+    <ul class="rubric">{% for c in item.metadata.scoring_rubric %}<li>{{ c }}</li>{% endfor %}</ul>
+  </div>
+  <div class="card panel">
+    <h3>Why this label</h3>
+    <p style="color:var(--slate);font-size:13.5px;margin:0">{{ item.rationale }}</p>
+    <p style="margin:12px 0 0"><span class="chip">eval: {{ item.metadata.eval_mode }}</span> <span class="chip">{{ item.metadata.difficulty }}</span></p>
+  </div>
+</div>
+
+<details class="raw" style="margin-top:18px">
+  <summary>View raw record</summary>
+  <pre style="margin-top:10px">{{ raw }}</pre>
+</details>
+{% endblock %}

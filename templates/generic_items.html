@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block body %}
+<p class="eyebrow">Task {{ task.num }} · {{ task.kind }}</p>
+<h1 class="title">{{ task.name }}</h1>
+<p class="lede">{{ task.tests }}</p>
+
+<style>
+  .glist{display:flex;flex-direction:column;gap:10px}
+  .gi{display:block;padding:15px 16px;color:var(--navy)}
+  .gi:hover{text-decoration:none;border-color:var(--indigo)}
+  .gi .q{font-weight:500;margin-bottom:8px}
+  .gi .meta{display:flex;gap:6px;flex-wrap:wrap}
+</style>
+
+<div class="glist">
+  {% for it in items %}
+  <a class="gi card" href="/task/{{ task.id }}/item/{{ it.question_id }}">
+    <div class="q">{{ it.question }}</div>
+    <div class="meta">
+      {% if it.city %}<span class="chip">{{ it.city }}</span>{% endif %}
+      {% if it.metadata and it.metadata.answer_type %}<span class="badge label">{{ it.metadata.answer_type }}</span>{% endif %}
+      {% if it.metadata and it.metadata.difficulty %}<span class="chip">{{ it.metadata.difficulty }}</span>{% endif %}
+    </div>
+  </a>
+  {% endfor %}
+</div>
+{% endblock %}

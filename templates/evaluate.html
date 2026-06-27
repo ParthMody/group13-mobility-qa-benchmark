@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block body %}
+<p class="eyebrow">Task {{ task.num }} · Evaluation</p>
+<h1 class="title">Baseline run</h1>
+<p class="lede">The majority-label baseline scored against every item — an end-to-end check that scoring works. It is deliberately weak; a real model should beat it.</p>
+
+<style>
+  .kpis{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:18px}
+  @media(max-width:560px){.kpis{grid-template-columns:1fr}}
+  .kpi{padding:18px 20px}
+  .kpi .k{font-size:12px;color:var(--slate);font-weight:500}
+  .kpi .v{font-family:var(--fd);font-weight:700;font-size:34px;letter-spacing:-.02em;margin:6px 0 2px}
+  .kpi .n{font-family:var(--fm);font-size:12px;color:var(--slate)}
+  table{width:100%;border-collapse:collapse;font-size:13.5px}
+  thead th{text-align:left;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--slate);font-weight:600;padding:0 14px 10px}
+  tbody td{padding:10px 14px;border-top:1px solid var(--line)}
+  tbody td.q{font-family:var(--fm);font-size:12.5px}
+  .ok{color:#0E7C70;font-weight:600}.no{color:var(--slate)}
+  .tbl{padding:14px 4px 6px}
+</style>
+
+<div class="kpis">
+  <div class="card kpi">
+    <div class="k">Change-label accuracy</div>
+    <div class="v">{{ (report.classification.accuracy*100)|round|int }}%</div>
+    <div class="n">{{ report.classification.n }} items · exact match on the gold label</div>
+  </div>
+  <div class="card kpi">
+    <div class="k">Open-answer rubric coverage</div>
+    <div class="v">{{ (report.open.mean_rubric_coverage*100)|round|int }}%</div>
+    <div class="n">placeholder scorer · swap in llm_judge() for real grading</div>
+  </div>
+</div>
+
+<div class="card tbl">
+  <table>
+    <thead><tr><th>Item</th><th>Gold label</th><th>Baseline prediction</th><th style="text-align:right">Match</th></tr></thead>
+    <tbody>
+    {% for qid, it in items_by_id.items() %}
+      {% set hit = preds[qid].change_label == it.metadata.change_label %}
+      <tr>
+        <td class="q"><a href="/task/{{ task.id }}/item/{{ qid }}">{{ qid }}</a></td>
+        <td>{{ it.metadata.change_label }}</td>
+        <td>{{ preds[qid].change_label }}</td>
+        <td style="text-align:right" class="{{ 'ok' if hit else 'no' }}">{{ '\u2713' if hit else '\u2717' }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

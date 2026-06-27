@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block body %}
+<style>
+  .ph{max-width:560px;margin:40px auto;text-align:center}
+  .ph .status{display:inline-flex;align-items:center;gap:7px;padding:5px 12px;border-radius:999px;background:var(--slate-soft);color:var(--slate);font-size:12px;font-weight:600}
+  .ph .status .dot{width:7px;height:7px;border-radius:50%;background:#CBD5E1}
+  .ph h1{font-family:var(--fd);font-weight:700;font-size:26px;margin:16px 0 4px}
+  .ph .owner{color:var(--slate);font-size:14px}
+  .ph .cols{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0 0;text-align:left}
+  @media(max-width:520px){.ph .cols{grid-template-columns:1fr}}
+  .ph .col{padding:14px 16px}
+  .ph .col .k{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--slate);font-weight:600;margin-bottom:5px}
+  .ph .col .vv{font-size:13.5px}
+  .ph .note{margin-top:20px;color:var(--slate);font-size:13.5px}
+</style>
+<div class="ph">
+  <span class="status"><span class="dot"></span>In progress</span>
+  <h1>Task {{ task.num }} · {{ task.name }}</h1>
+  <p class="owner">Owned by {{ task.owner }} · {{ task.kind }}</p>
+  <div class="cols">
+    <div class="card col"><div class="k">What it tests</div><div class="vv">{{ task.tests }}</div></div>
+    <div class="card col"><div class="k">How it's scored</div><div class="vv">{{ task.scoring }}</div></div>
+  </div>
+  <p class="note">Items appear here automatically once {{ task.owner }} adds <code>data/{{ task.id }}_items.jsonl</code> in the shared format. Task 3 is the worked reference.</p>
+</div>
+{% endblock %}
