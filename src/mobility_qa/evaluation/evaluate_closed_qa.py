@@ -15,8 +15,7 @@ def normalize_answer(text: object) -> str:
 
 
 def _is_closed_record(record: Mapping[str, Any]) -> bool:
-    metadata = record.get("metadata", {})
-    return isinstance(metadata, Mapping) and metadata.get("answer_type") == "closed"
+    return record.get("answer_type") == "multiple choice"
 
 
 def evaluate_accuracy(
@@ -28,7 +27,7 @@ def evaluate_accuracy(
     """Evaluate exact-match accuracy for closed QA records.
 
     Args:
-        gold_records: Shared-format gold records.
+        gold_records: Shared-format gold records with ``correct_answer``.
         pred_records: Prediction records with question_id and prediction.
         on_open: Use "skip" to ignore open records, or "error" to fail clearly.
     """
@@ -61,7 +60,9 @@ def evaluate_accuracy(
             missing += 1
             continue
 
-        if normalize_answer(predictions[question_id]) == normalize_answer(record["answer"]):
+        if normalize_answer(predictions[question_id]) == normalize_answer(
+            record["correct_answer"]
+        ):
             correct += 1
 
     accuracy = correct / total if total else 0.0

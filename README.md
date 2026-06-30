@@ -38,8 +38,9 @@ python3 -m src.tasks.task1_next_poi_category \
   --output-jsonl data/examples/task1_dhanesh_5_questions.jsonl
 ```
 
-The generated examples are draft category-level records pending verification
-against raw Massive-STEPS POI ID to category mappings.
+The generated examples are manual category-level records for format checking.
+They are not extracted Massive-STEPS rows and use
+`verification_status = "draft_manual_example"`.
 
 ## Evaluate Closed QA Predictions
 

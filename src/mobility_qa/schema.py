@@ -21,19 +21,18 @@ REQUIRED_QA_FIELDS = [
     "question_id",
     "task",
     "city",
-    "user_id",
-    "context_sequence",
-    "target_time",
-    "question",
-    "choices",
-    "answer",
-    "rationale",
+    "context",
+    "answer_type",
+    "options",
+    "correct_answer",
+    "reasoning",
+    "difficulty",
     "source_dataset",
-    "metadata",
+    "verification_status",
 ]
 
 ALLOWED_SOURCE_DATASETS = {"massive_steps"}
-ALLOWED_ANSWER_TYPES = {"closed", "open"}
+ALLOWED_ANSWER_TYPES = {"multiple choice", "written"}
 ALLOWED_DIFFICULTIES = {"easy", "medium", "hard"}
 TASK1_NAME = "task1_next_poi_category"
 
@@ -88,11 +87,13 @@ def validate_qa_record(record: Mapping[str, object]) -> bool:
         "question_id",
         "task",
         "city",
-        "user_id",
-        "target_time",
-        "question",
-        "rationale",
+        "context",
+        "answer_type",
+        "correct_answer",
+        "reasoning",
+        "difficulty",
         "source_dataset",
+        "verification_status",
     ]:
         value = record[field]
         if not isinstance(value, str) or not value.strip():
@@ -101,45 +102,29 @@ def validate_qa_record(record: Mapping[str, object]) -> bool:
     if record["source_dataset"] not in ALLOWED_SOURCE_DATASETS:
         raise ValueError("QA field 'source_dataset' must be 'massive_steps'.")
 
-    if not isinstance(record["context_sequence"], list) or not record["context_sequence"]:
-        raise ValueError("QA field 'context_sequence' must be a non-empty list.")
-
-    choices = record["choices"]
-    if not isinstance(choices, list):
-        raise ValueError("QA field 'choices' must be a list.")
-
-    if not all(isinstance(choice, str) and choice.strip() for choice in choices):
-        raise ValueError("QA field 'choices' must contain non-empty strings.")
-
-    answer = record["answer"]
-    if not isinstance(answer, str) or not answer.strip():
-        raise ValueError("QA field 'answer' must be a non-empty string.")
-
-    metadata = record["metadata"]
-    if not isinstance(metadata, Mapping):
-        raise ValueError("QA field 'metadata' must be a dictionary.")
-
-    answer_type = metadata.get("answer_type")
+    answer_type = record["answer_type"]
     if answer_type not in ALLOWED_ANSWER_TYPES:
-        raise ValueError("QA metadata 'answer_type' must be either 'closed' or 'open'.")
-
-    if "eval_mode" not in metadata or not str(metadata["eval_mode"]).strip():
-        raise ValueError("QA metadata 'eval_mode' must exist and be non-empty.")
-
-    difficulty = metadata.get("difficulty")
-    if difficulty not in ALLOWED_DIFFICULTIES:
         raise ValueError(
-            "QA metadata 'difficulty' must be one of: easy, medium, hard."
+            "QA field 'answer_type' must be either 'multiple choice' or 'written'."
         )
 
-    if answer_type == "closed":
-        if not choices:
-            raise ValueError("Closed QA records must have a non-empty choices list.")
-        if answer not in choices:
-            raise ValueError("Closed QA field 'answer' must appear in 'choices'.")
+    difficulty = record["difficulty"]
+    if difficulty not in ALLOWED_DIFFICULTIES:
+        raise ValueError("QA field 'difficulty' must be one of: easy, medium, hard.")
 
-    if answer_type == "open" and not answer.strip():
-        raise ValueError("Open QA records must have a non-empty written answer.")
+    options = record["options"]
+    if not isinstance(options, list):
+        raise ValueError("QA field 'options' must be a list.")
+    if not all(isinstance(option, str) and option.strip() for option in options):
+        raise ValueError("QA field 'options' must contain non-empty strings.")
+
+    if answer_type == "multiple choice":
+        if not options:
+            raise ValueError("Multiple-choice QA records must have non-empty options.")
+        if record["correct_answer"] not in options:
+            raise ValueError(
+                "Multiple-choice QA field 'correct_answer' must appear in 'options'."
+            )
 
     return True
 
@@ -161,11 +146,7 @@ def validate_task1_record(record: Mapping[str, object]) -> bool:
     if record["task"] != TASK1_NAME:
         raise ValueError(f"Task 1 record must use task '{TASK1_NAME}'.")
 
-    metadata = record["metadata"]
-    if metadata.get("answer_type") != "closed":
-        raise ValueError("Task 1 records must use metadata.answer_type = 'closed'.")
-
-    if metadata.get("eval_mode") != "classification":
-        raise ValueError("Task 1 records must use metadata.eval_mode = 'classification'.")
+    if record["answer_type"] != "multiple choice":
+        raise ValueError("Task 1 records must use answer_type = 'multiple choice'.")
 
     return True

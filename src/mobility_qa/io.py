@@ -38,10 +38,10 @@ def write_jsonl(records: Iterable[Mapping[str, object]], path: str | Path) -> No
 
 
 def _encode_csv_value(field: str, value: object) -> object:
-    if field == "choices":
+    if field in {"options", "choices"}:
         if not isinstance(value, list):
-            raise ValueError("CSV field 'choices' must be a list before writing.")
-        return "|".join(str(choice) for choice in value)
+            raise ValueError(f"CSV field '{field}' must be a list before writing.")
+        return " | ".join(str(option) for option in value)
 
     if field == "metadata":
         if not isinstance(value, Mapping):
@@ -67,18 +67,22 @@ def _decode_context_sequence(value: str) -> object:
 def read_csv_records(path: str | Path) -> list[dict]:
     """Read shared QA records from CSV.
 
-    The CSV representation stores choices as pipe-separated text and metadata as
-    JSON text. Complex fields such as context_sequence are read from JSON when
-    present.
+    Option lists are pipe-separated. Legacy shared-format fields remain
+    readable so older example files do not break the helper.
     """
     records: list[dict] = []
     with Path(path).open("r", encoding="utf-8", newline="") as file:
         reader = csv.DictReader(file)
         for row in reader:
             record = dict(row)
-            if "choices" in record:
-                choices_text = record["choices"]
-                record["choices"] = choices_text.split("|") if choices_text else []
+            for field in ("options", "choices"):
+                if field in record:
+                    option_text = record[field]
+                    record[field] = (
+                        [option.strip() for option in option_text.split("|")]
+                        if option_text
+                        else []
+                    )
             if "metadata" in record:
                 record["metadata"] = json.loads(record["metadata"] or "{}")
             if "context_sequence" in record:
@@ -102,7 +106,7 @@ def write_csv_records(records: Iterable[Mapping[str, object]], path: str | Path)
 
     fieldnames = list(records_list[0].keys())
     with output_path.open("w", encoding="utf-8", newline="") as file:
-        writer = csv.DictWriter(file, fieldnames=fieldnames)
+        writer = csv.DictWriter(file, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         for record in records_list:
             writer.writerow(

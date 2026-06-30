@@ -1,10 +1,10 @@
 # Evaluation Plan
 
-Closed tasks use accuracy first. This applies to Tasks 1, 2, and 5 where
-`metadata.answer_type = "closed"`.
+Closed tasks use accuracy first. This applies to records where
+`answer_type = "multiple choice"`.
 
-Open tasks use rubric-based evaluation later. This applies to Tasks 3 and 4
-where `metadata.answer_type = "open"`.
+Written tasks use rubric-based evaluation later. These records use
+`answer_type = "written"`.
 
 ## Task 1
 

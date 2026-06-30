@@ -1,4 +1,4 @@
-"""CLI wrapper for closed QA evaluation."""
+"""CLI entry point for Parth-format multiple-choice QA evaluation."""
 
 from __future__ import annotations
 
@@ -13,6 +13,8 @@ from mobility_qa.evaluation.evaluate_closed_qa import (  # noqa: E402,F401
     main,
     normalize_answer,
 )
+
+__all__ = ["normalize_answer", "evaluate_accuracy", "evaluate_closed_qa", "main"]
 
 
 if __name__ == "__main__":
