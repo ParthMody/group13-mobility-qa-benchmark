@@ -1,0 +1,24 @@
+{
+  "n_items": 6,
+  "labels": [
+    "shift_to_transit",
+    "shift_to_leisure",
+    "shift_to_food",
+    "increased_diversity",
+    "no_major_change"
+  ],
+  "scoreboard": [
+    {
+      "method": "Majority baseline",
+      "accuracy": 0.333,
+      "macro_f1": 0.1,
+      "reasoning": null
+    },
+    {
+      "method": "LLM zero-shot",
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "reasoning": 0.833
+    }
+  ]
+}
