@@ -1,16 +1,3 @@
-"""
-Evaluation for Task 3 (Two-Period Change Detection).
-
-Two modes, matching the dual nature of the task:
-  - classification: exact match on metadata.change_label (for the ML head)
-  - open:           how well the written answer covers the scoring rubric
-
-The open scorer here is a transparent placeholder (rubric keyword coverage) so
-the harness runs end-to-end today. Swap in llm_judge() for real scoring later.
-
-Prediction format (matches the shared harness):
-    {question_id: {"change_label": "<label>", "answer": "<text>"}}
-"""
 from collections import defaultdict
 
 

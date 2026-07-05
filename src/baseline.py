@@ -1,8 +1,3 @@
-"""
-Reference baselines for Task 3, so the harness shows real numbers without an
-external model. Intentionally weak — they exist to be beaten (the proposal calls
-for a popularity baseline to expose shortcut-taking).
-"""
 from collections import Counter
 
 

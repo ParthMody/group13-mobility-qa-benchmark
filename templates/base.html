@@ -32,9 +32,9 @@
   .brand{display:flex;align-items:center;gap:10px;color:var(--navy)}
   .brand:hover{text-decoration:none}
   .brand .mark{flex:none;display:block}
+  .brand-img{height:130px;width:auto;display:block}
   .brand .word{font-family:var(--fd);font-weight:700;font-size:18px;letter-spacing:-.01em;line-height:1}
   .brand .sub{font-family:var(--fd);font-weight:600;font-size:10px;letter-spacing:.22em;color:var(--indigo);text-transform:uppercase;margin-left:2px}
-  .brand-img{height:120px;width:auto;display:block}
   .topbar-meta{color:var(--slate);font-size:13px}
   @media(max-width:560px){.topbar-meta{display:none}}
 
@@ -100,7 +100,7 @@
   {% if task and task.status == 'live' %}
   <nav class="subnav" aria-label="Sections"><div class="wrap">
     <a href="/task/{{ task.id }}" class="{{ 'on' if section == 'items' }}">Items</a>
-    <a href="/task/{{ task.id }}/evaluate" class="{{ 'on' if section == 'evaluate' }}">Evaluate</a>
+    {% if task.view == 'change' %}<a href="/task/{{ task.id }}/evaluate" class="{{ 'on' if section == 'evaluate' }}">Evaluate</a>{% endif %}
     <a class="api" href="/api/{{ task.id }}/items">{ } API</a>
   </div></nav>
   {% endif %}
@@ -109,7 +109,7 @@
 
   <footer><div class="wrap">
     <span>Waypoint Analytics · Group 13 · DATA5925</span>
-    <span>Data: Massive-STEPS (2013 / 2018)</span>
+    <span>Data: Massive-STEPS (2013 / 2018) · no database, items loaded from JSONL</span>
   </div></footer>
 </body>
 </html>

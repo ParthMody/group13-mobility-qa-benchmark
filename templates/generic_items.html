@@ -8,7 +8,8 @@
   .glist{display:flex;flex-direction:column;gap:10px}
   .gi{display:block;padding:15px 16px;color:var(--navy)}
   .gi:hover{text-decoration:none;border-color:var(--indigo)}
-  .gi .q{font-weight:500;margin-bottom:8px}
+  .gi .q{font-weight:500;margin-bottom:6px}
+  .gi .ctx{color:var(--slate);font-size:12.5px;margin-bottom:10px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
   .gi .meta{display:flex;gap:6px;flex-wrap:wrap}
 </style>
 
@@ -16,6 +17,7 @@
   {% for it in items %}
   <a class="gi card" href="/task/{{ task.id }}/item/{{ it.question_id }}">
     <div class="q">{{ it.question }}</div>
+    {% if it.context_text %}<div class="ctx">{{ it.context_text }}</div>{% endif %}
     <div class="meta">
       {% if it.city %}<span class="chip">{{ it.city }}</span>{% endif %}
       {% if it.metadata and it.metadata.answer_type %}<span class="badge label">{{ it.metadata.answer_type }}</span>{% endif %}

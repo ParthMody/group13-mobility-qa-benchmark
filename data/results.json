@@ -1,5 +1,5 @@
 {
-  "n_items": 6,
+  "n_items": 9,
   "labels": [
     "shift_to_transit",
     "shift_to_leisure",
@@ -10,15 +10,15 @@
   "scoreboard": [
     {
       "method": "Majority baseline",
-      "accuracy": 0.333,
-      "macro_f1": 0.1,
+      "accuracy": 0.667,
+      "macro_f1": 0.16,
       "reasoning": null
     },
     {
       "method": "LLM zero-shot",
-      "accuracy": 1.0,
-      "macro_f1": 1.0,
-      "reasoning": 0.833
+      "accuracy": 0.0,
+      "macro_f1": 0.0,
+      "reasoning": 0.92
     }
   ]
 }

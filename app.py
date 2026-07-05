@@ -79,8 +79,9 @@ def change_rows(item):
 # ---------- pages ----------
 @app.route("/")
 def home():
-    live = next((t for t in TASKS if t["status"] == "live"), TASKS[0])
-    return redirect(url_for("task_view", tid=live["id"]))
+    # land on Task 3 (the worked task with real results) if it's live
+    landing = "task3" if TASK_BY_ID.get("task3", {}).get("status") == "live" else TASKS[0]["id"]
+    return redirect(url_for("task_view", tid=landing))
 
 
 @app.route("/task/<tid>")
@@ -113,8 +114,8 @@ def item_view(tid, qid):
 @app.route("/task/<tid>/evaluate")
 def evaluate_view(tid):
     t = TASK_BY_ID.get(tid)
-    if not t or t["status"] != "live":
-        abort(404)
+    if not t or t["status"] != "live" or t["view"] != "change":
+        abort(404)   # evaluation is only defined for the change-detection task
     from src.baseline import majority_baseline
     from src.evaluate import evaluate_all
     items = ITEMS[tid]
