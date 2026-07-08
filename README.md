@@ -38,9 +38,28 @@ python3 -m src.tasks.task1_next_poi_category \
   --output-jsonl data/examples/task1_dhanesh_5_questions.jsonl
 ```
 
-The generated examples are manual category-level records for format checking.
+The five generated examples are manual category-level records for format checking.
 They are not extracted Massive-STEPS rows and use
 `verification_status = "draft_manual_example"`.
+
+## Build The Dataset-Backed Task 1 Benchmark
+
+The main Task 1 benchmark contains 2,832 questions from the official
+Massive-STEPS test splits across all 15 cities. Raw check-ins are downloaded to
+the ignored `data/raw/` directory; generated benchmark files are written to
+`data/benchmark/task1_massive_steps/`.
+
+```bash
+python3 -m src.tasks.build_task1_dataset \
+  --download \
+  --split test \
+  --per-city 200
+```
+
+The source is Apache-2.0 licensed. The builder derives broad category labels
+from Foursquare category IDs, excludes venue and user identifiers from prompts,
+uses transition-based distractors, and emits a provenance summary. Full method
+details are in `docs/task1_dataset_build.md`.
 
 ## Evaluate Closed QA Predictions
 
@@ -57,6 +76,7 @@ python3 -m src.evaluation.evaluate_closed_qa \
 
 ```text
 data/
+  benchmark/    Generated, versioned benchmark datasets
   raw/          Raw Massive-STEPS files, not committed by default
   processed/    Generated benchmark outputs, not committed by default
   examples/     Small example QA records

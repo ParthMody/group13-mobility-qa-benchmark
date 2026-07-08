@@ -16,6 +16,12 @@ Parth's current benchmark template uses these fields:
 | `source_dataset` | Dataset direction; currently `massive_steps` |
 | `verification_status` | Provenance or review state of the record |
 
+Current Task 1 verification values are:
+
+- `draft_manual_example`: manually authored format-check record
+- `verified_massive_steps_taxonomy_mapping`: target taken from an official
+  Massive-STEPS trail and mapped by Foursquare category ID
+
 ## Answer Types
 
 - `multiple choice`: `options` must be non-empty and `correct_answer` must

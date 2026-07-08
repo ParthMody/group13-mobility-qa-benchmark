@@ -1,0 +1,471 @@
+{
+  "category_counts": {
+    "Arts & Entertainment": 307,
+    "College & University": 249,
+    "Event": 27,
+    "Food": 345,
+    "Nightlife Spot": 268,
+    "Outdoors & Recreation": 284,
+    "Professional & Other Places": 313,
+    "Residence": 309,
+    "Shop & Service": 362,
+    "Travel & Transport": 368
+  },
+  "cities": {
+    "Bandung": {
+      "category_counts": {
+        "Arts & Entertainment": 23,
+        "College & University": 23,
+        "Food": 22,
+        "Nightlife Spot": 22,
+        "Outdoors & Recreation": 22,
+        "Professional & Other Places": 22,
+        "Residence": 22,
+        "Shop & Service": 22,
+        "Travel & Transport": 22
+      },
+      "difficulty_counts": {
+        "easy": 40,
+        "hard": 107,
+        "medium": 53
+      },
+      "eligible_trajectories": 4288,
+      "selected_records": 200,
+      "skipped_short": 6553,
+      "skipped_unmapped": 226,
+      "source_rows": 32208,
+      "source_trajectories": 11067
+    },
+    "Beijing": {
+      "category_counts": {
+        "Arts & Entertainment": 1,
+        "Food": 5,
+        "Nightlife Spot": 1,
+        "Outdoors & Recreation": 1,
+        "Professional & Other Places": 7,
+        "Residence": 3,
+        "Shop & Service": 3,
+        "Travel & Transport": 11
+      },
+      "difficulty_counts": {
+        "easy": 7,
+        "hard": 21,
+        "medium": 4
+      },
+      "eligible_trajectories": 32,
+      "selected_records": 32,
+      "skipped_short": 76,
+      "skipped_unmapped": 7,
+      "source_rows": 285,
+      "source_trajectories": 115
+    },
+    "Istanbul": {
+      "category_counts": {
+        "Arts & Entertainment": 22,
+        "College & University": 22,
+        "Event": 3,
+        "Food": 22,
+        "Nightlife Spot": 22,
+        "Outdoors & Recreation": 22,
+        "Professional & Other Places": 22,
+        "Residence": 22,
+        "Shop & Service": 22,
+        "Travel & Transport": 21
+      },
+      "difficulty_counts": {
+        "easy": 44,
+        "hard": 113,
+        "medium": 43
+      },
+      "eligible_trajectories": 12299,
+      "selected_records": 200,
+      "skipped_short": 30025,
+      "skipped_unmapped": 959,
+      "source_rows": 108885,
+      "source_trajectories": 43283
+    },
+    "Jakarta": {
+      "category_counts": {
+        "Arts & Entertainment": 23,
+        "College & University": 22,
+        "Event": 1,
+        "Food": 22,
+        "Nightlife Spot": 22,
+        "Outdoors & Recreation": 22,
+        "Professional & Other Places": 22,
+        "Residence": 22,
+        "Shop & Service": 22,
+        "Travel & Transport": 22
+      },
+      "difficulty_counts": {
+        "easy": 42,
+        "hard": 125,
+        "medium": 33
+      },
+      "eligible_trajectories": 10846,
+      "selected_records": 200,
+      "skipped_short": 15963,
+      "skipped_unmapped": 671,
+      "source_rows": 82483,
+      "source_trajectories": 27480
+    },
+    "Kuwait City": {
+      "category_counts": {
+        "Arts & Entertainment": 21,
+        "College & University": 20,
+        "Event": 19,
+        "Food": 20,
+        "Nightlife Spot": 20,
+        "Outdoors & Recreation": 20,
+        "Professional & Other Places": 20,
+        "Residence": 20,
+        "Shop & Service": 20,
+        "Travel & Transport": 20
+      },
+      "difficulty_counts": {
+        "easy": 39,
+        "hard": 124,
+        "medium": 37
+      },
+      "eligible_trajectories": 5634,
+      "selected_records": 200,
+      "skipped_short": 12590,
+      "skipped_unmapped": 108,
+      "source_rows": 46614,
+      "source_trajectories": 18332
+    },
+    "Melbourne": {
+      "category_counts": {
+        "Arts & Entertainment": 23,
+        "College & University": 22,
+        "Food": 23,
+        "Nightlife Spot": 22,
+        "Outdoors & Recreation": 22,
+        "Professional & Other Places": 22,
+        "Residence": 22,
+        "Shop & Service": 22,
+        "Travel & Transport": 22
+      },
+      "difficulty_counts": {
+        "easy": 49,
+        "hard": 108,
+        "medium": 43
+      },
+      "eligible_trajectories": 602,
+      "selected_records": 200,
+      "skipped_short": 950,
+      "skipped_unmapped": 21,
+      "source_rows": 4475,
+      "source_trajectories": 1573
+    },
+    "Moscow": {
+      "category_counts": {
+        "Arts & Entertainment": 23,
+        "College & University": 23,
+        "Food": 22,
+        "Nightlife Spot": 22,
+        "Outdoors & Recreation": 22,
+        "Professional & Other Places": 22,
+        "Residence": 22,
+        "Shop & Service": 22,
+        "Travel & Transport": 22
+      },
+      "difficulty_counts": {
+        "easy": 57,
+        "hard": 96,
+        "medium": 47
+      },
+      "eligible_trajectories": 2695,
+      "selected_records": 200,
+      "skipped_short": 5154,
+      "skipped_unmapped": 48,
+      "source_rows": 21034,
+      "source_trajectories": 7897
+    },
+    "New York": {
+      "category_counts": {
+        "Arts & Entertainment": 22,
+        "College & University": 22,
+        "Event": 2,
+        "Food": 22,
+        "Nightlife Spot": 22,
+        "Outdoors & Recreation": 22,
+        "Professional & Other Places": 22,
+        "Residence": 22,
+        "Shop & Service": 22,
+        "Travel & Transport": 22
+      },
+      "difficulty_counts": {
+        "easy": 44,
+        "hard": 110,
+        "medium": 46
+      },
+      "eligible_trajectories": 7207,
+      "selected_records": 200,
+      "skipped_short": 10798,
+      "skipped_unmapped": 404,
+      "source_rows": 54427,
+      "source_trajectories": 18409
+    },
+    "Palembang": {
+      "category_counts": {
+        "Arts & Entertainment": 27,
+        "College & University": 8,
+        "Food": 30,
+        "Nightlife Spot": 7,
+        "Outdoors & Recreation": 10,
+        "Professional & Other Places": 30,
+        "Residence": 30,
+        "Shop & Service": 29,
+        "Travel & Transport": 29
+      },
+      "difficulty_counts": {
+        "easy": 37,
+        "hard": 106,
+        "medium": 57
+      },
+      "eligible_trajectories": 394,
+      "selected_records": 200,
+      "skipped_short": 529,
+      "skipped_unmapped": 17,
+      "source_rows": 2848,
+      "source_trajectories": 940
+    },
+    "Petaling Jaya": {
+      "category_counts": {
+        "Arts & Entertainment": 23,
+        "College & University": 23,
+        "Food": 22,
+        "Nightlife Spot": 22,
+        "Outdoors & Recreation": 22,
+        "Professional & Other Places": 22,
+        "Residence": 22,
+        "Shop & Service": 22,
+        "Travel & Transport": 22
+      },
+      "difficulty_counts": {
+        "easy": 32,
+        "hard": 123,
+        "medium": 45
+      },
+      "eligible_trajectories": 13689,
+      "selected_records": 200,
+      "skipped_short": 22097,
+      "skipped_unmapped": 296,
+      "source_rows": 101105,
+      "source_trajectories": 36082
+    },
+    "Shanghai": {
+      "category_counts": {
+        "Arts & Entertainment": 13,
+        "College & University": 1,
+        "Food": 30,
+        "Nightlife Spot": 29,
+        "Outdoors & Recreation": 15,
+        "Professional & Other Places": 29,
+        "Residence": 25,
+        "Shop & Service": 29,
+        "Travel & Transport": 29
+      },
+      "difficulty_counts": {
+        "easy": 44,
+        "hard": 111,
+        "medium": 45
+      },
+      "eligible_trajectories": 312,
+      "selected_records": 200,
+      "skipped_short": 404,
+      "skipped_unmapped": 12,
+      "source_rows": 2090,
+      "source_trajectories": 728
+    },
+    "Sydney": {
+      "category_counts": {
+        "Arts & Entertainment": 24,
+        "College & University": 15,
+        "Food": 23,
+        "Nightlife Spot": 23,
+        "Outdoors & Recreation": 23,
+        "Professional & Other Places": 23,
+        "Residence": 23,
+        "Shop & Service": 23,
+        "Travel & Transport": 23
+      },
+      "difficulty_counts": {
+        "easy": 47,
+        "hard": 122,
+        "medium": 31
+      },
+      "eligible_trajectories": 802,
+      "selected_records": 200,
+      "skipped_short": 1207,
+      "skipped_unmapped": 21,
+      "source_rows": 5896,
+      "source_trajectories": 2030
+    },
+    "S\u00e3o Paulo": {
+      "category_counts": {
+        "Arts & Entertainment": 22,
+        "College & University": 22,
+        "Event": 2,
+        "Food": 22,
+        "Nightlife Spot": 22,
+        "Outdoors & Recreation": 22,
+        "Professional & Other Places": 22,
+        "Residence": 22,
+        "Shop & Service": 22,
+        "Travel & Transport": 22
+      },
+      "difficulty_counts": {
+        "easy": 47,
+        "hard": 116,
+        "medium": 37
+      },
+      "eligible_trajectories": 6821,
+      "selected_records": 200,
+      "skipped_short": 10935,
+      "skipped_unmapped": 182,
+      "source_rows": 51428,
+      "source_trajectories": 17938
+    },
+    "Tangerang": {
+      "category_counts": {
+        "Arts & Entertainment": 25,
+        "College & University": 25,
+        "Food": 25,
+        "Nightlife Spot": 5,
+        "Outdoors & Recreation": 24,
+        "Professional & Other Places": 24,
+        "Residence": 24,
+        "Shop & Service": 24,
+        "Travel & Transport": 24
+      },
+      "difficulty_counts": {
+        "easy": 48,
+        "hard": 107,
+        "medium": 45
+      },
+      "eligible_trajectories": 1076,
+      "selected_records": 200,
+      "skipped_short": 2039,
+      "skipped_unmapped": 82,
+      "source_rows": 8937,
+      "source_trajectories": 3197
+    },
+    "Tokyo": {
+      "category_counts": {
+        "Arts & Entertainment": 15,
+        "College & University": 1,
+        "Food": 35,
+        "Nightlife Spot": 7,
+        "Outdoors & Recreation": 15,
+        "Professional & Other Places": 4,
+        "Residence": 8,
+        "Shop & Service": 58,
+        "Travel & Transport": 57
+      },
+      "difficulty_counts": {
+        "easy": 72,
+        "hard": 87,
+        "medium": 41
+      },
+      "eligible_trajectories": 261,
+      "selected_records": 200,
+      "skipped_short": 755,
+      "skipped_unmapped": 81,
+      "source_rows": 2791,
+      "source_trajectories": 1097
+    }
+  },
+  "difficulty_counts": {
+    "easy": 649,
+    "hard": 1576,
+    "medium": 607
+  },
+  "per_city_limit": 200,
+  "seed": 5925,
+  "source_dataset": "massive_steps",
+  "source_files": {
+    "Bandung": {
+      "filename": "bandung_checkins_test.csv",
+      "sha256": "2d238b2b41cada62bcfe4362b800fe1a5709d1628914d2fe20873c98153bf87d",
+      "url": "https://huggingface.co/datasets/CRUISEResearchGroup/Massive-STEPS-Bandung/resolve/main/bandung_checkins_test.csv?download=true"
+    },
+    "Beijing": {
+      "filename": "beijing_checkins_test.csv",
+      "sha256": "1fd92fd87bd7b3373f05ab8b95257c984fdc132b3113e1a3582e8e9ab361e00a",
+      "url": "https://huggingface.co/datasets/CRUISEResearchGroup/Massive-STEPS-Beijing/resolve/main/beijing_checkins_test.csv?download=true"
+    },
+    "Istanbul": {
+      "filename": "istanbul_checkins_test.csv",
+      "sha256": "4657fda78d577c88af24826de1d2706064ed587c2f1d0c348a861bdbfa758c71",
+      "url": "https://huggingface.co/datasets/CRUISEResearchGroup/Massive-STEPS-Istanbul/resolve/main/istanbul_checkins_test.csv?download=true"
+    },
+    "Jakarta": {
+      "filename": "jakarta_checkins_test.csv",
+      "sha256": "2f795ef27fb2e2d1b79560dd98d7d9f278535218ac374ee34acd7288540209d4",
+      "url": "https://huggingface.co/datasets/CRUISEResearchGroup/Massive-STEPS-Jakarta/resolve/main/jakarta_checkins_test.csv?download=true"
+    },
+    "Kuwait City": {
+      "filename": "kuwait_city_checkins_test.csv",
+      "sha256": "e678c1c0153f0664ac70b3f3b65a150ab2690194bff507c3a023f1a078888b03",
+      "url": "https://huggingface.co/datasets/CRUISEResearchGroup/Massive-STEPS-Kuwait-City/resolve/main/kuwait_city_checkins_test.csv?download=true"
+    },
+    "Melbourne": {
+      "filename": "melbourne_checkins_test.csv",
+      "sha256": "7a93dec9347a42e455df1568df803e77b7d9434986124287bae7fbdde9836932",
+      "url": "https://huggingface.co/datasets/CRUISEResearchGroup/Massive-STEPS-Melbourne/resolve/main/melbourne_checkins_test.csv?download=true"
+    },
+    "Moscow": {
+      "filename": "moscow_checkins_test.csv",
+      "sha256": "5823ce502aac803195b4242197f1be1419590ec47a53892805b39e79d4a3cc5a",
+      "url": "https://huggingface.co/datasets/CRUISEResearchGroup/Massive-STEPS-Moscow/resolve/main/moscow_checkins_test.csv?download=true"
+    },
+    "New York": {
+      "filename": "new_york_checkins_test.csv",
+      "sha256": "04d6c8bb79c438cca456b049484eb59ff87aeeb8597c4d392bdd638351c3d394",
+      "url": "https://huggingface.co/datasets/CRUISEResearchGroup/Massive-STEPS-New-York/resolve/main/new_york_checkins_test.csv?download=true"
+    },
+    "Palembang": {
+      "filename": "palembang_checkins_test.csv",
+      "sha256": "655b84cb62f5a4f3b8e4acd66b306c5745045249af375a8503ca74d70582b39d",
+      "url": "https://huggingface.co/datasets/CRUISEResearchGroup/Massive-STEPS-Palembang/resolve/main/palembang_checkins_test.csv?download=true"
+    },
+    "Petaling Jaya": {
+      "filename": "petaling_jaya_checkins_test.csv",
+      "sha256": "cb7dbed9df688ac4c3b396dcdedf031944fa4f46e0ee7774c7c00fba2a4ecdc3",
+      "url": "https://huggingface.co/datasets/CRUISEResearchGroup/Massive-STEPS-Petaling-Jaya/resolve/main/petaling_jaya_checkins_test.csv?download=true"
+    },
+    "Shanghai": {
+      "filename": "shanghai_checkins_test.csv",
+      "sha256": "9640b993b7e06ef0cddeb34e010495a8fa1481d4faa193abd27ff03b53e1a5da",
+      "url": "https://huggingface.co/datasets/CRUISEResearchGroup/Massive-STEPS-Shanghai/resolve/main/shanghai_checkins_test.csv?download=true"
+    },
+    "Sydney": {
+      "filename": "sydney_checkins_test.csv",
+      "sha256": "b8cf6e88db19ef3e388564435f954e3bc9daf255d0ce2ea0f2b63ec2b42b2fbd",
+      "url": "https://huggingface.co/datasets/CRUISEResearchGroup/Massive-STEPS-Sydney/resolve/main/sydney_checkins_test.csv?download=true"
+    },
+    "S\u00e3o Paulo": {
+      "filename": "sao_paulo_checkins_test.csv",
+      "sha256": "1e0bfef5034311c25fe9b30ea913dc9514ee7d83b3c2494e197e77febdbd4bdc",
+      "url": "https://huggingface.co/datasets/CRUISEResearchGroup/Massive-STEPS-Sao-Paulo/resolve/main/sao_paulo_checkins_test.csv?download=true"
+    },
+    "Tangerang": {
+      "filename": "tangerang_checkins_test.csv",
+      "sha256": "024724f70d9ee0a974beea6e5bcf814f3fe7b17de0afa90eb06aa85a0a18824d",
+      "url": "https://huggingface.co/datasets/CRUISEResearchGroup/Massive-STEPS-Tangerang/resolve/main/tangerang_checkins_test.csv?download=true"
+    },
+    "Tokyo": {
+      "filename": "tokyo_checkins_test.csv",
+      "sha256": "71f21928b7e0c6c95e108fce9d4d5978e35b77c012051459ce154bd84cad06cf",
+      "url": "https://huggingface.co/datasets/CRUISEResearchGroup/Massive-STEPS-Tokyo/resolve/main/tokyo_checkins_test.csv?download=true"
+    }
+  },
+  "source_split": "test",
+  "task": "task1_next_poi_category",
+  "taxonomy": "Foursquare legacy top-level category tree",
+  "taxonomy_sha256": "e3499f5d77e66a90318b9c5d4aadc43a4ebb62a0eb5713b92a57777243c044dd",
+  "taxonomy_url": "https://gist.githubusercontent.com/missinglink/a0344050d3e2b52256d7/raw/bd2bae3b17f85de544caa53daaff36a4eba8ad2b/foursquare-taxonomy.json",
+  "total_records": 2832
+}

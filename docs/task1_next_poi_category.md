@@ -12,7 +12,7 @@ reasoning task whose response explains mobility behaviour in free text. The
 short `reasoning` field in a Task 1 gold record documents why its label is
 plausible; it does not turn Task 1 into an open-response task.
 
-## Current Examples
+## Datasets
 
 The five records in `data/examples/task1_dhanesh_5_questions.csv` and its JSONL
 equivalent are draft manual examples used to check the benchmark format. They
@@ -20,8 +20,17 @@ follow the Massive-STEPS-style benchmark direction and therefore use
 `source_dataset = massive_steps`, but they are not extracted Massive-STEPS
 rows. Every record is marked `verification_status = draft_manual_example`.
 
-Full Massive-STEPS extraction and POI-to-category mapping are future work if
-the group later needs dataset-derived benchmark splits.
+The main benchmark is now generated from the official Massive-STEPS test splits:
+
+```text
+data/benchmark/task1_massive_steps/task1_massive_steps_test.csv
+data/benchmark/task1_massive_steps/task1_massive_steps_test.jsonl
+```
+
+It contains 2,832 verified questions across all 15 released cities. Target
+labels are derived from source `venue_category_id` values through the historical
+Foursquare top-level taxonomy. See `docs/task1_dataset_build.md` for the full
+methodology and limitations.
 
 ## Evaluation
 
