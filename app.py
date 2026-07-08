@@ -51,6 +51,8 @@ for t in TASKS:
     t["status"] = "live" if t["count"] else "planned"
     # Task 3 has a bespoke change-detection view; any other task renders generically.
     t["view"] = "change" if t["id"] == "task3" else "generic"
+    # a task shows an Evaluate tab if it's Task 3 or has a <id>_results.json
+    t["has_eval"] = (t["id"] == "task3") or (DATA_DIR / f"{t['id']}_results.json").exists()
 
 app = Flask(__name__)
 
@@ -114,8 +116,15 @@ def item_view(tid, qid):
 @app.route("/task/<tid>/evaluate")
 def evaluate_view(tid):
     t = TASK_BY_ID.get(tid)
-    if not t or t["status"] != "live" or t["view"] != "change":
-        abort(404)   # evaluation is only defined for the change-detection task
+    if not t or t["status"] != "live" or not t.get("has_eval"):
+        abort(404)
+    if t["view"] != "change":
+        # generic per-task evaluation (Tasks 1, 2, 4, 5)
+        with open(DATA_DIR / f"{tid}_results.json", encoding="utf-8") as f:
+            res = json.load(f)
+        by_id = {it["question_id"]: it for it in ITEMS[tid]}
+        return render_template("evaluate_generic.html", result=res, items_by_id=by_id,
+                               **nav(tid, "evaluate"))
     from src.baseline import majority_baseline
     from src.evaluate import evaluate_all
     items = ITEMS[tid]
@@ -128,8 +137,13 @@ def evaluate_view(tid):
     if results_path.exists():
         with open(results_path, encoding="utf-8") as f:
             scoreboard = json.load(f)
+    # the LLM row carries the real judge-based reasoning score
+    llm_row = None
+    if scoreboard:
+        llm_row = next((r for r in scoreboard.get("scoreboard", [])
+                        if r.get("reasoning") is not None), None)
     return render_template("evaluate.html", report=report, preds=preds, items_by_id=by_id,
-                           scoreboard=scoreboard, **nav(tid, "evaluate"))
+                           scoreboard=scoreboard, llm_row=llm_row, **nav(tid, "evaluate"))
 
 
 # ---------- JSON API ----------

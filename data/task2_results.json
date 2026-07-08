@@ -1,0 +1,70 @@
+{
+  "task": "task2",
+  "n_items": 12,
+  "type": "closed",
+  "accuracy": 0.5,
+  "macro_f1": 0.5,
+  "reasoning": null,
+  "rows": [
+    {
+      "question_id": "task2_001",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_002",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_003",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_004",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_005",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_006",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_007",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_008",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_009",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_010",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_011",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_012",
+      "gold": "weekend",
+      "pred": "weekend"
+    }
+  ]
+}

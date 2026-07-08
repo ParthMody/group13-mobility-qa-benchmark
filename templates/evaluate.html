@@ -52,14 +52,19 @@
 
 <div class="kpis">
   <div class="card kpi">
-    <div class="k">Change-label accuracy</div>
-    <div class="v">{{ (report.classification.accuracy*100)|round|int }}%</div>
-    <div class="n">{{ report.classification.n }} items · exact match on the gold label</div>
+    <div class="k">{{ 'LLM label accuracy' if llm_row else 'Change-label accuracy' }}</div>
+    <div class="v">{{ ((llm_row.accuracy if llm_row else report.classification.accuracy)*100)|round|int }}%</div>
+    <div class="n">{{ scoreboard.n_items if scoreboard else report.classification.n }} items · exact match on the gold label</div>
   </div>
   <div class="card kpi">
-    <div class="k">Open-answer rubric coverage</div>
-    <div class="v">{{ (report.open.mean_rubric_coverage*100)|round|int }}%</div>
-    <div class="n">placeholder scorer · swap in llm_judge() for real grading</div>
+    <div class="k">LLM reasoning score</div>
+    {% if llm_row and llm_row.reasoning is not none %}
+    <div class="v">{{ (llm_row.reasoning*100)|round|int }}%</div>
+    <div class="n">LLM-judged against the per-item rubric (0–1)</div>
+    {% else %}
+    <div class="v">—</div>
+    <div class="n">run the zero-shot LLM to populate</div>
+    {% endif %}
   </div>
 </div>
 

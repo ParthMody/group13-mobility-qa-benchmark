@@ -1,0 +1,35 @@
+{
+  "task": "task1",
+  "n_items": 5,
+  "type": "closed",
+  "accuracy": 0.6,
+  "macro_f1": 0.667,
+  "reasoning": null,
+  "rows": [
+    {
+      "question_id": "task1_dhanesh_001",
+      "gold": "Office",
+      "pred": "Office"
+    },
+    {
+      "question_id": "task1_dhanesh_002",
+      "gold": "Restaurant",
+      "pred": "Restaurant"
+    },
+    {
+      "question_id": "task1_dhanesh_003",
+      "gold": "Arts & Entertainment",
+      "pred": "Arts & Entertainment"
+    },
+    {
+      "question_id": "task1_dhanesh_004",
+      "gold": "Residence",
+      "pred": "Restaurant"
+    },
+    {
+      "question_id": "task1_dhanesh_005",
+      "gold": "Residence",
+      "pred": "Shop & Service"
+    }
+  ]
+}

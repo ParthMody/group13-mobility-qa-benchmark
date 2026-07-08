@@ -1,0 +1,35 @@
+{
+  "task": "task5",
+  "n_items": 5,
+  "type": "closed",
+  "accuracy": 1.0,
+  "macro_f1": 1.0,
+  "reasoning": null,
+  "rows": [
+    {
+      "question_id": "task5_001",
+      "gold": "Outdoor, Sports & Recreation",
+      "pred": "Outdoor, Sports & Recreation"
+    },
+    {
+      "question_id": "task5_002",
+      "gold": "Entertainment & Culture",
+      "pred": "Entertainment & Culture"
+    },
+    {
+      "question_id": "task5_003",
+      "gold": "Grocery & Convenience",
+      "pred": "Grocery & Convenience"
+    },
+    {
+      "question_id": "task5_004",
+      "gold": "Café, Coffee & Bakery",
+      "pred": "Café, Coffee & Bakery"
+    },
+    {
+      "question_id": "task5_005",
+      "gold": "Daily Services & Errands",
+      "pred": "Daily Services & Errands"
+    }
+  ]
+}

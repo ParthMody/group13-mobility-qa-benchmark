@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block body %}
+<p class="eyebrow">Task {{ task.num }} · Evaluation</p>
+<h1 class="title">Zero-shot LLM results</h1>
+<p class="lede">The zero-shot LLM answered each item;
+{% if result.type == 'closed' %}scored by exact match against the correct option.
+{% else %}scored by an LLM judge against each item's rubric (0–1).{% endif %}</p>
+
+<style>
+  .kpis{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:18px}
+  @media(max-width:560px){.kpis{grid-template-columns:1fr}}
+  .kpi{padding:18px 20px}
+  .kpi .k{font-size:12px;color:var(--slate);font-weight:500}
+  .kpi .v{font-family:var(--fd);font-weight:700;font-size:34px;letter-spacing:-.02em;margin:6px 0 2px}
+  .kpi .n{font-family:var(--fm);font-size:12px;color:var(--slate)}
+  table{width:100%;border-collapse:collapse;font-size:13.5px}
+  thead th{text-align:left;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--slate);font-weight:600;padding:0 14px 10px}
+  tbody td{padding:10px 14px;border-top:1px solid var(--line);vertical-align:top}
+  tbody td.q{font-family:var(--fm);font-size:12.5px}
+  .ok{color:#0E7C70;font-weight:600}.no{color:var(--slate)}
+  .tbl{padding:14px 4px 6px}
+</style>
+
+<div class="kpis">
+  {% if result.type == 'closed' %}
+  <div class="card kpi"><div class="k">Accuracy</div><div class="v">{{ (result.accuracy*100)|round|int }}%</div><div class="n">{{ result.n_items }} items · exact match</div></div>
+  <div class="card kpi"><div class="k">Macro-F1</div><div class="v">{{ (result.macro_f1*100)|round|int }}%</div><div class="n">across answer classes</div></div>
+  {% else %}
+  <div class="card kpi"><div class="k">Mean reasoning</div><div class="v">{{ (result.reasoning*100)|round|int }}%</div><div class="n">{{ result.n_items }} items · LLM-judged vs rubric</div></div>
+  <div class="card kpi"><div class="k">Answer type</div><div class="v" style="font-size:22px">Open</div><div class="n">graded on reasoning, not exact match</div></div>
+  {% endif %}
+</div>
+
+<div class="card tbl">
+  <table>
+    {% if result.type == 'closed' %}
+    <thead><tr><th>Item</th><th>Correct answer</th><th>LLM prediction</th><th style="text-align:right">Match</th></tr></thead>
+    <tbody>
+      {% for r in result.rows %}
+      {% set hit = r.gold == r.pred %}
+      <tr>
+        <td class="q"><a href="/task/{{ task.id }}/item/{{ r.question_id }}">{{ r.question_id }}</a></td>
+        <td>{{ r.gold }}</td><td>{{ r.pred }}</td>
+        <td style="text-align:right" class="{{ 'ok' if hit else 'no' }}">{{ '\u2713' if hit else '\u2717' }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+    {% else %}
+    <thead><tr><th>Item</th><th>LLM answer</th><th style="text-align:right">Reasoning</th></tr></thead>
+    <tbody>
+      {% for r in result.rows %}
+      <tr>
+        <td class="q"><a href="/task/{{ task.id }}/item/{{ r.question_id }}">{{ r.question_id }}</a></td>
+        <td>{{ r.answer }}</td>
+        <td style="text-align:right">{{ (r.reasoning_score*100)|round|int }}%</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+    {% endif %}
+  </table>
+</div>
+{% endblock %}
