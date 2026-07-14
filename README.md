@@ -11,13 +11,13 @@ Group 13 · DATA5925
 
 ## Tasks
 
-All tasks are evaluated with a zero-shot LLM (Gemini 2.5-flash) so results are comparable.
+Tasks are evaluated with a zero-shot LLM (Gemini 2.5-flash) so results are comparable.
 Multiple-choice tasks are scored by exact-match accuracy and macro-F1; open-answer tasks
 by an LLM judge against a per-item rubric.
 
 | # | Task | Answer type | Status |
 |---|------|-------------|--------|
-| 1 | Next-POI Category QA | multiple choice | evaluated (accuracy) |
+| 1 | Next-POI Category QA | multiple choice | grounded items · evaluation rerun pending |
 | 2 | Weekday vs Weekend QA | binary | evaluated (accuracy) |
 | 3 | Two-Period Change Detection QA | open + label | evaluated (baseline + zero-shot LLM + reasoning) |
 | 4 | Zero-Shot POI Reasoning QA | open | evaluated (reasoning judge) |
@@ -70,6 +70,11 @@ python -m src.eval_task --task task5 --model gemini-2.5-flash
 
 API keys are read from the environment (`GEMINI_API_KEY`), never committed.
 
+Task 1's five items are held-out Massive-STEPS trajectories with verified
+Foursquare taxonomy mappings. Its old result file was removed when these items
+replaced the manual draft set; rerun the Task 1 command above before reporting
+its accuracy or macro-F1.
+
 ## Repository structure
 
 ```text
@@ -105,6 +110,7 @@ starts cleanly.
 
 ## Status
 
-All five tasks are evaluated with a consistent zero-shot LLM (Gemini 2.5-flash) and shown
-in the app. Task 3 is the fully worked reference (multi-city items, baseline, zero-shot,
-reasoning). Task 5's items are being scaled (more cities, harder items). Deployed on Railway.
+Tasks 2--5 have results from a consistent zero-shot LLM (Gemini 2.5-flash) and are shown
+in the app. Task 1 now has grounded Massive-STEPS items and awaits a fresh evaluation.
+Task 3 is the fully worked reference (multi-city items, baseline, zero-shot, reasoning).
+Task 5's items are being scaled (more cities, harder items). Deployed on Railway.
