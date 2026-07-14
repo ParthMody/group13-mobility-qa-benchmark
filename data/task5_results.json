@@ -1,35 +1,60 @@
 {
   "task": "task5",
-  "n_items": 5,
+  "n_items": 10,
   "type": "closed",
-  "accuracy": 1.0,
-  "macro_f1": 1.0,
+  "accuracy": 0.8,
+  "macro_f1": 0.85,
   "reasoning": null,
   "rows": [
     {
       "question_id": "task5_001",
-      "gold": "Outdoor, Sports & Recreation",
-      "pred": "Outdoor, Sports & Recreation"
+      "gold": "Change to Coffee Shop",
+      "pred": "Change to Coffee Shop"
     },
     {
       "question_id": "task5_002",
-      "gold": "Entertainment & Culture",
-      "pred": "Entertainment & Culture"
+      "gold": "No change",
+      "pred": "No change"
     },
     {
       "question_id": "task5_003",
-      "gold": "Grocery & Convenience",
-      "pred": "Grocery & Convenience"
+      "gold": "Change to Boutique",
+      "pred": "Change to Miscellaneous Shop"
     },
     {
       "question_id": "task5_004",
-      "gold": "Café, Coffee & Bakery",
-      "pred": "Café, Coffee & Bakery"
+      "gold": "Change to Library",
+      "pred": "Change to Library"
     },
     {
       "question_id": "task5_005",
-      "gold": "Daily Services & Errands",
-      "pred": "Daily Services & Errands"
+      "gold": "Change to Bookstore",
+      "pred": "Change to Bookstore"
+    },
+    {
+      "question_id": "task5_006",
+      "gold": "No change",
+      "pred": "Change to Bus Line"
+    },
+    {
+      "question_id": "task5_007",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_008",
+      "gold": "Change to Cocktail Bar",
+      "pred": "Change to Cocktail Bar"
+    },
+    {
+      "question_id": "task5_009",
+      "gold": "Change to Art Museum",
+      "pred": "Change to Art Museum"
+    },
+    {
+      "question_id": "task5_010",
+      "gold": "Change to Train Station",
+      "pred": "Change to Train Station"
     }
   ]
 }

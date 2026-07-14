@@ -2,33 +2,33 @@
   "task": "task1",
   "n_items": 5,
   "type": "closed",
-  "accuracy": 0.6,
-  "macro_f1": 0.667,
+  "accuracy": 0.4,
+  "macro_f1": 0.333,
   "reasoning": null,
   "rows": [
     {
-      "question_id": "task1_dhanesh_001",
-      "gold": "Office",
-      "pred": "Office"
-    },
-    {
-      "question_id": "task1_dhanesh_002",
-      "gold": "Restaurant",
-      "pred": "Restaurant"
-    },
-    {
-      "question_id": "task1_dhanesh_003",
-      "gold": "Arts & Entertainment",
-      "pred": "Arts & Entertainment"
-    },
-    {
-      "question_id": "task1_dhanesh_004",
+      "question_id": "task1_ms_test_jakarta_2013_2167804",
       "gold": "Residence",
-      "pred": "Restaurant"
+      "pred": "Professional & Other Places"
     },
     {
-      "question_id": "task1_dhanesh_005",
-      "gold": "Residence",
+      "question_id": "task1_ms_test_sydney_2013_1557289",
+      "gold": "Travel & Transport",
+      "pred": "Travel & Transport"
+    },
+    {
+      "question_id": "task1_ms_test_melbourne_2013_1233941",
+      "gold": "Food",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_tokyo_2018_1388327",
+      "gold": "Shop & Service",
+      "pred": "Travel & Transport"
+    },
+    {
+      "question_id": "task1_ms_test_new_york_2013_4101695",
+      "gold": "Outdoors & Recreation",
       "pred": "Shop & Service"
     }
   ]
