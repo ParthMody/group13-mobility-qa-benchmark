@@ -1,9 +1,17 @@
+import csv
 import json
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
 ITEMS_PATH = ROOT / "data/task1_items.jsonl"
+CITY_CHECKIN_PATHS = {
+    "Jakarta": ROOT / "data/jakarta_checkins.csv",
+    "Sydney": ROOT / "data/sydney_checkins.csv",
+    "Melbourne": ROOT / "data/melbourne_checkins.csv",
+    "Tokyo": ROOT / "data/tokyo_checkins.csv",
+    "New York": ROOT / "data/new-york_checkins.csv",
+}
 
 
 def load_items():
@@ -51,3 +59,20 @@ def test_task1_context_does_not_expose_user_or_venue_ids():
     for item in load_items():
         assert all("poi_id" not in checkin for checkin in item["context_sequence"])
         assert "draft_" not in json.dumps(item)
+
+
+def test_task1_context_categories_match_the_source_trails():
+    for item in load_items():
+        source_path = CITY_CHECKIN_PATHS[item["city"]]
+        source_trail_id = item["metadata"]["source_trail_id"]
+        with source_path.open(encoding="utf-8", newline="") as source_file:
+            source_categories = [
+                row["venue_category"]
+                for row in csv.DictReader(source_file)
+                if row["trail_id"] == source_trail_id
+            ]
+
+        context_categories = [
+            checkin["poi_category"] for checkin in item["context_sequence"]
+        ]
+        assert context_categories == source_categories
