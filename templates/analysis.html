@@ -1,0 +1,168 @@
+{% extends "base.html" %}
+{% block body %}
+<p class="eyebrow">Task {{ task.num }} · Supporting analysis</p>
+<h1 class="title">The same rule, one level down</h1>
+<p class="lede">Task&nbsp;3 gives {{ an.city }} a single change label. This page applies the
+<em>identical</em> labelling rule to the city's individual neighbourhoods, to see whether that
+one label describes the city or merely blends it. This is a descriptive analysis, not a
+benchmark task: there are no gold labels, no model predictions and no scores here.</p>
+
+<style>
+  .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0}
+  @media(max-width:760px){.kpis{grid-template-columns:1fr 1fr}}
+  .kpi{padding:16px 18px}
+  .kpi .k{font-size:11.5px;color:var(--slate);font-weight:500}
+  .kpi .v{font-family:var(--fd);font-weight:700;font-size:26px;letter-spacing:-.02em;margin:5px 0 2px}
+  .kpi .v.sm{font-size:16px}
+  .kpi .n{font-family:var(--fm);font-size:11px;color:var(--slate)}
+  .dist{padding:16px 18px;margin-bottom:16px}
+  .dist h3{font-size:12px;color:var(--slate);font-weight:600;margin:0 0 12px;
+           letter-spacing:.06em;text-transform:uppercase}
+  .drow{display:flex;align-items:center;gap:10px;margin-bottom:7px;font-size:13px}
+  .drow .lab{font-family:var(--fm);font-size:12px;width:170px;flex:none}
+  .drow .bar{height:16px;border-radius:3px;background:var(--indigo)}
+  .drow .bar.city{background:var(--mint)}
+  .drow .ct{font-family:var(--fm);font-size:12px;color:var(--slate)}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  thead th{text-align:left;font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;
+           color:var(--slate);font-weight:600;padding:0 12px 9px}
+  tbody td{padding:9px 12px;border-top:1px solid var(--line);vertical-align:middle}
+  tbody td.mono{font-family:var(--fm);font-size:12px}
+  .no{color:#E11D48;font-weight:600}.yes{color:var(--slate)}
+  .tbl{padding:14px 4px 6px}
+  .note{background:#FFF7ED;border:1px solid #FED7AA;border-radius:8px;padding:14px 16px;
+        font-size:13.5px;margin-bottom:16px;color:#7C2D12}
+  .d{font-family:var(--fm);font-size:11.5px;color:var(--slate)}
+  .up{color:#0E7C70}.dn{color:#E11D48}
+  .pick{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0 4px;align-items:center}
+  .pick .lbl{font-size:11px;letter-spacing:.07em;text-transform:uppercase;
+             color:var(--slate);font-weight:600;margin-right:2px}
+  .pill{display:inline-block;padding:6px 13px;border-radius:999px;font-size:13px;
+        border:1px solid var(--line);background:#fff;color:var(--slate);
+        text-decoration:none;font-weight:500}
+  .pill:hover{border-color:var(--indigo);text-decoration:none}
+  .pill.on{background:var(--navy);border-color:var(--navy);color:#fff}
+  .pill .n{font-family:var(--fm);font-size:11px;opacity:.65;margin-left:5px}
+</style>
+
+{% if cities|length > 1 %}
+<div class="pick">
+  <span class="lbl">City</span>
+  {% for c in cities %}
+  <a class="pill {{ 'on' if c.city == an.city }}"
+     href="/task/{{ task.id }}/analysis?city={{ c.city|urlencode }}">{{ c.city }}<span
+     class="n">{{ c.n_units }}</span></a>
+  {% endfor %}
+</div>
+{% endif %}
+
+<div class="kpis">
+  <div class="card kpi">
+    <div class="k">City-level label</div>
+    <div class="v sm" style="font-family:var(--fm)">{{ an.city_label }}</div>
+    <div class="n">what Task 3 reports</div>
+  </div>
+  <div class="card kpi">
+    <div class="k">Neighbourhoods</div>
+    <div class="v">{{ an.n_units }}</div>
+    <div class="n">&ge; {{ an.min_n }} check-ins per period</div>
+  </div>
+  <div class="card kpi">
+    <div class="k">Distinct labels</div>
+    <div class="v">{{ an.label_distribution|length }}</div>
+    <div class="n">where the city gives 1</div>
+  </div>
+  <div class="card kpi">
+    <div class="k">Disagree with city</div>
+    <div class="v">{{ an.n_units - an.agree_with_city }}/{{ an.n_units }}</div>
+    <div class="n">{{ ((an.n_units - an.agree_with_city) / an.n_units * 100)|round|int }}% of units</div>
+  </div>
+</div>
+
+{% set biggest = an.units[0] %}
+{% if not biggest.agrees %}
+<div class="note">
+  <strong>{{ biggest.neighbourhood }}</strong> is the largest unit in the city
+  ({{ '{:,}'.format(biggest.n_2013 + biggest.n_2018) }} check-ins,
+  {{ (biggest.share * 100)|round|int }}% of those analysed here), and the same rule labels it
+  <code>{{ biggest.label }}</code> &mdash; not <code>{{ an.city_label }}</code>. The largest single
+  contributor to the aggregate disagrees with the aggregate.
+</div>
+{% endif %}
+
+<div class="card dist">
+  <h3>Label distribution across neighbourhoods</h3>
+  {% set mx = an.label_distribution.values()|max %}
+  {% for lab, n in an.label_distribution.items()|sort(attribute='1', reverse=True) %}
+  <div class="drow">
+    <span class="lab">{{ lab }}</span>
+    <span class="bar {{ 'city' if lab == an.city_label }}"
+          style="width: {{ (n / mx * 260)|round|int }}px"></span>
+    <span class="ct">{{ n }}{% if lab == an.city_label %} &nbsp;· city's label{% endif %}</span>
+  </div>
+  {% endfor %}
+</div>
+
+<div class="card tbl">
+  <table>
+    <thead>
+      <tr><th>Neighbourhood</th><th style="text-align:right">2013</th>
+      <th style="text-align:right">2018</th><th>Label</th>
+      <th>Largest theme movements</th>
+      <th style="text-align:right">Same as city?</th></tr>
+    </thead>
+    <tbody>
+      {% for u in an.units %}
+      <tr>
+        <td class="mono">{{ u.neighbourhood }}</td>
+        <td style="text-align:right">{{ '{:,}'.format(u.n_2013) }}</td>
+        <td style="text-align:right">{{ '{:,}'.format(u.n_2018) }}</td>
+        <td class="mono">{{ u.label }}</td>
+        <td class="d">
+          {% for t, v in u.top_deltas %}{{ t }}
+          <span class="{{ 'up' if v > 0 else 'dn' }}">{{ '%+.1f'|format(v) }}</span>{% if not loop.last %} · {% endif %}{% endfor %}
+        </td>
+        <td style="text-align:right" class="{{ 'yes' if u.agrees else 'no' }}">
+          {{ 'yes' if u.agrees else 'NO' }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<p class="lede" style="margin-top:18px;font-size:13.5px">
+{% if cov %}Of the nine Task&nbsp;3 cities, <strong>{{ cov.analysed }}</strong> support this view,
+<strong>{{ cov.sparse }}</strong> resolve to sub-units but too few clear the threshold to compute a
+distribution, and <strong>{{ cov.none }}</strong> return a single locality; the city itself
+,so have no sub-unit to analyse.{% else %}Only some Task&nbsp;3 cities support this view.{% endif %}
+The sub-units are also not the same kind of thing: New York's are neighbourhoods, Istanbul's are
+districts of several hundred thousand people, and Kuwait City's are governorate areas. Figures are
+therefore reported per city and never pooled. Localities bearing the city's own name, and New York's
+boroughs, are excluded as containers of the units beneath them.
+</p>
+
+{% if cov %}
+<div class="card tbl" style="margin-top:14px">
+  <table>
+    <thead><tr><th>City</th><th style="text-align:right">localities</th>
+      <th style="text-align:right">both periods</th><th style="text-align:right">clearing</th>
+      <th style="text-align:right">labels</th><th style="text-align:right">agree</th>
+      <th>status</th></tr></thead>
+    <tbody>
+      {% for r in cov.rows %}
+      <tr{% if r.city == an.city %} style="background:#F8FAFF"{% endif %}>
+        <td class="mono">{{ r.city }}</td>
+        <td style="text-align:right">{{ r.localities }}</td>
+        <td style="text-align:right">{{ r.both_periods }}</td>
+        <td style="text-align:right">{{ r.clearing }}</td>
+        <td style="text-align:right" class="d">{{ r.n_labels if r.n_labels is defined else '—' }}</td>
+        <td style="text-align:right" class="d">{{ r.agree if r.agree is defined else '—' }}</td>
+        <td class="d">{{ r.status }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endif %}
+
+{% endblock %}

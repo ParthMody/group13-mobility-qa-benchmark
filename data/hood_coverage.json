@@ -1,0 +1,86 @@
+{
+  "min_n": 200,
+  "cities": [
+    {
+      "city": "New York",
+      "localities": 46,
+      "sub_units": 42,
+      "both_periods": 42,
+      "clearing": 14,
+      "status": "analysed",
+      "n_labels": 5,
+      "agree": "8/14",
+      "city_label": "shift_to_food"
+    },
+    {
+      "city": "Kuwait City",
+      "localities": 9,
+      "sub_units": 8,
+      "both_periods": 7,
+      "clearing": 7,
+      "status": "analysed",
+      "n_labels": 4,
+      "agree": "2/7",
+      "city_label": "shift_to_food"
+    },
+    {
+      "city": "Istanbul",
+      "localities": 14,
+      "sub_units": 13,
+      "both_periods": 4,
+      "clearing": 3,
+      "status": "analysed",
+      "n_labels": 1,
+      "agree": "3/3",
+      "city_label": "shift_to_food"
+    },
+    {
+      "city": "Sydney",
+      "localities": 188,
+      "sub_units": 187,
+      "both_periods": 101,
+      "clearing": 1,
+      "status": "sparse coverage"
+    },
+    {
+      "city": "Melbourne",
+      "localities": 177,
+      "sub_units": 177,
+      "both_periods": 97,
+      "clearing": 2,
+      "status": "sparse coverage"
+    },
+    {
+      "city": "Moscow",
+      "localities": 12,
+      "sub_units": 11,
+      "both_periods": 8,
+      "clearing": 0,
+      "status": "sparse coverage"
+    },
+    {
+      "city": "Jakarta",
+      "localities": 1,
+      "sub_units": 0,
+      "both_periods": 0,
+      "clearing": 0,
+      "status": "no sub-units"
+    },
+    {
+      "city": "Petaling Jaya",
+      "localities": 1,
+      "sub_units": 0,
+      "both_periods": 0,
+      "clearing": 0,
+      "status": "no sub-units"
+    },
+    {
+      "city": "Sao Paulo",
+      "localities": 1,
+      "sub_units": 0,
+      "both_periods": 0,
+      "clearing": 0,
+      "status": "no sub-units"
+    }
+  ]
+}

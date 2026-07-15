@@ -68,6 +68,92 @@
   </div>
 </div>
 
+{% if probe %}
+<style>
+  .probe{padding:16px 18px;margin-bottom:16px;border-left:3px solid var(--mint)}
+  .probe h3{font-size:12px;color:var(--slate);font-weight:600;margin:0 0 4px;
+            letter-spacing:.06em;text-transform:uppercase}
+  .probe .head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin:10px 0 12px}
+  .probe .big{font-family:var(--fd);font-weight:700;font-size:30px;letter-spacing:-.02em;
+              color:#0E7C70}
+  .probe .vs{font-family:var(--fd);font-weight:700;font-size:30px;letter-spacing:-.02em;
+             color:#E11D48}
+  .probe .cap{font-size:12.5px;color:var(--slate)}
+  .probe .tiers{display:flex;gap:22px;flex-wrap:wrap;margin:12px 0 8px}
+  .probe .t .tn{font-family:var(--fm);font-size:11px;color:var(--slate)}
+  .probe .t .tv{font-family:var(--fd);font-weight:700;font-size:17px}
+  .probe p{font-size:13px;margin:8px 0 0;color:var(--slate)}
+</style>
+<div class="card probe">
+  <h3>Probe control · same model, same distributions</h3>
+  <div class="head">
+    <span class="big">{{ (probe.accuracy*100)|round|int }}%</span>
+    <span class="cap">on {{ probe.n_items }} factual probes over the same
+      {{ probe.n_cities }} cities</span>
+    <span class="cap">vs</span>
+    <span class="vs">{{ ((llm_row.accuracy if llm_row else 0)*100)|round|int }}%</span>
+    <span class="cap">on the change label</span>
+  </div>
+  <div class="tiers">
+    {% for t in probe.tiers %}
+    <div class="t">
+      <div class="tn">{{ t.tier }} · {{ t.n }}</div>
+      <div class="tv">{{ (t.acc*100)|round|int }}%</div>
+    </div>
+    {% endfor %}
+  </div>
+  <p>The probes ask factual questions about the same two distributions the model is shown above
+  &mdash; which category is largest, which gained most, did X rise or fall &mdash; with answers
+  computable directly from the display. None pass through the theme taxonomy, the five-point
+  threshold, or the single-label formulation. The model reads these distributions almost
+  perfectly; what it does not reproduce is the label the rule assigns to them. The label accuracy
+  is therefore a measurement of the schema rather than of the model. Probes are clustered
+  ({{ probe.n_cities }} cities &times; ~{{ (probe.n_items / probe.n_cities)|round|int }} each),
+  so they are not {{ probe.n_items }} independent observations.</p>
+</div>
+{% endif %}
+
+{% if models %}
+<style>
+  .mc{padding:14px 4px 6px;margin-bottom:16px}
+  .mc h3{font-size:12px;color:var(--slate);font-weight:600;margin:2px 0 10px 14px;
+         letter-spacing:.06em;text-transform:uppercase}
+  .mc table{width:100%;border-collapse:collapse;font-size:13.5px}
+  .mc thead th{text-align:right;font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;
+               color:var(--slate);font-weight:600;padding:0 14px 9px}
+  .mc thead th:first-child{text-align:left}
+  .mc tbody td{padding:10px 14px;border-top:1px solid var(--line);text-align:right}
+  .mc tbody td:first-child{text-align:left;font-family:var(--fm);font-size:12.5px}
+  .mc .hi{color:#0E7C70;font-weight:600}
+  .mc .lo{color:#E11D48;font-weight:600}
+  .mc p{font-size:13px;color:var(--slate);margin:10px 14px 4px}
+</style>
+<div class="card mc">
+  <h3>Across models</h3>
+  <table>
+    <thead>
+      <tr><th>Model</th><th>Probes</th><th>Change label</th><th>Reasoning</th></tr>
+    </thead>
+    <tbody>
+      {% for m in models %}
+      <tr>
+        <td>{{ m.model }}</td>
+        <td class="hi">{{ (m.probe_acc*100)|round|int if m.probe_acc is not none else '—' }}%</td>
+        <td class="lo">{{ (m.label_acc*100)|round|int }}%</td>
+        <td>{{ (m.reasoning*100)|round|int if m.reasoning is not none else '—' }}%</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <p>Probes and reasoning separate these models; the change label does not. A model that reads the
+  distributions better and explains them better does not agree with the rule any more often, which
+  is what would be expected if the label were measuring the schema rather than the model. With
+  {{ models[0].n_label }} label items a difference of one item moves accuracy by
+  {{ (100 / models[0].n_label)|round|int }} points, so the label column should be read as
+  "indistinguishable", not ranked.</p>
+</div>
+{% endif %}
+
 <div class="card tbl">
   <table>
     <thead><tr><th>Item</th><th>Gold label</th><th>Baseline prediction</th><th style="text-align:right">Match</th></tr></thead>

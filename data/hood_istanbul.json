@@ -1,0 +1,66 @@
+{
+  "city": "Istanbul",
+  "city_label": "shift_to_food",
+  "min_n": 200,
+  "n_units": 3,
+  "label_distribution": {
+    "shift_to_food": 3
+  },
+  "agree_with_city": 3,
+  "units": [
+    {
+      "neighbourhood": "Bağcılar",
+      "n_2013": 36880,
+      "n_2018": 14779,
+      "label": "shift_to_food",
+      "theme_deltas": {
+        "food": 8.4,
+        "education": -7.5,
+        "transit": -4.9,
+        "shopping": 4.7,
+        "work": -3.8,
+        "civic": 1.5,
+        "outdoors": 1.0,
+        "home": -0.9,
+        "leisure": 0.8,
+        "other": 0.7
+      }
+    },
+    {
+      "neighbourhood": "Sancaktepe",
+      "n_2013": 2879,
+      "n_2018": 1265,
+      "label": "shift_to_food",
+      "theme_deltas": {
+        "outdoors": -16.0,
+        "civic": 8.8,
+        "other": 6.7,
+        "food": 5.6,
+        "work": -2.5,
+        "shopping": -1.9,
+        "leisure": -1.2,
+        "education": 1.1,
+        "home": -0.4,
+        "transit": -0.2
+      }
+    },
+    {
+      "neighbourhood": "Üsküdar",
+      "n_2013": 140973,
+      "n_2018": 42366,
+      "label": "shift_to_food",
+      "theme_deltas": {
+        "civic": 13.3,
+        "food": 10.0,
+        "transit": -9.8,
+        "outdoors": -9.4,
+        "education": -4.5,
+        "home": -4.3,
+        "shopping": 2.5,
+        "other": 2.2,
+        "work": -0.4,
+        "leisure": 0.3
+      }
+    }
+  ]
+}

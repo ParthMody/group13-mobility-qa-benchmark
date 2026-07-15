@@ -1,0 +1,141 @@
+{
+  "city": "Kuwait City",
+  "city_label": "shift_to_food",
+  "min_n": 200,
+  "n_units": 7,
+  "label_distribution": {
+    "shift_to_outdoors": 1,
+    "shift_to_residential": 3,
+    "shift_to_food": 2,
+    "no_major_change": 1
+  },
+  "agree_with_city": 2,
+  "units": [
+    {
+      "neighbourhood": "Ad Dasmah",
+      "n_2013": 6206,
+      "n_2018": 23123,
+      "label": "shift_to_outdoors",
+      "theme_deltas": {
+        "outdoors": 6.8,
+        "food": 5.9,
+        "leisure": -4.2,
+        "civic": 4.1,
+        "education": -3.8,
+        "home": -3.0,
+        "work": -2.9,
+        "shopping": -2.0,
+        "transit": -1.8,
+        "other": 1.1
+      }
+    },
+    {
+      "neighbourhood": "Al Aḩmadī",
+      "n_2013": 409,
+      "n_2018": 1664,
+      "label": "shift_to_residential",
+      "theme_deltas": {
+        "other": -12.8,
+        "home": 8.1,
+        "shopping": -4.0,
+        "work": 4.0,
+        "transit": 3.9,
+        "outdoors": -3.5,
+        "education": 1.2,
+        "civic": 1.2,
+        "food": 1.0,
+        "leisure": 0.9
+      }
+    },
+    {
+      "neighbourhood": "Al Manqaf",
+      "n_2013": 989,
+      "n_2018": 1929,
+      "label": "shift_to_food",
+      "theme_deltas": {
+        "food": 30.3,
+        "home": -26.2,
+        "civic": 6.1,
+        "transit": -5.3,
+        "other": -2.5,
+        "leisure": -2.2,
+        "education": 1.6,
+        "outdoors": -1.6,
+        "shopping": -0.7,
+        "work": 0.5
+      }
+    },
+    {
+      "neighbourhood": "Ar Riqqah",
+      "n_2013": 1624,
+      "n_2018": 7052,
+      "label": "no_major_change",
+      "theme_deltas": {
+        "education": 6.9,
+        "civic": 5.1,
+        "transit": -4.2,
+        "home": -3.3,
+        "outdoors": -2.8,
+        "shopping": 2.6,
+        "other": -2.3,
+        "food": -1.1,
+        "leisure": -0.8,
+        "work": -0.1
+      }
+    },
+    {
+      "neighbourhood": "Bayān",
+      "n_2013": 3495,
+      "n_2018": 5556,
+      "label": "shift_to_residential",
+      "theme_deltas": {
+        "other": -10.7,
+        "home": 9.7,
+        "shopping": 9.6,
+        "transit": -9.4,
+        "civic": 6.7,
+        "outdoors": -3.6,
+        "leisure": -2.5,
+        "food": 2.5,
+        "education": -1.5,
+        "work": -0.8
+      }
+    },
+    {
+      "neighbourhood": "Salwá",
+      "n_2013": 2495,
+      "n_2018": 5685,
+      "label": "shift_to_food",
+      "theme_deltas": {
+        "transit": -9.4,
+        "food": 8.9,
+        "home": 7.5,
+        "shopping": -4.0,
+        "outdoors": 3.9,
+        "education": -2.4,
+        "other": -2.1,
+        "leisure": -1.4,
+        "work": -0.7,
+        "civic": -0.3
+      }
+    },
+    {
+      "neighbourhood": "Ḩawallī",
+      "n_2013": 7886,
+      "n_2018": 17510,
+      "label": "shift_to_residential",
+      "theme_deltas": {
+        "home": 11.7,
+        "outdoors": -7.3,
+        "education": -5.9,
+        "transit": 5.7,
+        "food": 5.3,
+        "leisure": -4.4,
+        "other": -4.1,
+        "shopping": -3.4,
+        "civic": 2.8,
+        "work": -0.3
+      }
+    }
+  ]
+}

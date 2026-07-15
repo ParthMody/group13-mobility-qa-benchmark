@@ -1,0 +1,267 @@
+{
+  "city": "New York",
+  "city_label": "shift_to_food",
+  "min_n": 200,
+  "n_units": 14,
+  "label_distribution": {
+    "shift_to_leisure": 3,
+    "shift_to_residential": 1,
+    "shift_to_food": 8,
+    "no_major_change": 1,
+    "shift_to_transit": 1
+  },
+  "agree_with_city": 8,
+  "units": [
+    {
+      "neighbourhood": "Astoria",
+      "n_2013": 2324,
+      "n_2018": 537,
+      "label": "shift_to_leisure",
+      "theme_deltas": {
+        "home": -6.4,
+        "leisure": 5.5,
+        "food": 4.2,
+        "civic": 4.0,
+        "outdoors": -3.8,
+        "transit": -3.5,
+        "shopping": 2.3,
+        "other": -1.2,
+        "education": -0.9,
+        "work": -0.3
+      }
+    },
+    {
+      "neighbourhood": "Brooklyn Heights",
+      "n_2013": 4739,
+      "n_2018": 1192,
+      "label": "shift_to_residential",
+      "theme_deltas": {
+        "transit": -9.9,
+        "leisure": 8.3,
+        "home": 8.3,
+        "education": -5.5,
+        "food": 3.6,
+        "work": -3.0,
+        "civic": -2.1,
+        "outdoors": -1.5,
+        "shopping": 1.1,
+        "other": 0.7
+      }
+    },
+    {
+      "neighbourhood": "Bushwick",
+      "n_2013": 3022,
+      "n_2018": 334,
+      "label": "shift_to_food",
+      "theme_deltas": {
+        "food": 22.5,
+        "home": -16.5,
+        "transit": -13.6,
+        "leisure": 6.6,
+        "shopping": 2.3,
+        "work": -1.3,
+        "education": -0.9,
+        "outdoors": 0.5,
+        "other": 0.5,
+        "civic": -0.2
+      }
+    },
+    {
+      "neighbourhood": "East Harlem",
+      "n_2013": 3498,
+      "n_2018": 357,
+      "label": "shift_to_food",
+      "theme_deltas": {
+        "food": 9.4,
+        "transit": -6.1,
+        "home": -5.3,
+        "work": 2.8,
+        "other": -2.1,
+        "leisure": 1.3,
+        "shopping": -1.2,
+        "education": 1.1,
+        "outdoors": -0.4,
+        "civic": 0.4
+      }
+    },
+    {
+      "neighbourhood": "East Village",
+      "n_2013": 34955,
+      "n_2018": 5750,
+      "label": "shift_to_food",
+      "theme_deltas": {
+        "food": 5.7,
+        "other": -3.6,
+        "leisure": 1.6,
+        "outdoors": -1.6,
+        "work": -1.4,
+        "home": 1.3,
+        "education": -1.1,
+        "transit": -1.1,
+        "civic": 0.3,
+        "shopping": -0.2
+      }
+    },
+    {
+      "neighbourhood": "Flatbush",
+      "n_2013": 1611,
+      "n_2018": 310,
+      "label": "shift_to_food",
+      "theme_deltas": {
+        "transit": -20.1,
+        "food": 19.0,
+        "home": -11.1,
+        "leisure": 5.9,
+        "outdoors": 5.8,
+        "work": -1.4,
+        "education": 1.0,
+        "other": 0.7,
+        "civic": 0.2,
+        "shopping": -0.0
+      }
+    },
+    {
+      "neighbourhood": "Greenpoint",
+      "n_2013": 5504,
+      "n_2018": 1042,
+      "label": "shift_to_leisure",
+      "theme_deltas": {
+        "leisure": 8.4,
+        "home": -6.7,
+        "transit": -3.5,
+        "food": 3.4,
+        "outdoors": -2.5,
+        "shopping": -0.8,
+        "education": 0.6,
+        "other": 0.6,
+        "civic": 0.5,
+        "work": 0.0
+      }
+    },
+    {
+      "neighbourhood": "Hell's Kitchen",
+      "n_2013": 36691,
+      "n_2018": 6880,
+      "label": "no_major_change",
+      "theme_deltas": {
+        "work": -4.3,
+        "leisure": 3.8,
+        "food": 3.6,
+        "transit": -2.1,
+        "shopping": -2.1,
+        "home": 2.1,
+        "education": -1.5,
+        "outdoors": 0.5,
+        "civic": 0.4,
+        "other": -0.3
+      }
+    },
+    {
+      "neighbourhood": "Jackson Heights",
+      "n_2013": 1707,
+      "n_2018": 269,
+      "label": "shift_to_transit",
+      "theme_deltas": {
+        "transit": 15.2,
+        "home": -8.0,
+        "other": -3.7,
+        "shopping": -2.2,
+        "civic": -2.1,
+        "food": 2.0,
+        "work": -0.6,
+        "leisure": -0.5,
+        "education": -0.2
+      }
+    },
+    {
+      "neighbourhood": "Long Island City",
+      "n_2013": 3086,
+      "n_2018": 450,
+      "label": "shift_to_food",
+      "theme_deltas": {
+        "food": 9.3,
+        "transit": -7.7,
+        "home": -4.6,
+        "civic": 4.1,
+        "outdoors": 3.8,
+        "work": -2.2,
+        "other": -1.2,
+        "shopping": -0.8,
+        "education": -0.6,
+        "leisure": -0.0
+      }
+    },
+    {
+      "neighbourhood": "Morningside Heights",
+      "n_2013": 3485,
+      "n_2018": 406,
+      "label": "shift_to_food",
+      "theme_deltas": {
+        "food": 11.0,
+        "transit": -7.6,
+        "civic": 5.9,
+        "shopping": -4.1,
+        "other": -2.8,
+        "home": 2.7,
+        "outdoors": -2.6,
+        "education": -1.7,
+        "leisure": -1.6,
+        "work": 0.9
+      }
+    },
+    {
+      "neighbourhood": "Park Slope",
+      "n_2013": 3355,
+      "n_2018": 706,
+      "label": "shift_to_food",
+      "theme_deltas": {
+        "food": 9.7,
+        "leisure": 6.6,
+        "outdoors": -4.4,
+        "transit": -4.0,
+        "other": -2.9,
+        "home": -2.6,
+        "shopping": -1.2,
+        "work": -0.9,
+        "education": -0.6,
+        "civic": 0.2
+      }
+    },
+    {
+      "neighbourhood": "Rego Park",
+      "n_2013": 1782,
+      "n_2018": 310,
+      "label": "shift_to_food",
+      "theme_deltas": {
+        "transit": -14.1,
+        "food": 13.9,
+        "leisure": 7.0,
+        "outdoors": -4.7,
+        "shopping": -2.4,
+        "work": 1.6,
+        "education": -1.5,
+        "civic": -1.3,
+        "home": 0.9,
+        "other": 0.7
+      }
+    },
+    {
+      "neighbourhood": "Washington Heights",
+      "n_2013": 2782,
+      "n_2018": 306,
+      "label": "shift_to_leisure",
+      "theme_deltas": {
+        "leisure": 12.8,
+        "transit": -11.6,
+        "food": 7.1,
+        "other": -5.2,
+        "shopping": 4.9,
+        "outdoors": -3.3,
+        "civic": -2.5,
+        "home": -1.9,
+        "education": -1.5,
+        "work": 1.2
+      }
+    }
+  ]
+}

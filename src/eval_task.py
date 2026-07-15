@@ -42,10 +42,30 @@ def open_prompt(it):
 
 
 def match_choice(reply, choices):
-    reply = (reply or "").strip().lower()
+    """Map a free-text reply back to one of the options.
+
+    Order matters. The naive version returned the first option that appeared
+    anywhere in the reply, which mis-scores nested options: a reply of
+    "Residential Building (Apartment / Condo)" matched the option "Building"
+    first and was marked wrong despite being correct. Any task carrying options
+    where one is a substring of another (Gym / Gym / Fitness Center; Office /
+    Post Office) is exposed to this, so prefer exact, then most specific.
+    """
+    r = (reply or "").strip().lower()
+    if not r:
+        return "invalid"
+    # 1. exact match always wins
     for c in choices:
-        if c.lower() in reply or reply in c.lower():
+        if c.lower() == r:
             return c
+    # 2. otherwise the LONGEST option contained in the reply is the most specific
+    hits = [c for c in choices if c.lower() in r]
+    if hits:
+        return max(hits, key=len)
+    # 3. finally, the reply contained inside an option
+    hits = [c for c in choices if r in c.lower()]
+    if hits:
+        return max(hits, key=len)
     return "invalid"
 
 
@@ -56,6 +76,10 @@ def main():
     ap.add_argument("--model", default=os.environ.get("GEMINI_MODEL", "gemini-2.5-flash"))
     ap.add_argument("--mock", action="store_true")
     ap.add_argument("--sleep", type=float, default=4.0)
+    ap.add_argument("--out", default=None,
+                    help="results path; defaults to data/<task>_results.json. "
+                         "Set this when comparing models so runs do not overwrite "
+                         "each other.")
     args = ap.parse_args()
 
     items = load_items(args.task)
@@ -87,17 +111,19 @@ def main():
     if is_closed:
         acc = sum(1 for g, p in zip(gold, pred) if g == p) / len(gold)
         labels = sorted(set(gold))
-        result = {"task": args.task, "n_items": len(items), "type": "closed",
+        result = {"task": args.task, "model": args.model,
+                  "n_items": len(items), "type": "closed",
                   "accuracy": round(acc, 3), "macro_f1": round(macro_f1(gold, pred, labels), 3),
                   "reasoning": None, "rows": rows}
         print(f"\n{args.task}: accuracy={acc:.3f}  macro-F1={result['macro_f1']:.3f}")
     else:
-        result = {"task": args.task, "n_items": len(items), "type": "open",
+        result = {"task": args.task, "model": args.model,
+                  "n_items": len(items), "type": "open",
                   "accuracy": None, "macro_f1": None,
                   "reasoning": round(rsum / len(items), 3), "rows": rows}
         print(f"\n{args.task}: mean reasoning={result['reasoning']:.3f}")
 
-    out = f"data/{args.task}_results.json"
+    out = args.out or f"data/{args.task}_results.json"
     with open(out, "w", encoding="utf-8") as f:
         json.dump(result, f, indent=2, ensure_ascii=False)
     print(f"wrote {out}")

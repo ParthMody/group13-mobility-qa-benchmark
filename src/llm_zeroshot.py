@@ -32,7 +32,7 @@ def get_caller(provider):
     if provider == "anthropic":
         if not os.environ.get("ANTHROPIC_API_KEY"):
             raise SystemExit("ANTHROPIC_API_KEY not set.")
-        from anthropic import Anthropic # type: ignore
+        from anthropic import Anthropic
         client = Anthropic()
 
         def call(model, prompt):
@@ -145,7 +145,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--items", default=ITEMS_DEFAULT)
     ap.add_argument("--provider", default="gemini", choices=["gemini", "anthropic"])
-    ap.add_argument("--model", default=os.environ.get("GEMINI_MODEL", "gemini-2.0-flash"))
+    ap.add_argument("--model", default=os.environ.get("GEMINI_MODEL", "gemini-2.5-flash"))
     ap.add_argument("--cot", action="store_true")
     ap.add_argument("--mock", action="store_true")
     ap.add_argument("--sleep", type=float, default=4.0, help="seconds between calls (free-tier rate limit)")
