@@ -1,0 +1,396 @@
+{
+  "task": "task3probe",
+  "model": "gemini-3.5-flash",
+  "n_items": 77,
+  "type": "closed",
+  "accuracy": 1.0,
+  "macro_f1": 1.0,
+  "reasoning": null,
+  "rows": [
+    {
+      "question_id": "task3probe_sydney_top2013",
+      "gold": "Train Station",
+      "pred": "Train Station"
+    },
+    {
+      "question_id": "task3probe_sydney_top2018",
+      "gold": "Train Station",
+      "pred": "Train Station"
+    },
+    {
+      "question_id": "task3probe_sydney_new2018",
+      "gold": "Gym / Fitness Center",
+      "pred": "Gym / Fitness Center"
+    },
+    {
+      "question_id": "task3probe_sydney_direction",
+      "gold": "rose",
+      "pred": "rose"
+    },
+    {
+      "question_id": "task3probe_sydney_riser",
+      "gold": "Train Station",
+      "pred": "Train Station"
+    },
+    {
+      "question_id": "task3probe_sydney_faller",
+      "gold": "Platform",
+      "pred": "Platform"
+    },
+    {
+      "question_id": "task3probe_sydney_compare",
+      "gold": "yes",
+      "pred": "yes"
+    },
+    {
+      "question_id": "task3probe_sydney_bothrose",
+      "gold": "no",
+      "pred": "no"
+    },
+    {
+      "question_id": "task3probe_sydney_countrisers",
+      "gold": "2",
+      "pred": "2"
+    },
+    {
+      "question_id": "task3probe_jakarta_top2013",
+      "gold": "Shopping Mall",
+      "pred": "Shopping Mall"
+    },
+    {
+      "question_id": "task3probe_jakarta_top2018",
+      "gold": "Shopping Mall",
+      "pred": "Shopping Mall"
+    },
+    {
+      "question_id": "task3probe_jakarta_new2018",
+      "gold": "Train Station",
+      "pred": "Train Station"
+    },
+    {
+      "question_id": "task3probe_jakarta_direction",
+      "gold": "fell",
+      "pred": "fell"
+    },
+    {
+      "question_id": "task3probe_jakarta_riser",
+      "gold": "Office",
+      "pred": "Office"
+    },
+    {
+      "question_id": "task3probe_jakarta_faller",
+      "gold": "Shopping Mall",
+      "pred": "Shopping Mall"
+    },
+    {
+      "question_id": "task3probe_jakarta_compare",
+      "gold": "no",
+      "pred": "no"
+    },
+    {
+      "question_id": "task3probe_jakarta_bothrose",
+      "gold": "yes",
+      "pred": "yes"
+    },
+    {
+      "question_id": "task3probe_jakarta_countrisers",
+      "gold": "4",
+      "pred": "4"
+    },
+    {
+      "question_id": "task3probe_melbourne_top2013",
+      "gold": "Train Station",
+      "pred": "Train Station"
+    },
+    {
+      "question_id": "task3probe_melbourne_top2018",
+      "gold": "Shopping Mall",
+      "pred": "Shopping Mall"
+    },
+    {
+      "question_id": "task3probe_melbourne_new2018",
+      "gold": "Neighborhood",
+      "pred": "Neighborhood"
+    },
+    {
+      "question_id": "task3probe_melbourne_direction",
+      "gold": "rose",
+      "pred": "rose"
+    },
+    {
+      "question_id": "task3probe_melbourne_riser",
+      "gold": "Shopping Mall",
+      "pred": "Shopping Mall"
+    },
+    {
+      "question_id": "task3probe_melbourne_faller",
+      "gold": "Train Station",
+      "pred": "Train Station"
+    },
+    {
+      "question_id": "task3probe_melbourne_compare",
+      "gold": "yes",
+      "pred": "yes"
+    },
+    {
+      "question_id": "task3probe_melbourne_bothrose",
+      "gold": "no",
+      "pred": "no"
+    },
+    {
+      "question_id": "task3probe_melbourne_countrisers",
+      "gold": "4",
+      "pred": "4"
+    },
+    {
+      "question_id": "task3probe_moscow_top2013",
+      "gold": "Metro Station",
+      "pred": "Metro Station"
+    },
+    {
+      "question_id": "task3probe_moscow_top2018",
+      "gold": "Plaza",
+      "pred": "Plaza"
+    },
+    {
+      "question_id": "task3probe_moscow_new2018",
+      "gold": "Road",
+      "pred": "Road"
+    },
+    {
+      "question_id": "task3probe_moscow_direction",
+      "gold": "fell",
+      "pred": "fell"
+    },
+    {
+      "question_id": "task3probe_moscow_faller",
+      "gold": "Metro Station",
+      "pred": "Metro Station"
+    },
+    {
+      "question_id": "task3probe_moscow_compare",
+      "gold": "no",
+      "pred": "no"
+    },
+    {
+      "question_id": "task3probe_moscow_bothrose",
+      "gold": "yes",
+      "pred": "yes"
+    },
+    {
+      "question_id": "task3probe_moscow_countrisers",
+      "gold": "3",
+      "pred": "3"
+    },
+    {
+      "question_id": "task3probe_newyork_top2013",
+      "gold": "Metro Station",
+      "pred": "Metro Station"
+    },
+    {
+      "question_id": "task3probe_newyork_new2018",
+      "gold": "Gym",
+      "pred": "Gym"
+    },
+    {
+      "question_id": "task3probe_newyork_direction",
+      "gold": "rose",
+      "pred": "rose"
+    },
+    {
+      "question_id": "task3probe_newyork_riser",
+      "gold": "Neighborhood",
+      "pred": "Neighborhood"
+    },
+    {
+      "question_id": "task3probe_newyork_faller",
+      "gold": "Metro Station",
+      "pred": "Metro Station"
+    },
+    {
+      "question_id": "task3probe_newyork_compare",
+      "gold": "yes",
+      "pred": "yes"
+    },
+    {
+      "question_id": "task3probe_newyork_bothrose",
+      "gold": "no",
+      "pred": "no"
+    },
+    {
+      "question_id": "task3probe_newyork_countrisers",
+      "gold": "3",
+      "pred": "3"
+    },
+    {
+      "question_id": "task3probe_istanbul_top2013",
+      "gold": "Other Great Outdoors",
+      "pred": "Other Great Outdoors"
+    },
+    {
+      "question_id": "task3probe_istanbul_top2018",
+      "gold": "Café",
+      "pred": "Café"
+    },
+    {
+      "question_id": "task3probe_istanbul_new2018",
+      "gold": "Coffee Shop",
+      "pred": "Coffee Shop"
+    },
+    {
+      "question_id": "task3probe_istanbul_direction",
+      "gold": "fell",
+      "pred": "fell"
+    },
+    {
+      "question_id": "task3probe_istanbul_riser",
+      "gold": "Shopping Mall",
+      "pred": "Shopping Mall"
+    },
+    {
+      "question_id": "task3probe_istanbul_faller",
+      "gold": "University",
+      "pred": "University"
+    },
+    {
+      "question_id": "task3probe_istanbul_compare",
+      "gold": "no",
+      "pred": "no"
+    },
+    {
+      "question_id": "task3probe_istanbul_bothrose",
+      "gold": "yes",
+      "pred": "yes"
+    },
+    {
+      "question_id": "task3probe_istanbul_countrisers",
+      "gold": "4",
+      "pred": "4"
+    },
+    {
+      "question_id": "task3probe_kuwaitcity_top2013",
+      "gold": "Home (private)",
+      "pred": "Home (private)"
+    },
+    {
+      "question_id": "task3probe_kuwaitcity_top2018",
+      "gold": "Café",
+      "pred": "Café"
+    },
+    {
+      "question_id": "task3probe_kuwaitcity_new2018",
+      "gold": "Shopping Mall",
+      "pred": "Shopping Mall"
+    },
+    {
+      "question_id": "task3probe_kuwaitcity_direction",
+      "gold": "rose",
+      "pred": "rose"
+    },
+    {
+      "question_id": "task3probe_kuwaitcity_riser",
+      "gold": "Café",
+      "pred": "Café"
+    },
+    {
+      "question_id": "task3probe_kuwaitcity_faller",
+      "gold": "Building",
+      "pred": "Building"
+    },
+    {
+      "question_id": "task3probe_kuwaitcity_compare",
+      "gold": "yes",
+      "pred": "yes"
+    },
+    {
+      "question_id": "task3probe_kuwaitcity_stable",
+      "gold": "Road",
+      "pred": "Road"
+    },
+    {
+      "question_id": "task3probe_kuwaitcity_countrisers",
+      "gold": "3",
+      "pred": "3"
+    },
+    {
+      "question_id": "task3probe_petalingjaya_top2013",
+      "gold": "Shopping Mall",
+      "pred": "Shopping Mall"
+    },
+    {
+      "question_id": "task3probe_petalingjaya_top2018",
+      "gold": "Shopping Mall",
+      "pred": "Shopping Mall"
+    },
+    {
+      "question_id": "task3probe_petalingjaya_new2018",
+      "gold": "Residential Building (Apartment / Condo)",
+      "pred": "Residential Building (Apartment / Condo)"
+    },
+    {
+      "question_id": "task3probe_petalingjaya_direction",
+      "gold": "rose",
+      "pred": "rose"
+    },
+    {
+      "question_id": "task3probe_petalingjaya_riser",
+      "gold": "Shopping Mall",
+      "pred": "Shopping Mall"
+    },
+    {
+      "question_id": "task3probe_petalingjaya_compare",
+      "gold": "no",
+      "pred": "no"
+    },
+    {
+      "question_id": "task3probe_petalingjaya_countrisers",
+      "gold": "4",
+      "pred": "4"
+    },
+    {
+      "question_id": "task3probe_saopaulo_top2013",
+      "gold": "Metro Station",
+      "pred": "Metro Station"
+    },
+    {
+      "question_id": "task3probe_saopaulo_top2018",
+      "gold": "Shopping Mall",
+      "pred": "Shopping Mall"
+    },
+    {
+      "question_id": "task3probe_saopaulo_new2018",
+      "gold": "Neighborhood",
+      "pred": "Neighborhood"
+    },
+    {
+      "question_id": "task3probe_saopaulo_direction",
+      "gold": "rose",
+      "pred": "rose"
+    },
+    {
+      "question_id": "task3probe_saopaulo_riser",
+      "gold": "Shopping Mall",
+      "pred": "Shopping Mall"
+    },
+    {
+      "question_id": "task3probe_saopaulo_faller",
+      "gold": "Metro Station",
+      "pred": "Metro Station"
+    },
+    {
+      "question_id": "task3probe_saopaulo_compare",
+      "gold": "yes",
+      "pred": "yes"
+    },
+    {
+      "question_id": "task3probe_saopaulo_bothrose",
+      "gold": "no",
+      "pred": "no"
+    },
+    {
+      "question_id": "task3probe_saopaulo_countrisers",
+      "gold": "2",
+      "pred": "2"
+    }
+  ]
+}
