@@ -51,7 +51,7 @@
       {% for r in result.rows %}
       <tr>
         <td class="q"><a href="/task/{{ task.id }}/item/{{ r.question_id }}">{{ r.question_id }}</a></td>
-        <td>{{ r.answer }}</td>
+        <td>{{ r.answer|mdbold }}</td>
         <td style="text-align:right">{{ (r.reasoning_score*100)|round|int }}%</td>
       </tr>
       {% endfor %}
