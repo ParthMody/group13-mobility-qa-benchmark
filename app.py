@@ -1,5 +1,6 @@
 import os
 import json
+import re
 from pathlib import Path
 
 from flask import (Flask, render_template, jsonify, abort, request, redirect, url_for)
@@ -134,6 +135,22 @@ for t in TASKS:
     t["has_analysis"] = (t["id"] == "task3") and bool(analysis_files())
 
 app = Flask(__name__)
+
+def md_bold(text):
+    """Render the **bold** markdown the model emits, as bold.
+
+    The text is model output, so it is HTML-escaped first and only the bold
+    spans are re-introduced as markup. Newlines become <br> so multi-line
+    answers keep their structure.
+    """
+    from markupsafe import Markup, escape
+    out = str(escape(text or ""))
+    out = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", out, flags=re.S)
+    out = out.replace("\n", "<br>")
+    return Markup(out)
+
+app.jinja_env.filters["mdbold"] = md_bold
+
 
 
 def nav(active_id, section=None):
