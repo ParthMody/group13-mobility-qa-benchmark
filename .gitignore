@@ -6,6 +6,8 @@ data/raw/*
 !data/raw/.gitkeep
 data/processed/*
 !data/processed/.gitkeep
+!data/processed/task1_all_records.csv
+!data/processed/task1_all_records.jsonl
 
 .venv/
 venv/
@@ -22,3 +24,7 @@ env/
 *.out
 *.synctex.gz
 *.toc
+
+# Local thesis draft; maintained outside this benchmark repository.
+thesis/group13_draft_thesis.tex
+thesis/dhanesh_task1_overleaf_replacements.tex

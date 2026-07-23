@@ -1,0 +1,60 @@
+{
+  "task": "task1_next_poi_category",
+  "source_paths": [
+    "data/examples/task1_dhanesh_5_questions.csv",
+    "data/examples/task1_dhanesh_5_questions.jsonl",
+    "data/examples/task1_sample_qa.csv",
+    "data/examples/task1_sample_qa.jsonl"
+  ],
+  "total_valid_records": 5,
+  "initial_size_requested": 400,
+  "initial_records": 5,
+  "extended_records": 0,
+  "random_seed": 5925,
+  "split_strategy": "Deterministic stratified selection across city, difficulty, and correct-answer POI category where possible, with seeded tie-breaking.",
+  "created_at": "2026-07-23T14:44:01+00:00",
+  "duplicate_records_removed": 5,
+  "invalid_records_excluded": 8,
+  "city_counts_total": {
+    "Los Angeles": 1,
+    "New York": 1,
+    "San Francisco": 1,
+    "Singapore": 1,
+    "Tokyo": 1
+  },
+  "city_counts_initial": {
+    "Los Angeles": 1,
+    "New York": 1,
+    "San Francisco": 1,
+    "Singapore": 1,
+    "Tokyo": 1
+  },
+  "city_counts_extended": {},
+  "difficulty_counts_total": {
+    "easy": 3,
+    "medium": 2
+  },
+  "difficulty_counts_initial": {
+    "easy": 3,
+    "medium": 2
+  },
+  "difficulty_counts_extended": {},
+  "answer_category_counts_total": {
+    "Arts & Entertainment": 1,
+    "Office": 1,
+    "Residence": 2,
+    "Restaurant": 1
+  },
+  "answer_category_counts_initial": {
+    "Arts & Entertainment": 1,
+    "Office": 1,
+    "Residence": 2,
+    "Restaurant": 1
+  },
+  "answer_category_counts_extended": {},
+  "notes": [
+    "Only 5 valid Task 1 records were available; the initial set contains all records and the extended set is empty.",
+    "All valid records included city, difficulty, and correct-answer category, so the full stratification fields were available.",
+    "No valid records were available for these difficulty levels: hard."
+  ]
+}

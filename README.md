@@ -70,6 +70,31 @@ python -m src.eval_task --task task5 --model gemini-2.5-flash
 
 API keys are read from the environment (`GEMINI_API_KEY`), never committed.
 
+## Task 1 dataset splits
+
+Task 1 has separate initial and extended release files. Both contain only
+`task1_next_poi_category` records:
+
+- `data/benchmark/task1/task1_initial_400.jsonl` contains up to 400 items for
+  the initial release, app demo, baseline evaluation, and first experiments.
+- `data/benchmark/task1/task1_extended.jsonl` contains every remaining valid
+  Task 1 item.
+
+Rebuild the normalized Task 1 source and both splits with:
+
+```bash
+python scripts/build_task1_dataset.py
+python scripts/create_task1_splits.py \
+  --input data/processed/task1_all_records.jsonl \
+  --initial-size 400 \
+  --seed 5925
+```
+
+Check `data/benchmark/task1/task1_split_manifest.json` for record counts and
+city, difficulty, and answer-category distributions. Invalid inputs and removed
+duplicate representations are listed in
+`data/benchmark/task1/task1_rejected_records.csv`.
+
 ## Repository structure
 
 ```text
