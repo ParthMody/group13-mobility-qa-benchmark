@@ -1,60 +1,121 @@
 {
   "task": "task1_next_poi_category",
   "source_paths": [
-    "data/examples/task1_dhanesh_5_questions.csv",
-    "data/examples/task1_dhanesh_5_questions.jsonl",
-    "data/examples/task1_sample_qa.csv",
-    "data/examples/task1_sample_qa.jsonl"
+    "/tmp/task1_2832_split_export/task1_verified_pool_2832.jsonl"
   ],
-  "total_valid_records": 5,
+  "total_valid_records": 2832,
   "initial_size_requested": 400,
-  "initial_records": 5,
-  "extended_records": 0,
+  "initial_records": 400,
+  "extended_records": 2432,
   "random_seed": 5925,
   "split_strategy": "Deterministic stratified selection across city, difficulty, and correct-answer POI category where possible, with seeded tie-breaking.",
-  "created_at": "2026-07-23T14:44:01+00:00",
-  "duplicate_records_removed": 5,
-  "invalid_records_excluded": 8,
+  "created_at": "2026-07-24T00:47:20+00:00",
+  "duplicate_records_removed": 0,
+  "invalid_records_excluded": 0,
   "city_counts_total": {
-    "Los Angeles": 1,
-    "New York": 1,
-    "San Francisco": 1,
-    "Singapore": 1,
-    "Tokyo": 1
+    "Bandung": 200,
+    "Beijing": 32,
+    "Istanbul": 200,
+    "Jakarta": 200,
+    "Kuwait City": 200,
+    "Melbourne": 200,
+    "Moscow": 200,
+    "New York": 200,
+    "Palembang": 200,
+    "Petaling Jaya": 200,
+    "Shanghai": 200,
+    "Sydney": 200,
+    "São Paulo": 200,
+    "Tangerang": 200,
+    "Tokyo": 200
   },
   "city_counts_initial": {
-    "Los Angeles": 1,
-    "New York": 1,
-    "San Francisco": 1,
-    "Singapore": 1,
-    "Tokyo": 1
+    "Bandung": 27,
+    "Beijing": 26,
+    "Istanbul": 27,
+    "Jakarta": 27,
+    "Kuwait City": 27,
+    "Melbourne": 26,
+    "Moscow": 27,
+    "New York": 27,
+    "Palembang": 26,
+    "Petaling Jaya": 27,
+    "Shanghai": 26,
+    "Sydney": 27,
+    "São Paulo": 27,
+    "Tangerang": 27,
+    "Tokyo": 26
   },
-  "city_counts_extended": {},
+  "city_counts_extended": {
+    "Bandung": 173,
+    "Beijing": 6,
+    "Istanbul": 173,
+    "Jakarta": 173,
+    "Kuwait City": 173,
+    "Melbourne": 174,
+    "Moscow": 173,
+    "New York": 173,
+    "Palembang": 174,
+    "Petaling Jaya": 173,
+    "Shanghai": 174,
+    "Sydney": 173,
+    "São Paulo": 173,
+    "Tangerang": 173,
+    "Tokyo": 174
+  },
   "difficulty_counts_total": {
-    "easy": 3,
-    "medium": 2
+    "easy": 649,
+    "hard": 1576,
+    "medium": 607
   },
   "difficulty_counts_initial": {
-    "easy": 3,
-    "medium": 2
+    "easy": 133,
+    "hard": 134,
+    "medium": 133
   },
-  "difficulty_counts_extended": {},
+  "difficulty_counts_extended": {
+    "easy": 516,
+    "hard": 1442,
+    "medium": 474
+  },
   "answer_category_counts_total": {
-    "Arts & Entertainment": 1,
-    "Office": 1,
-    "Residence": 2,
-    "Restaurant": 1
+    "Arts & Entertainment": 307,
+    "College & University": 249,
+    "Event": 27,
+    "Food": 345,
+    "Nightlife Spot": 268,
+    "Outdoors & Recreation": 284,
+    "Professional & Other Places": 313,
+    "Residence": 309,
+    "Shop & Service": 362,
+    "Travel & Transport": 368
   },
   "answer_category_counts_initial": {
-    "Arts & Entertainment": 1,
-    "Office": 1,
-    "Residence": 2,
-    "Restaurant": 1
+    "Arts & Entertainment": 42,
+    "College & University": 42,
+    "Event": 21,
+    "Food": 43,
+    "Nightlife Spot": 42,
+    "Outdoors & Recreation": 42,
+    "Professional & Other Places": 42,
+    "Residence": 42,
+    "Shop & Service": 42,
+    "Travel & Transport": 42
   },
-  "answer_category_counts_extended": {},
+  "answer_category_counts_extended": {
+    "Arts & Entertainment": 265,
+    "College & University": 207,
+    "Event": 6,
+    "Food": 302,
+    "Nightlife Spot": 226,
+    "Outdoors & Recreation": 242,
+    "Professional & Other Places": 271,
+    "Residence": 267,
+    "Shop & Service": 320,
+    "Travel & Transport": 326
+  },
   "notes": [
-    "Only 5 valid Task 1 records were available; the initial set contains all records and the extended set is empty.",
-    "All valid records included city, difficulty, and correct-answer category, so the full stratification fields were available.",
-    "No valid records were available for these difficulty levels: hard."
+    "The initial set reached the requested size without fabricating records.",
+    "All valid records included city, difficulty, and correct-answer category, so the full stratification fields were available."
   ]
 }

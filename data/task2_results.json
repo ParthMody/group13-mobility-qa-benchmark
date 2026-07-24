@@ -1,70 +1,1936 @@
 {
   "task": "task2",
-  "n_items": 12,
+  "model": "gemini-2.5-flash",
+  "n_items": 385,
   "type": "closed",
-  "accuracy": 0.5,
-  "macro_f1": 0.5,
+  "accuracy": 0.686,
+  "macro_f1": 0.684,
   "reasoning": null,
   "rows": [
     {
-      "question_id": "task2_001",
-      "gold": "weekday",
-      "pred": "weekday"
-    },
-    {
-      "question_id": "task2_002",
-      "gold": "weekday",
-      "pred": "weekend"
-    },
-    {
-      "question_id": "task2_003",
-      "gold": "weekend",
-      "pred": "weekend"
-    },
-    {
-      "question_id": "task2_004",
-      "gold": "weekday",
-      "pred": "weekend"
-    },
-    {
-      "question_id": "task2_005",
-      "gold": "weekday",
-      "pred": "weekend"
-    },
-    {
-      "question_id": "task2_006",
-      "gold": "weekend",
-      "pred": "weekend"
-    },
-    {
-      "question_id": "task2_007",
-      "gold": "weekday",
-      "pred": "weekend"
-    },
-    {
-      "question_id": "task2_008",
-      "gold": "weekday",
-      "pred": "weekday"
-    },
-    {
-      "question_id": "task2_009",
+      "question_id": "task2_sydney_2013_4641548_20121216",
       "gold": "weekend",
       "pred": "weekday"
     },
     {
-      "question_id": "task2_010",
+      "question_id": "task2_new_york_2013_1271394_20130428",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_shanghai_2013_5064934_20120514",
       "gold": "weekday",
       "pred": "weekday"
     },
     {
-      "question_id": "task2_011",
+      "question_id": "task2_sydney_2013_2029184_20130704",
       "gold": "weekday",
       "pred": "weekend"
     },
     {
-      "question_id": "task2_012",
+      "question_id": "task2_tangerang_2013_2522921_20130418",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_sao_paulo_2013_3469402_20120811",
       "gold": "weekend",
       "pred": "weekend"
+    },
+    {
+      "question_id": "task2_sydney_2013_3331304_20130216",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_palembang_2013_4540428_20121111",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_new_york_2018_2569782_20171119",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_melbourne_2018_695158_20171011",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_new_york_2013_5295484_20120513",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_shanghai_2013_5300962_20120714",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_petaling_jaya_2013_2091356_20121028",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_palembang_2013_3710919_20130203",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_melbourne_2013_539649_20120428",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_tangerang_2013_3366607_20130511",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_shanghai_2013_4088772_20120526",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_sydney_2013_5387035_20130225",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_tokyo_2018_34906_20171007",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_sao_paulo_2013_5705617_20120415",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_new_york_2013_156510_20120706",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_jakarta_2013_4791886_20121024",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_jakarta_2013_1621438_20121028",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_kuwait_city_2013_2218836_20120818",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_shanghai_2018_3182482_20180423",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_moscow_2013_5969245_20120610",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_kuwait_city_2018_84050_20171111",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_tangerang_2013_892731_20130412",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_moscow_2013_1696359_20130428",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_sydney_2018_437643_20180713",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_jakarta_2013_4647081_20120524",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_tangerang_2013_5344254_20121031",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_palembang_2013_5462899_20120408",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_sao_paulo_2013_2244836_20120610",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_moscow_2013_3425409_20120610",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_tangerang_2013_3067915_20121025",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_palembang_2013_2045045_20121209",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_palembang_2013_3354988_20130428",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_sydney_2013_2983218_20121111",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_sao_paulo_2013_664279_20130126",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_moscow_2013_677777_20120412",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_shanghai_2013_24757_20120425",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_tokyo_2018_3593797_20180329",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_shanghai_2013_3506893_20120707",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_shanghai_2013_2325811_20121013",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_sao_paulo_2013_2141102_20130420",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_tangerang_2013_6071385_20121029",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_tokyo_2018_3751065_20180323",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_kuwait_city_2018_740724_20171018",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_sao_paulo_2013_4996816_20120504",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_moscow_2013_1182446_20121208",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_melbourne_2013_3726742_20130416",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_beijing_2013_3736511_20130317",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_shanghai_2013_1068651_20120423",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_jakarta_2018_1190383_20171110",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_sydney_2013_5155915_20120811",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_new_york_2018_3195252_20180324",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_new_york_2013_3789950_20120703",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_petaling_jaya_2013_2322012_20121013",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_melbourne_2013_5360875_20130329",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_petaling_jaya_2013_3617387_20120617",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_sao_paulo_2013_222263_20120715",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_istanbul_2013_3032194_20121012",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_petaling_jaya_2013_2174139_20130128",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_sydney_2018_3330370_20171125",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_istanbul_2013_3498579_20130422",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_istanbul_2013_2982938_20121222",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_new_york_2013_1041887_20120423",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_kuwait_city_2013_3378230_20130418",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_palembang_2013_1910771_20121204",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_new_york_2013_2013502_20120811",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_petaling_jaya_2013_151560_20120811",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_tangerang_2013_5842444_20130418",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_istanbul_2013_342547_20121205",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_shanghai_2013_3803622_20120704",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_moscow_2013_451766_20120416",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_palembang_2013_4217202_20120818",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_jakarta_2013_2772971_20120715",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_kuwait_city_2018_1452054_20171205",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_bandung_2013_132445_20130205",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_bandung_2013_2838276_20121027",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_tokyo_2018_1909214_20180827",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_sydney_2018_1806408_20171119",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_moscow_2013_4934735_20120423",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_shanghai_2013_1284090_20120421",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_bandung_2013_1439120_20121124",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_melbourne_2013_2395491_20121117",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_melbourne_2013_1730823_20120915",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_melbourne_2013_3810324_20120421",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_palembang_2013_6043463_20120603",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_jakarta_2013_1781555_20130521",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_sydney_2013_5794304_20120421",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_melbourne_2013_4829459_20130914",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_moscow_2013_3817595_20121029",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_istanbul_2013_5641831_20120408",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_tangerang_2013_3099986_20120819",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_shanghai_2013_2817771_20120511",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_sao_paulo_2013_1908409_20130218",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_kuwait_city_2013_1004614_20120614",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_bandung_2013_4650734_20130112",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_petaling_jaya_2013_5251134_20121218",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_moscow_2013_2760341_20120428",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_moscow_2013_3995879_20120404",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_sao_paulo_2018_3539420_20180103",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_tokyo_2018_1190583_20180705",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_istanbul_2013_4446880_20121111",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_new_york_2013_279_20121213",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_jakarta_2013_5105850_20121117",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_istanbul_2013_436240_20120601",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_moscow_2013_2567326_20120425",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_tokyo_2018_1798613_20171129",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_bandung_2013_286888_20130217",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_new_york_2013_3355220_20121026",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_petaling_jaya_2018_1692352_20180206",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_shanghai_2013_4334998_20130328",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_sydney_2013_4948117_20121125",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_istanbul_2013_5760564_20121121",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_tangerang_2013_3969853_20120715",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_sao_paulo_2013_1289832_20130830",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_palembang_2013_1035422_20120603",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_bandung_2013_578744_20120515",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_bandung_2013_5164291_20120421",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_sao_paulo_2013_3458416_20120610",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_bandung_2013_140043_20120527",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_tangerang_2013_3369979_20120411",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_petaling_jaya_2013_1454478_20120707",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_tokyo_2018_2498126_20171125",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_moscow_2013_1448513_20120412",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_tangerang_2013_581187_20130214",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_tokyo_2018_3387339_20181001",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_melbourne_2013_274640_20121112",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_shanghai_2013_5140561_20120415",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_beijing_2018_928368_20171014",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_palembang_2013_1113908_20121022",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_petaling_jaya_2013_4512065_20120519",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_jakarta_2013_4747272_20121008",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_tangerang_2013_3407976_20120414",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_new_york_2018_1832132_20180323",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_istanbul_2018_520575_20180414",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_kuwait_city_2013_2322950_20121023",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_moscow_2013_1367916_20130602",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_istanbul_2018_53040_20180217",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_istanbul_2013_5786487_20120407",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_jakarta_2013_1785836_20130508",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_tokyo_2018_2604374_20180318",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_bandung_2013_210003_20130308",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_sao_paulo_2013_2342817_20130314",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_bandung_2013_5504393_20120516",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_kuwait_city_2013_403641_20120526",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_kuwait_city_2013_5532921_20120716",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_tangerang_2013_2711737_20120704",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_tokyo_2018_2466902_20181013",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_bandung_2013_3326704_20130105",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_kuwait_city_2013_3905796_20120811",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_tangerang_2013_4238681_20120712",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_tokyo_2018_1032497_20180114",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_istanbul_2013_618745_20121219",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_tangerang_2013_2744437_20120512",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_sao_paulo_2013_1664716_20120411",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_beijing_2013_3783937_20130201",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_sydney_2018_440644_20180509",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_moscow_2018_2325482_20171029",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_melbourne_2013_3031898_20120618",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_new_york_2018_686334_20171006",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_tangerang_2013_3399708_20121118",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_kuwait_city_2018_1651302_20171014",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_palembang_2013_3812106_20120515",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_tokyo_2018_1402572_20180616",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_shanghai_2018_1052091_20180211",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_sao_paulo_2018_2912356_20171014",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_new_york_2018_601775_20171111",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_palembang_2013_4059775_20121113",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_new_york_2013_1001139_20120523",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_melbourne_2013_430871_20120716",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_shanghai_2013_4742049_20120805",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_petaling_jaya_2013_1572607_20130511",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_jakarta_2013_4967052_20120729",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_shanghai_2013_5994260_20121108",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_new_york_2013_5201383_20120415",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_tokyo_2018_2118376_20180120",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_istanbul_2018_433938_20180602",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_kuwait_city_2018_2724308_20180127",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_sydney_2013_463711_20120411",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_moscow_2013_3819752_20130207",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_petaling_jaya_2013_2096772_20130330",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_tokyo_2018_503380_20180211",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_kuwait_city_2013_2853900_20130412",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_sydney_2013_2297098_20120412",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_petaling_jaya_2013_5759956_20121101",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_palembang_2013_2872468_20130409",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_new_york_2013_5309333_20120728",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_petaling_jaya_2013_2007604_20130723",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_moscow_2013_5029794_20130102",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_sydney_2013_1727752_20120603",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_melbourne_2013_5875703_20120609",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_jakarta_2013_1057223_20120603",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_istanbul_2018_1822238_20171231",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_melbourne_2018_3746440_20180503",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_moscow_2013_2684258_20121123",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_jakarta_2013_5482759_20130516",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_kuwait_city_2013_2614210_20120514",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_shanghai_2013_3404213_20130314",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_sao_paulo_2013_1240092_20120626",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_new_york_2018_1329826_20171115",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_jakarta_2013_2415390_20120512",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_palembang_2013_4433781_20120703",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_petaling_jaya_2013_1347834_20130114",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_moscow_2013_3896152_20130409",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_kuwait_city_2018_1482619_20180225",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_petaling_jaya_2013_3870935_20120618",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_new_york_2013_4111213_20120423",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_palembang_2013_215690_20120419",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_new_york_2013_3074597_20130420",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_new_york_2018_2341760_20180818",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_tangerang_2013_3467018_20121202",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_melbourne_2013_1546745_20120703",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_petaling_jaya_2013_3352291_20130103",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_palembang_2013_1807230_20120811",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_bandung_2013_3403439_20120514",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_tangerang_2013_3473369_20120527",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_shanghai_2013_2894752_20120814",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_sao_paulo_2013_262387_20130503",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_new_york_2013_629665_20121216",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_beijing_2013_3783920_20130108",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_petaling_jaya_2018_558787_20180417",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_bandung_2013_4439318_20120413",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_kuwait_city_2018_252217_20171008",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_istanbul_2018_1965331_20171008",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_bandung_2013_5634685_20120730",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_palembang_2013_1218343_20120428",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_istanbul_2013_319338_20121126",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_kuwait_city_2018_192059_20180925",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_istanbul_2013_3830211_20130428",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_moscow_2013_2722894_20130316",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_melbourne_2018_891246_20171221",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_sao_paulo_2013_3397782_20130208",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_jakarta_2013_4021014_20121209",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_jakarta_2013_2849057_20120408",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_sao_paulo_2013_1021095_20121215",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_new_york_2013_1941833_20120529",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_jakarta_2013_2004767_20120513",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_istanbul_2018_1320073_20180308",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_moscow_2013_5677622_20120519",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_palembang_2013_4026628_20120502",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_shanghai_2018_1770289_20180412",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_tangerang_2013_4406712_20120706",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_jakarta_2013_4337293_20120529",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_istanbul_2013_533172_20120404",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_istanbul_2013_5062809_20120603",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_palembang_2013_4856810_20120812",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_bandung_2013_5169177_20130820",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_palembang_2013_118427_20120420",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_shanghai_2018_737194_20180106",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_bandung_2013_1046384_20121028",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_beijing_2013_2343568_20120528",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_tokyo_2018_2202771_20180130",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_tangerang_2013_4996232_20130216",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_jakarta_2013_3286657_20130103",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_shanghai_2013_1053881_20120527",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_melbourne_2018_1959661_20180331",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_sao_paulo_2013_1399359_20121013",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_tangerang_2013_3982711_20120515",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_tangerang_2013_3799840_20120610",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_tangerang_2013_4495643_20120505",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_shanghai_2013_3606438_20130109",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_melbourne_2013_950088_20130408",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_jakarta_2013_4663149_20120528",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_jakarta_2013_2591192_20120611",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_tangerang_2013_296260_20130113",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_tokyo_2018_1201439_20171018",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_melbourne_2013_1557294_20121209",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_tokyo_2018_2179306_20171216",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_kuwait_city_2013_1419538_20120606",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_moscow_2013_112394_20120511",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_sydney_2013_4022152_20130201",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_palembang_2013_4679911_20130321",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_bandung_2013_1490005_20120621",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_sao_paulo_2013_431506_20120706",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_melbourne_2013_5453979_20130503",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_bandung_2013_4297249_20121027",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_moscow_2013_3472962_20120712",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_tangerang_2013_3619291_20120609",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_melbourne_2013_4202533_20120403",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_melbourne_2013_3239831_20120603",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_sydney_2013_471789_20130609",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_moscow_2013_200139_20130416",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_sao_paulo_2013_3547388_20130315",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_petaling_jaya_2013_5972123_20121028",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_shanghai_2013_4518545_20121222",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_sydney_2013_3309870_20130117",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_melbourne_2013_114434_20120714",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_kuwait_city_2013_1107168_20120516",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_petaling_jaya_2013_3292936_20120514",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_shanghai_2018_2008660_20180320",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_bandung_2013_5951902_20120702",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_shanghai_2013_966574_20120428",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_palembang_2013_1310949_20120713",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_sydney_2013_3308170_20120504",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_kuwait_city_2018_36742_20180303",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_tokyo_2018_3462038_20171203",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_petaling_jaya_2013_292635_20130330",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_bandung_2013_72138_20120429",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_istanbul_2013_5472251_20130422",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_melbourne_2013_429752_20120512",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_jakarta_2013_5085964_20120715",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_petaling_jaya_2018_600891_20180302",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_new_york_2013_1477769_20120516",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_kuwait_city_2018_3544628_20180106",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_beijing_2013_3371426_20120627",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_bandung_2013_1139545_20130504",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_sydney_2013_3388298_20120706",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_melbourne_2013_809081_20120512",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_istanbul_2013_5661203_20130205",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_jakarta_2013_4558746_20120805",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_sydney_2013_5389482_20130228",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_jakarta_2013_4496668_20130202",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_palembang_2013_5043007_20120716",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_jakarta_2013_1036079_20121027",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_sao_paulo_2013_3610328_20130309",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_istanbul_2018_176795_20171209",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_kuwait_city_2018_3432636_20180225",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_sao_paulo_2013_5621156_20121206",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_petaling_jaya_2013_212759_20130216",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_new_york_2013_4415299_20120729",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_sao_paulo_2013_1099275_20121025",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_tangerang_2013_4963802_20120708",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_bandung_2013_1974880_20120526",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_palembang_2013_4424970_20120426",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_bandung_2013_2849510_20120412",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_istanbul_2013_2991471_20121008",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_shanghai_2018_613153_20180628",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_sao_paulo_2013_4554613_20130428",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_sydney_2013_986232_20120811",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_bandung_2013_5956719_20120708",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_tokyo_2018_4005669_20180813",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_petaling_jaya_2013_1938564_20121028",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_bandung_2013_1891696_20130130",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_melbourne_2013_1656198_20130112",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_palembang_2013_4606657_20120528",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_sydney_2018_1459410_20171005",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_palembang_2013_5478366_20121124",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_istanbul_2013_886615_20130216",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_moscow_2013_5204879_20120722",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_jakarta_2013_3885165_20121231",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_bandung_2013_604344_20120728",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_tangerang_2013_2605423_20120424",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_sydney_2013_3741653_20130208",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_moscow_2013_861437_20120708",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_sao_paulo_2013_2074703_20120711",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_kuwait_city_2018_742949_20171025",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_melbourne_2013_901560_20120818",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_petaling_jaya_2018_2704700_20180218",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_tokyo_2018_668780_20171014",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_kuwait_city_2013_6098000_20121111",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_jakarta_2013_5907420_20130515",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_moscow_2013_4175615_20120708",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_tokyo_2018_1789183_20180724",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_tokyo_2018_1388327_20171213",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_sydney_2013_1016139_20130411",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_sydney_2013_5173479_20130126",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_tokyo_2018_1472712_20180302",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_bandung_2013_2202475_20130318",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_tokyo_2018_741700_20180318",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_sydney_2013_3784058_20130406",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_tokyo_2018_2620302_20180730",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_melbourne_2013_5195407_20120504",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_kuwait_city_2018_32010_20171204",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_palembang_2013_1412462_20120421",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_sao_paulo_2013_2846152_20130519",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_petaling_jaya_2013_1776820_20130216",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_new_york_2013_5653900_20120608",
+      "gold": "weekday",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_new_york_2013_462180_20130831",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_petaling_jaya_2013_4359885_20120705",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_kuwait_city_2018_2947346_20180106",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_istanbul_2013_1804221_20130416",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_petaling_jaya_2013_2186427_20121024",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_jakarta_2013_5435_20120806",
+      "gold": "weekday",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_tokyo_2018_1032383_20180114",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_new_york_2013_844755_20121208",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_tokyo_2018_1023537_20180414",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_istanbul_2013_2251620_20120512",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_beijing_2013_4591390_20130728",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_moscow_2013_1112062_20120512",
+      "gold": "weekend",
+      "pred": "weekend"
+    },
+    {
+      "question_id": "task2_shanghai_2013_4843725_20130407",
+      "gold": "weekend",
+      "pred": "weekday"
+    },
+    {
+      "question_id": "task2_kuwait_city_2013_863722_20120521",
+      "gold": "weekday",
+      "pred": "weekday"
     }
   ]
 }

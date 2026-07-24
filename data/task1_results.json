@@ -1,35 +1,2011 @@
 {
   "task": "task1",
-  "n_items": 5,
+  "model": "gemini-2.5-flash",
+  "n_items": 400,
   "type": "closed",
-  "accuracy": 0.4,
-  "macro_f1": 0.333,
+  "accuracy": 0.268,
+  "macro_f1": 0.271,
   "reasoning": null,
   "rows": [
     {
-      "question_id": "task1_ms_test_jakarta_2013_2167804",
-      "gold": "Residence",
-      "pred": "Professional & Other Places"
+      "question_id": "task1_ms_test_bandung_2013_4234266",
+      "gold": "Arts & Entertainment",
+      "pred": "Food"
     },
     {
-      "question_id": "task1_ms_test_sydney_2013_1557289",
-      "gold": "Travel & Transport",
-      "pred": "Travel & Transport"
-    },
-    {
-      "question_id": "task1_ms_test_melbourne_2013_1233941",
+      "question_id": "task1_ms_test_beijing_2013_3736511",
       "gold": "Food",
       "pred": "Food"
     },
     {
-      "question_id": "task1_ms_test_tokyo_2018_1388327",
+      "question_id": "task1_ms_test_istanbul_2013_1040060",
+      "gold": "Outdoors & Recreation",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_jakarta_2013_5417782",
+      "gold": "Nightlife Spot",
+      "pred": "Shop & Service"
+    },
+    {
+      "question_id": "task1_ms_test_kuwait_city_2018_2690202",
+      "gold": "College & University",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_melbourne_2013_3007241",
+      "gold": "Shop & Service",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_moscow_2013_3995879",
+      "gold": "Residence",
+      "pred": "Residence"
+    },
+    {
+      "question_id": "task1_ms_test_new_york_2013_2515488",
+      "gold": "Professional & Other Places",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_palembang_2013_1575703",
+      "gold": "Travel & Transport",
+      "pred": "Travel & Transport"
+    },
+    {
+      "question_id": "task1_ms_test_petaling_jaya_2013_5470350",
+      "gold": "Professional & Other Places",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_shanghai_2013_3583591",
+      "gold": "Residence",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_sydney_2013_2819344",
+      "gold": "College & University",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_sao_paulo_2018_2059161",
+      "gold": "Event",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_tangerang_2013_2966714",
+      "gold": "Food",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_tokyo_2018_1466948",
+      "gold": "Arts & Entertainment",
+      "pred": "Arts & Entertainment"
+    },
+    {
+      "question_id": "task1_ms_test_tokyo_2018_493934",
+      "gold": "Outdoors & Recreation",
+      "pred": "Outdoors & Recreation"
+    },
+    {
+      "question_id": "task1_ms_test_istanbul_2018_687324",
+      "gold": "Nightlife Spot",
+      "pred": "Nightlife Spot"
+    },
+    {
+      "question_id": "task1_ms_test_sydney_2013_3218568",
+      "gold": "Travel & Transport",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_moscow_2013_2937641",
+      "gold": "Shop & Service",
+      "pred": "Shop & Service"
+    },
+    {
+      "question_id": "task1_ms_test_kuwait_city_2018_3384822",
+      "gold": "Event",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_bandung_2013_1212263",
+      "gold": "Food",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_sao_paulo_2013_6008289",
+      "gold": "Arts & Entertainment",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_palembang_2013_1113927",
+      "gold": "College & University",
+      "pred": "Travel & Transport"
+    },
+    {
+      "question_id": "task1_ms_test_new_york_2013_766396",
+      "gold": "Shop & Service",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_tangerang_2013_5984838",
+      "gold": "Professional & Other Places",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_jakarta_2013_3344097",
+      "gold": "Travel & Transport",
+      "pred": "Travel & Transport"
+    },
+    {
+      "question_id": "task1_ms_test_melbourne_2013_3635091",
+      "gold": "Nightlife Spot",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_petaling_jaya_2013_4817521",
+      "gold": "Residence",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_shanghai_2013_1411354",
+      "gold": "Outdoors & Recreation",
+      "pred": "Outdoors & Recreation"
+    },
+    {
+      "question_id": "task1_ms_test_beijing_2013_3783923",
+      "gold": "Professional & Other Places",
+      "pred": "Residence"
+    },
+    {
+      "question_id": "task1_ms_test_new_york_2018_315353",
+      "gold": "Event",
+      "pred": "Nightlife Spot"
+    },
+    {
+      "question_id": "task1_ms_test_tokyo_2018_3396833",
+      "gold": "Residence",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_istanbul_2013_4402635",
+      "gold": "College & University",
+      "pred": "Outdoors & Recreation"
+    },
+    {
+      "question_id": "task1_ms_test_kuwait_city_2018_3174864",
+      "gold": "Arts & Entertainment",
+      "pred": "Shop & Service"
+    },
+    {
+      "question_id": "task1_ms_test_moscow_2013_3526017",
+      "gold": "Outdoors & Recreation",
+      "pred": "Outdoors & Recreation"
+    },
+    {
+      "question_id": "task1_ms_test_palembang_2013_3032851",
+      "gold": "Shop & Service",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_petaling_jaya_2018_846818",
+      "gold": "Travel & Transport",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_sao_paulo_2013_2137657",
+      "gold": "Food",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_shanghai_2013_585809",
+      "gold": "Nightlife Spot",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_jakarta_2018_767779",
+      "gold": "Event",
+      "pred": "Event"
+    },
+    {
+      "question_id": "task1_ms_test_sydney_2013_702812",
+      "gold": "Arts & Entertainment",
+      "pred": "Shop & Service"
+    },
+    {
+      "question_id": "task1_ms_test_tangerang_2013_1253325",
+      "gold": "Shop & Service",
+      "pred": "Shop & Service"
+    },
+    {
+      "question_id": "task1_ms_test_melbourne_2018_624818",
+      "gold": "Professional & Other Places",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_bandung_2013_2907488",
+      "gold": "Nightlife Spot",
+      "pred": "Shop & Service"
+    },
+    {
+      "question_id": "task1_ms_test_beijing_2013_1951479",
+      "gold": "Travel & Transport",
+      "pred": "Travel & Transport"
+    },
+    {
+      "question_id": "task1_ms_test_sydney_2018_802947",
+      "gold": "Residence",
+      "pred": "Residence"
+    },
+    {
+      "question_id": "task1_ms_test_new_york_2018_1702479",
+      "gold": "Outdoors & Recreation",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_palembang_2013_3710937",
+      "gold": "Food",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_istanbul_2013_5508373",
+      "gold": "College & University",
+      "pred": "Outdoors & Recreation"
+    },
+    {
+      "question_id": "task1_ms_test_kuwait_city_2018_1688070",
+      "gold": "Event",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_tokyo_2018_3807520",
+      "gold": "Travel & Transport",
+      "pred": "Travel & Transport"
+    },
+    {
+      "question_id": "task1_ms_test_petaling_jaya_2013_6048023",
+      "gold": "Outdoors & Recreation",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_moscow_2013_4217627",
+      "gold": "Professional & Other Places",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_jakarta_2013_5004987",
+      "gold": "Food",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_tangerang_2013_685282",
+      "gold": "Residence",
+      "pred": "Travel & Transport"
+    },
+    {
+      "question_id": "task1_ms_test_melbourne_2013_347933",
+      "gold": "Arts & Entertainment",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_sao_paulo_2013_79108",
+      "gold": "College & University",
+      "pred": "Travel & Transport"
+    },
+    {
+      "question_id": "task1_ms_test_bandung_2013_5719146",
+      "gold": "Shop & Service",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_shanghai_2013_1626004",
+      "gold": "Nightlife Spot",
+      "pred": "Nightlife Spot"
+    },
+    {
+      "question_id": "task1_ms_test_beijing_2013_1283013",
+      "gold": "Shop & Service",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_istanbul_2018_260187",
+      "gold": "Event",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_palembang_2013_1771871",
+      "gold": "Professional & Other Places",
+      "pred": "Residence"
+    },
+    {
+      "question_id": "task1_ms_test_moscow_2013_1927934",
+      "gold": "Nightlife Spot",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_tokyo_2018_3396792",
+      "gold": "Residence",
+      "pred": "Shop & Service"
+    },
+    {
+      "question_id": "task1_ms_test_sao_paulo_2013_3555933",
+      "gold": "Outdoors & Recreation",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_jakarta_2013_1623087",
+      "gold": "Travel & Transport",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_petaling_jaya_2018_2180107",
+      "gold": "Arts & Entertainment",
+      "pred": "Residence"
+    },
+    {
+      "question_id": "task1_ms_test_kuwait_city_2018_1685777",
+      "gold": "College & University",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_tangerang_2013_4081111",
+      "gold": "Food",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_new_york_2018_2578147",
+      "gold": "Event",
+      "pred": "Nightlife Spot"
+    },
+    {
+      "question_id": "task1_ms_test_melbourne_2013_3259558",
+      "gold": "Professional & Other Places",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_bandung_2013_199739",
+      "gold": "Travel & Transport",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_sydney_2013_3515044",
+      "gold": "Nightlife Spot",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_shanghai_2018_1770276",
+      "gold": "Food",
+      "pred": "Travel & Transport"
+    },
+    {
+      "question_id": "task1_ms_test_beijing_2013_1283025",
+      "gold": "Shop & Service",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_istanbul_2013_2474223",
+      "gold": "Outdoors & Recreation",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_kuwait_city_2018_275162",
+      "gold": "Residence",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_jakarta_2013_5424528",
+      "gold": "College & University",
+      "pred": "College & University"
+    },
+    {
+      "question_id": "task1_ms_test_palembang_2013_1325650",
+      "gold": "Arts & Entertainment",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_petaling_jaya_2013_1372907",
+      "gold": "Professional & Other Places",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_tokyo_2018_1191690",
+      "gold": "Shop & Service",
+      "pred": "Shop & Service"
+    },
+    {
+      "question_id": "task1_ms_test_sao_paulo_2018_73978",
+      "gold": "Event",
+      "pred": "Travel & Transport"
+    },
+    {
+      "question_id": "task1_ms_test_moscow_2013_126631",
+      "gold": "Outdoors & Recreation",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_melbourne_2013_2777328",
+      "gold": "College & University",
+      "pred": "College & University"
+    },
+    {
+      "question_id": "task1_ms_test_shanghai_2013_2375181",
+      "gold": "Nightlife Spot",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_tangerang_2013_907862",
+      "gold": "Travel & Transport",
+      "pred": "Residence"
+    },
+    {
+      "question_id": "task1_ms_test_new_york_2013_2788995",
+      "gold": "Arts & Entertainment",
+      "pred": "Nightlife Spot"
+    },
+    {
+      "question_id": "task1_ms_test_sydney_2018_2328362",
+      "gold": "Food",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_bandung_2013_908251",
+      "gold": "Residence",
+      "pred": "College & University"
+    },
+    {
+      "question_id": "task1_ms_test_beijing_2013_171415",
+      "gold": "Food",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_kuwait_city_2018_48637",
+      "gold": "Event",
+      "pred": "College & University"
+    },
+    {
+      "question_id": "task1_ms_test_palembang_2013_4059797",
+      "gold": "Shop & Service",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_petaling_jaya_2013_4329874",
+      "gold": "Arts & Entertainment",
+      "pred": "Arts & Entertainment"
+    },
+    {
+      "question_id": "task1_ms_test_sao_paulo_2013_2716483",
+      "gold": "Professional & Other Places",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_moscow_2013_1125724",
+      "gold": "Travel & Transport",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_jakarta_2013_4397513",
+      "gold": "Residence",
+      "pred": "Residence"
+    },
+    {
+      "question_id": "task1_ms_test_tangerang_2013_5056017",
+      "gold": "Outdoors & Recreation",
+      "pred": "Residence"
+    },
+    {
+      "question_id": "task1_ms_test_tokyo_2018_2466902",
+      "gold": "Nightlife Spot",
+      "pred": "Outdoors & Recreation"
+    },
+    {
+      "question_id": "task1_ms_test_melbourne_2013_1625389",
+      "gold": "College & University",
+      "pred": "Travel & Transport"
+    },
+    {
+      "question_id": "task1_ms_test_istanbul_2018_182090",
+      "gold": "Event",
+      "pred": "Outdoors & Recreation"
+    },
+    {
+      "question_id": "task1_ms_test_sydney_2018_422830",
+      "gold": "Shop & Service",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_shanghai_2013_2817833",
+      "gold": "Professional & Other Places",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_new_york_2013_2041569",
+      "gold": "Outdoors & Recreation",
+      "pred": "Nightlife Spot"
+    },
+    {
+      "question_id": "task1_ms_test_bandung_2013_3126015",
+      "gold": "Arts & Entertainment",
+      "pred": "Shop & Service"
+    },
+    {
+      "question_id": "task1_ms_test_beijing_2013_3515360",
+      "gold": "Travel & Transport",
+      "pred": "Travel & Transport"
+    },
+    {
+      "question_id": "task1_ms_test_palembang_2013_1680168",
+      "gold": "Food",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_kuwait_city_2013_848558",
+      "gold": "Residence",
+      "pred": "Residence"
+    },
+    {
+      "question_id": "task1_ms_test_petaling_jaya_2013_2322673",
+      "gold": "Nightlife Spot",
+      "pred": "Shop & Service"
+    },
+    {
+      "question_id": "task1_ms_test_new_york_2013_3276395",
+      "gold": "College & University",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_moscow_2013_5867482",
+      "gold": "Shop & Service",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_istanbul_2013_5865719",
+      "gold": "Professional & Other Places",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_jakarta_2013_1213883",
+      "gold": "Residence",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_sao_paulo_2013_403173",
+      "gold": "Travel & Transport",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_tangerang_2013_3676867",
+      "gold": "College & University",
+      "pred": "College & University"
+    },
+    {
+      "question_id": "task1_ms_test_tokyo_2018_3817644",
+      "gold": "Nightlife Spot",
+      "pred": "Shop & Service"
+    },
+    {
+      "question_id": "task1_ms_test_melbourne_2013_144214",
+      "gold": "Food",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_bandung_2013_1219846",
+      "gold": "Arts & Entertainment",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_sydney_2013_3075577",
+      "gold": "Outdoors & Recreation",
+      "pred": "Travel & Transport"
+    },
+    {
+      "question_id": "task1_ms_test_shanghai_2013_4843725",
+      "gold": "Professional & Other Places",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_beijing_2013_3783920",
+      "gold": "Food",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_kuwait_city_2018_3285975",
+      "gold": "Event",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_palembang_2013_1214326",
+      "gold": "Residence",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_sydney_2013_2512461",
       "gold": "Shop & Service",
       "pred": "Travel & Transport"
     },
     {
-      "question_id": "task1_ms_test_new_york_2013_4101695",
+      "question_id": "task1_ms_test_istanbul_2018_1248697",
+      "gold": "Event",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_tokyo_2018_938209",
+      "gold": "Travel & Transport",
+      "pred": "Outdoors & Recreation"
+    },
+    {
+      "question_id": "task1_ms_test_sao_paulo_2013_1329579",
+      "gold": "Nightlife Spot",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_moscow_2013_2253942",
+      "gold": "Arts & Entertainment",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_petaling_jaya_2013_619291",
+      "gold": "College & University",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_new_york_2013_2314790",
+      "gold": "Outdoors & Recreation",
+      "pred": "Outdoors & Recreation"
+    },
+    {
+      "question_id": "task1_ms_test_jakarta_2013_3936784",
+      "gold": "Arts & Entertainment",
+      "pred": "Shop & Service"
+    },
+    {
+      "question_id": "task1_ms_test_bandung_2013_5321850",
+      "gold": "Professional & Other Places",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_tangerang_2013_1691282",
+      "gold": "Residence",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_melbourne_2013_3511004",
+      "gold": "Outdoors & Recreation",
+      "pred": "Outdoors & Recreation"
+    },
+    {
+      "question_id": "task1_ms_test_shanghai_2013_4843691",
+      "gold": "Shop & Service",
+      "pred": "Shop & Service"
+    },
+    {
+      "question_id": "task1_ms_test_beijing_2013_3783898",
+      "gold": "Professional & Other Places",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_kuwait_city_2018_3645020",
+      "gold": "Event",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_petaling_jaya_2018_2950954",
+      "gold": "Food",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_palembang_2013_118445",
+      "gold": "College & University",
+      "pred": "Residence"
+    },
+    {
+      "question_id": "task1_ms_test_moscow_2013_3983829",
+      "gold": "Travel & Transport",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_new_york_2013_1174220",
+      "gold": "Nightlife Spot",
+      "pred": "Nightlife Spot"
+    },
+    {
+      "question_id": "task1_ms_test_sydney_2013_5155909",
+      "gold": "Travel & Transport",
+      "pred": "Travel & Transport"
+    },
+    {
+      "question_id": "task1_ms_test_tangerang_2013_3833223",
+      "gold": "Arts & Entertainment",
+      "pred": "Arts & Entertainment"
+    },
+    {
+      "question_id": "task1_ms_test_istanbul_2013_4636746",
+      "gold": "Shop & Service",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_tokyo_2018_3646379",
+      "gold": "Food",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_melbourne_2013_116780",
+      "gold": "Residence",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_jakarta_2013_544320",
+      "gold": "College & University",
+      "pred": "College & University"
+    },
+    {
+      "question_id": "task1_ms_test_bandung_2013_1964477",
       "gold": "Outdoors & Recreation",
       "pred": "Shop & Service"
+    },
+    {
+      "question_id": "task1_ms_test_sao_paulo_2018_2336730",
+      "gold": "Nightlife Spot",
+      "pred": "Nightlife Spot"
+    },
+    {
+      "question_id": "task1_ms_test_shanghai_2013_4518516",
+      "gold": "Travel & Transport",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_beijing_2018_564120",
+      "gold": "Nightlife Spot",
+      "pred": "Shop & Service"
+    },
+    {
+      "question_id": "task1_ms_test_palembang_2013_257266",
+      "gold": "Professional & Other Places",
+      "pred": "Residence"
+    },
+    {
+      "question_id": "task1_ms_test_kuwait_city_2018_2047786",
+      "gold": "Outdoors & Recreation",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_istanbul_2018_403811",
+      "gold": "Residence",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_moscow_2013_5377895",
+      "gold": "Shop & Service",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_tangerang_2013_841880",
+      "gold": "College & University",
+      "pred": "Shop & Service"
+    },
+    {
+      "question_id": "task1_ms_test_petaling_jaya_2013_3929548",
+      "gold": "Food",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_tokyo_2018_3773318",
+      "gold": "Arts & Entertainment",
+      "pred": "Arts & Entertainment"
+    },
+    {
+      "question_id": "task1_ms_test_sao_paulo_2013_4872066",
+      "gold": "Professional & Other Places",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_shanghai_2013_3404213",
+      "gold": "Travel & Transport",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_new_york_2013_4685861",
+      "gold": "Shop & Service",
+      "pred": "Nightlife Spot"
+    },
+    {
+      "question_id": "task1_ms_test_melbourne_2018_166948",
+      "gold": "Outdoors & Recreation",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_bandung_2013_3254385",
+      "gold": "Food",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_jakarta_2013_2613116",
+      "gold": "College & University",
+      "pred": "College & University"
+    },
+    {
+      "question_id": "task1_ms_test_sydney_2013_4625632",
+      "gold": "Residence",
+      "pred": "Travel & Transport"
+    },
+    {
+      "question_id": "task1_ms_test_beijing_2013_3783917",
+      "gold": "Arts & Entertainment",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_new_york_2013_4534762",
+      "gold": "Nightlife Spot",
+      "pred": "Arts & Entertainment"
+    },
+    {
+      "question_id": "task1_ms_test_kuwait_city_2018_1043359",
+      "gold": "Food",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_istanbul_2013_411120",
+      "gold": "Travel & Transport",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_petaling_jaya_2013_82774",
+      "gold": "Nightlife Spot",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_bandung_2013_3077186",
+      "gold": "Shop & Service",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_sydney_2013_3741683",
+      "gold": "Professional & Other Places",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_sao_paulo_2013_1686057",
+      "gold": "College & University",
+      "pred": "Travel & Transport"
+    },
+    {
+      "question_id": "task1_ms_test_palembang_2013_1113902",
+      "gold": "Residence",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_tangerang_2013_5842431",
+      "gold": "Arts & Entertainment",
+      "pred": "Residence"
+    },
+    {
+      "question_id": "task1_ms_test_tokyo_2018_543199",
+      "gold": "Outdoors & Recreation",
+      "pred": "Outdoors & Recreation"
+    },
+    {
+      "question_id": "task1_ms_test_jakarta_2013_569983",
+      "gold": "Professional & Other Places",
+      "pred": "Residence"
+    },
+    {
+      "question_id": "task1_ms_test_melbourne_2013_5388951",
+      "gold": "Shop & Service",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_moscow_2013_4102552",
+      "gold": "Nightlife Spot",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_shanghai_2013_5041181",
+      "gold": "Food",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_beijing_2013_2343557",
+      "gold": "Travel & Transport",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_kuwait_city_2018_3951375",
+      "gold": "Outdoors & Recreation",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_istanbul_2013_3791071",
+      "gold": "College & University",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_tangerang_2013_5691575",
+      "gold": "Residence",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_new_york_2013_395635",
+      "gold": "Arts & Entertainment",
+      "pred": "Nightlife Spot"
+    },
+    {
+      "question_id": "task1_ms_test_petaling_jaya_2013_5734006",
+      "gold": "Shop & Service",
+      "pred": "Shop & Service"
+    },
+    {
+      "question_id": "task1_ms_test_moscow_2013_1021150",
+      "gold": "College & University",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_tokyo_2018_2333771",
+      "gold": "Travel & Transport",
+      "pred": "Shop & Service"
+    },
+    {
+      "question_id": "task1_ms_test_palembang_2013_4059730",
+      "gold": "Food",
+      "pred": "Shop & Service"
+    },
+    {
+      "question_id": "task1_ms_test_melbourne_2013_901540",
+      "gold": "Nightlife Spot",
+      "pred": "Outdoors & Recreation"
+    },
+    {
+      "question_id": "task1_ms_test_sao_paulo_2013_3391606",
+      "gold": "Residence",
+      "pred": "Outdoors & Recreation"
+    },
+    {
+      "question_id": "task1_ms_test_bandung_2013_5084648",
+      "gold": "Professional & Other Places",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_sydney_2013_1392629",
+      "gold": "Outdoors & Recreation",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_shanghai_2013_2633984",
+      "gold": "Arts & Entertainment",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_jakarta_2013_5660261",
+      "gold": "Shop & Service",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_beijing_2013_1017455",
+      "gold": "Professional & Other Places",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_kuwait_city_2013_3891300",
+      "gold": "Arts & Entertainment",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_new_york_2013_537559",
+      "gold": "Travel & Transport",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_petaling_jaya_2013_5449212",
+      "gold": "College & University",
+      "pred": "College & University"
+    },
+    {
+      "question_id": "task1_ms_test_istanbul_2018_2661851",
+      "gold": "Food",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_moscow_2013_3296549",
+      "gold": "Residence",
+      "pred": "Residence"
+    },
+    {
+      "question_id": "task1_ms_test_bandung_2013_1387710",
+      "gold": "Outdoors & Recreation",
+      "pred": "Shop & Service"
+    },
+    {
+      "question_id": "task1_ms_test_melbourne_2013_4853220",
+      "gold": "Nightlife Spot",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_tangerang_2013_3355595",
+      "gold": "Professional & Other Places",
+      "pred": "Shop & Service"
+    },
+    {
+      "question_id": "task1_ms_test_sao_paulo_2013_2018446",
+      "gold": "Shop & Service",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_palembang_2013_3840396",
+      "gold": "Travel & Transport",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_tokyo_2018_2192460",
+      "gold": "Food",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_sydney_2018_3330380",
+      "gold": "Nightlife Spot",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_shanghai_2013_651556",
+      "gold": "Outdoors & Recreation",
+      "pred": "Shop & Service"
+    },
+    {
+      "question_id": "task1_ms_test_jakarta_2013_5394655",
+      "gold": "Residence",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_beijing_2013_3176287",
+      "gold": "Shop & Service",
+      "pred": "Travel & Transport"
+    },
+    {
+      "question_id": "task1_ms_test_new_york_2013_3480017",
+      "gold": "Arts & Entertainment",
+      "pred": "Nightlife Spot"
+    },
+    {
+      "question_id": "task1_ms_test_moscow_2013_6096477",
+      "gold": "College & University",
+      "pred": "College & University"
+    },
+    {
+      "question_id": "task1_ms_test_kuwait_city_2013_5973917",
+      "gold": "Professional & Other Places",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_petaling_jaya_2013_3067950",
+      "gold": "Food",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_tangerang_2013_855132",
+      "gold": "Travel & Transport",
+      "pred": "Travel & Transport"
+    },
+    {
+      "question_id": "task1_ms_test_istanbul_2013_4310941",
+      "gold": "Outdoors & Recreation",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_sydney_2018_1880449",
+      "gold": "Arts & Entertainment",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_bandung_2013_5898442",
+      "gold": "College & University",
+      "pred": "College & University"
+    },
+    {
+      "question_id": "task1_ms_test_shanghai_2013_5140577",
+      "gold": "Residence",
+      "pred": "Residence"
+    },
+    {
+      "question_id": "task1_ms_test_palembang_2013_1703279",
+      "gold": "Nightlife Spot",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_sao_paulo_2013_4983193",
+      "gold": "Shop & Service",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_melbourne_2013_144477",
+      "gold": "Food",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_jakarta_2013_5817266",
+      "gold": "Travel & Transport",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_tokyo_2018_2455168",
+      "gold": "Arts & Entertainment",
+      "pred": "Arts & Entertainment"
+    },
+    {
+      "question_id": "task1_ms_test_beijing_2013_4591390",
+      "gold": "Professional & Other Places",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_kuwait_city_2018_3704781",
+      "gold": "Event",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_petaling_jaya_2013_579667",
+      "gold": "Outdoors & Recreation",
+      "pred": "Residence"
+    },
+    {
+      "question_id": "task1_ms_test_new_york_2013_3142263",
+      "gold": "College & University",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_palembang_2013_521532",
+      "gold": "Residence",
+      "pred": "Shop & Service"
+    },
+    {
+      "question_id": "task1_ms_test_tangerang_2013_3473361",
+      "gold": "Nightlife Spot",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_istanbul_2013_1339771",
+      "gold": "Shop & Service",
+      "pred": "Shop & Service"
+    },
+    {
+      "question_id": "task1_ms_test_moscow_2013_507983",
+      "gold": "Professional & Other Places",
+      "pred": "Outdoors & Recreation"
+    },
+    {
+      "question_id": "task1_ms_test_sao_paulo_2018_2369885",
+      "gold": "Arts & Entertainment",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_bandung_2013_2694677",
+      "gold": "Travel & Transport",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_shanghai_2013_334192",
+      "gold": "Food",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_sydney_2013_3164688",
+      "gold": "Outdoors & Recreation",
+      "pred": "Outdoors & Recreation"
+    },
+    {
+      "question_id": "task1_ms_test_tokyo_2018_2647182",
+      "gold": "Nightlife Spot",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_melbourne_2013_4766010",
+      "gold": "College & University",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_jakarta_2013_6048952",
+      "gold": "Residence",
+      "pred": "Residence"
+    },
+    {
+      "question_id": "task1_ms_test_beijing_2013_4028186",
+      "gold": "Food",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_kuwait_city_2018_3680706",
+      "gold": "Event",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_new_york_2013_5191430",
+      "gold": "Professional & Other Places",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_palembang_2013_2044999",
+      "gold": "Travel & Transport",
+      "pred": "Travel & Transport"
+    },
+    {
+      "question_id": "task1_ms_test_petaling_jaya_2013_3995604",
+      "gold": "Shop & Service",
+      "pred": "Residence"
+    },
+    {
+      "question_id": "task1_ms_test_bandung_2013_5896581",
+      "gold": "College & University",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_melbourne_2013_116851",
+      "gold": "Residence",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_jakarta_2013_3368540",
+      "gold": "Outdoors & Recreation",
+      "pred": "Travel & Transport"
+    },
+    {
+      "question_id": "task1_ms_test_moscow_2013_1347425",
+      "gold": "Arts & Entertainment",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_istanbul_2018_1219705",
+      "gold": "Nightlife Spot",
+      "pred": "Nightlife Spot"
+    },
+    {
+      "question_id": "task1_ms_test_shanghai_2013_5300964",
+      "gold": "Professional & Other Places",
+      "pred": "Travel & Transport"
+    },
+    {
+      "question_id": "task1_ms_test_sao_paulo_2013_5708684",
+      "gold": "Travel & Transport",
+      "pred": "Travel & Transport"
+    },
+    {
+      "question_id": "task1_ms_test_tokyo_2018_1824139",
+      "gold": "Shop & Service",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_tangerang_2013_581187",
+      "gold": "College & University",
+      "pred": "Residence"
+    },
+    {
+      "question_id": "task1_ms_test_sydney_2018_3330416",
+      "gold": "Food",
+      "pred": "Travel & Transport"
+    },
+    {
+      "question_id": "task1_ms_test_beijing_2013_3783937",
+      "gold": "Outdoors & Recreation",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_new_york_2013_4718598",
+      "gold": "Residence",
+      "pred": "Nightlife Spot"
+    },
+    {
+      "question_id": "task1_ms_test_palembang_2013_2045022",
+      "gold": "Arts & Entertainment",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_bandung_2013_2312727",
+      "gold": "Nightlife Spot",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_kuwait_city_2018_3833503",
+      "gold": "Event",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_petaling_jaya_2013_4093161",
+      "gold": "Travel & Transport",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_moscow_2013_2693629",
+      "gold": "Food",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_istanbul_2013_2633693",
+      "gold": "Professional & Other Places",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_shanghai_2013_1294002",
+      "gold": "Shop & Service",
+      "pred": "Shop & Service"
+    },
+    {
+      "question_id": "task1_ms_test_sydney_2013_4988019",
+      "gold": "College & University",
+      "pred": "College & University"
+    },
+    {
+      "question_id": "task1_ms_test_melbourne_2013_5527584",
+      "gold": "Arts & Entertainment",
+      "pred": "Arts & Entertainment"
+    },
+    {
+      "question_id": "task1_ms_test_sao_paulo_2013_2338457",
+      "gold": "Outdoors & Recreation",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_jakarta_2013_812421",
+      "gold": "Nightlife Spot",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_beijing_2013_2609786",
+      "gold": "Residence",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_tangerang_2013_40251",
+      "gold": "Shop & Service",
+      "pred": "Shop & Service"
+    },
+    {
+      "question_id": "task1_ms_test_tokyo_2018_3638369",
+      "gold": "Travel & Transport",
+      "pred": "Travel & Transport"
+    },
+    {
+      "question_id": "task1_ms_test_kuwait_city_2018_674880",
+      "gold": "Event",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_petaling_jaya_2013_1147855",
+      "gold": "Professional & Other Places",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_new_york_2013_4163293",
+      "gold": "College & University",
+      "pred": "College & University"
+    },
+    {
+      "question_id": "task1_ms_test_moscow_2013_661607",
+      "gold": "Food",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_melbourne_2013_3845171",
+      "gold": "Outdoors & Recreation",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_sao_paulo_2013_4210217",
+      "gold": "Residence",
+      "pred": "Residence"
+    },
+    {
+      "question_id": "task1_ms_test_bandung_2013_3317475",
+      "gold": "Nightlife Spot",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_istanbul_2013_4936280",
+      "gold": "Arts & Entertainment",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_jakarta_2013_5150382",
+      "gold": "Shop & Service",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_palembang_2013_3710823",
+      "gold": "Professional & Other Places",
+      "pred": "Shop & Service"
+    },
+    {
+      "question_id": "task1_ms_test_sydney_2013_2672140",
+      "gold": "Arts & Entertainment",
+      "pred": "Outdoors & Recreation"
+    },
+    {
+      "question_id": "task1_ms_test_tangerang_2013_5842312",
+      "gold": "Outdoors & Recreation",
+      "pred": "Residence"
+    },
+    {
+      "question_id": "task1_ms_test_tokyo_2018_1751512",
+      "gold": "Food",
+      "pred": "Arts & Entertainment"
+    },
+    {
+      "question_id": "task1_ms_test_shanghai_2013_1068718",
+      "gold": "Residence",
+      "pred": "Residence"
+    },
+    {
+      "question_id": "task1_ms_test_beijing_2013_1951553",
+      "gold": "Travel & Transport",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_sao_paulo_2013_3721100",
+      "gold": "College & University",
+      "pred": "College & University"
+    },
+    {
+      "question_id": "task1_ms_test_kuwait_city_2013_5627215",
+      "gold": "Nightlife Spot",
+      "pred": "Outdoors & Recreation"
+    },
+    {
+      "question_id": "task1_ms_test_petaling_jaya_2013_3066955",
+      "gold": "Outdoors & Recreation",
+      "pred": "Residence"
+    },
+    {
+      "question_id": "task1_ms_test_new_york_2013_461939",
+      "gold": "Professional & Other Places",
+      "pred": "Nightlife Spot"
+    },
+    {
+      "question_id": "task1_ms_test_istanbul_2018_308807",
+      "gold": "Food",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_moscow_2013_6005557",
+      "gold": "Nightlife Spot",
+      "pred": "Nightlife Spot"
+    },
+    {
+      "question_id": "task1_ms_test_jakarta_2013_5140",
+      "gold": "Shop & Service",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_melbourne_2013_3482728",
+      "gold": "Travel & Transport",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_shanghai_2013_5300962",
+      "gold": "Arts & Entertainment",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_bandung_2013_2493448",
+      "gold": "College & University",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_palembang_2013_2066147",
+      "gold": "Residence",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_sydney_2013_5043745",
+      "gold": "Food",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_tangerang_2013_778526",
+      "gold": "Shop & Service",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_tokyo_2018_790227",
+      "gold": "Professional & Other Places",
+      "pred": "Travel & Transport"
+    },
+    {
+      "question_id": "task1_ms_test_beijing_2013_1951557",
+      "gold": "Residence",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_moscow_2013_887161",
+      "gold": "Travel & Transport",
+      "pred": "Travel & Transport"
+    },
+    {
+      "question_id": "task1_ms_test_palembang_2013_3432103",
+      "gold": "Outdoors & Recreation",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_tangerang_2013_2817515",
+      "gold": "Arts & Entertainment",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_kuwait_city_2018_2936087",
+      "gold": "Event",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_sydney_2013_4645797",
+      "gold": "Nightlife Spot",
+      "pred": "Travel & Transport"
+    },
+    {
+      "question_id": "task1_ms_test_istanbul_2013_5863456",
+      "gold": "College & University",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_bandung_2013_3739441",
+      "gold": "Professional & Other Places",
+      "pred": "Residence"
+    },
+    {
+      "question_id": "task1_ms_test_new_york_2018_461228",
+      "gold": "Shop & Service",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_sao_paulo_2013_1886460",
+      "gold": "Food",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_shanghai_2013_4114483",
+      "gold": "Residence",
+      "pred": "Shop & Service"
+    },
+    {
+      "question_id": "task1_ms_test_petaling_jaya_2018_1790976",
+      "gold": "Travel & Transport",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_jakarta_2013_2865424",
+      "gold": "Outdoors & Recreation",
+      "pred": "Outdoors & Recreation"
+    },
+    {
+      "question_id": "task1_ms_test_tokyo_2018_2073621",
+      "gold": "College & University",
+      "pred": "Travel & Transport"
+    },
+    {
+      "question_id": "task1_ms_test_melbourne_2013_5527622",
+      "gold": "Nightlife Spot",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_beijing_2013_3994850",
+      "gold": "Food",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_istanbul_2018_2758707",
+      "gold": "Arts & Entertainment",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_kuwait_city_2018_2814953",
+      "gold": "Professional & Other Places",
+      "pred": "Shop & Service"
+    },
+    {
+      "question_id": "task1_ms_test_petaling_jaya_2013_2770960",
+      "gold": "Shop & Service",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_new_york_2013_840784",
+      "gold": "Nightlife Spot",
+      "pred": "Nightlife Spot"
+    },
+    {
+      "question_id": "task1_ms_test_bandung_2013_2076377",
+      "gold": "Residence",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_jakarta_2013_3796482",
+      "gold": "Outdoors & Recreation",
+      "pred": "Outdoors & Recreation"
+    },
+    {
+      "question_id": "task1_ms_test_moscow_2013_1979597",
+      "gold": "College & University",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_melbourne_2013_531560",
+      "gold": "Travel & Transport",
+      "pred": "Travel & Transport"
+    },
+    {
+      "question_id": "task1_ms_test_sydney_2013_2571786",
+      "gold": "Arts & Entertainment",
+      "pred": "Outdoors & Recreation"
+    },
+    {
+      "question_id": "task1_ms_test_sao_paulo_2013_404289",
+      "gold": "Shop & Service",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_tangerang_2013_1929424",
+      "gold": "Professional & Other Places",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_tokyo_2018_426055",
+      "gold": "Travel & Transport",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_palembang_2013_5114764",
+      "gold": "Outdoors & Recreation",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_shanghai_2013_24757",
+      "gold": "Food",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_beijing_2013_2489196",
+      "gold": "Residence",
+      "pred": "Shop & Service"
+    },
+    {
+      "question_id": "task1_ms_test_jakarta_2013_4747275",
+      "gold": "Arts & Entertainment",
+      "pred": "Arts & Entertainment"
+    },
+    {
+      "question_id": "task1_ms_test_sao_paulo_2013_3548764",
+      "gold": "Nightlife Spot",
+      "pred": "Nightlife Spot"
+    },
+    {
+      "question_id": "task1_ms_test_palembang_2013_3259541",
+      "gold": "College & University",
+      "pred": "College & University"
+    },
+    {
+      "question_id": "task1_ms_test_kuwait_city_2018_3335855",
+      "gold": "Event",
+      "pred": "Outdoors & Recreation"
+    },
+    {
+      "question_id": "task1_ms_test_bandung_2013_4762752",
+      "gold": "Shop & Service",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_istanbul_2013_3928296",
+      "gold": "Professional & Other Places",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_melbourne_2013_1749294",
+      "gold": "Food",
+      "pred": "Shop & Service"
+    },
+    {
+      "question_id": "task1_ms_test_new_york_2013_4969064",
+      "gold": "Travel & Transport",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_petaling_jaya_2013_3633084",
+      "gold": "Residence",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_sydney_2013_3797652",
+      "gold": "College & University",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_moscow_2013_1805764",
+      "gold": "Arts & Entertainment",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_shanghai_2013_4088803",
+      "gold": "Outdoors & Recreation",
+      "pred": "Outdoors & Recreation"
+    },
+    {
+      "question_id": "task1_ms_test_tangerang_2013_5949433",
+      "gold": "Nightlife Spot",
+      "pred": "Residence"
+    },
+    {
+      "question_id": "task1_ms_test_tokyo_2018_2949690",
+      "gold": "Shop & Service",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_beijing_2013_171423",
+      "gold": "Professional & Other Places",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_kuwait_city_2013_5454112",
+      "gold": "Food",
+      "pred": "Shop & Service"
+    },
+    {
+      "question_id": "task1_ms_test_petaling_jaya_2013_1154342",
+      "gold": "Residence",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_jakarta_2013_1012343",
+      "gold": "Arts & Entertainment",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_istanbul_2013_2338421",
+      "gold": "Travel & Transport",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_palembang_2013_2045009",
+      "gold": "Outdoors & Recreation",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_tangerang_2013_2788702",
+      "gold": "College & University",
+      "pred": "College & University"
+    },
+    {
+      "question_id": "task1_ms_test_sydney_2018_457231",
+      "gold": "Nightlife Spot",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_moscow_2013_4999580",
+      "gold": "Food",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_melbourne_2013_4720981",
+      "gold": "Professional & Other Places",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_bandung_2013_2961468",
+      "gold": "Outdoors & Recreation",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_sao_paulo_2013_2528670",
+      "gold": "Residence",
+      "pred": "Residence"
+    },
+    {
+      "question_id": "task1_ms_test_new_york_2013_2219342",
+      "gold": "Arts & Entertainment",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_tokyo_2018_543235",
+      "gold": "Shop & Service",
+      "pred": "Travel & Transport"
+    },
+    {
+      "question_id": "task1_ms_test_shanghai_2013_4965110",
+      "gold": "Travel & Transport",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_beijing_2013_171430",
+      "gold": "Travel & Transport",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_istanbul_2018_950505",
+      "gold": "Nightlife Spot",
+      "pred": "Outdoors & Recreation"
+    },
+    {
+      "question_id": "task1_ms_test_petaling_jaya_2013_2477370",
+      "gold": "College & University",
+      "pred": "Residence"
+    },
+    {
+      "question_id": "task1_ms_test_melbourne_2013_1559802",
+      "gold": "Professional & Other Places",
+      "pred": "Travel & Transport"
+    },
+    {
+      "question_id": "task1_ms_test_kuwait_city_2018_3051662",
+      "gold": "Event",
+      "pred": "Outdoors & Recreation"
+    },
+    {
+      "question_id": "task1_ms_test_new_york_2013_4959235",
+      "gold": "Food",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_moscow_2013_5029739",
+      "gold": "Residence",
+      "pred": "Shop & Service"
+    },
+    {
+      "question_id": "task1_ms_test_sydney_2013_1757101",
+      "gold": "Shop & Service",
+      "pred": "Nightlife Spot"
+    },
+    {
+      "question_id": "task1_ms_test_shanghai_2013_1301340",
+      "gold": "Outdoors & Recreation",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_jakarta_2013_672364",
+      "gold": "Nightlife Spot",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_palembang_2013_1113914",
+      "gold": "College & University",
+      "pred": "Shop & Service"
+    },
+    {
+      "question_id": "task1_ms_test_tangerang_2013_2432368",
+      "gold": "Arts & Entertainment",
+      "pred": "Shop & Service"
+    },
+    {
+      "question_id": "task1_ms_test_sao_paulo_2013_5978492",
+      "gold": "Professional & Other Places",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_bandung_2018_1897547",
+      "gold": "Travel & Transport",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_tokyo_2018_1730258",
+      "gold": "Food",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_beijing_2013_3371426",
+      "gold": "Professional & Other Places",
+      "pred": "Shop & Service"
+    },
+    {
+      "question_id": "task1_ms_test_istanbul_2013_2252449",
+      "gold": "Residence",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_kuwait_city_2013_3341386",
+      "gold": "Shop & Service",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_petaling_jaya_2013_634232",
+      "gold": "Nightlife Spot",
+      "pred": "Shop & Service"
+    },
+    {
+      "question_id": "task1_ms_test_sao_paulo_2013_1708291",
+      "gold": "Outdoors & Recreation",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_melbourne_2013_3726695",
+      "gold": "College & University",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_bandung_2013_159414",
+      "gold": "Arts & Entertainment",
+      "pred": "Residence"
+    },
+    {
+      "question_id": "task1_ms_test_shanghai_2013_24748",
+      "gold": "Shop & Service",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_new_york_2013_1646844",
+      "gold": "Food",
+      "pred": "Nightlife Spot"
+    },
+    {
+      "question_id": "task1_ms_test_sydney_2013_1805016",
+      "gold": "Travel & Transport",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_moscow_2013_1726746",
+      "gold": "Outdoors & Recreation",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_palembang_2013_3924564",
+      "gold": "College & University",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_tangerang_2013_4238680",
+      "gold": "Residence",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_jakarta_2013_566776",
+      "gold": "Arts & Entertainment",
+      "pred": "Residence"
+    },
+    {
+      "question_id": "task1_ms_test_tokyo_2018_1357873",
+      "gold": "Food",
+      "pred": "Shop & Service"
+    },
+    {
+      "question_id": "task1_ms_test_beijing_2013_171464",
+      "gold": "Travel & Transport",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_moscow_2013_1699863",
+      "gold": "Nightlife Spot",
+      "pred": "Nightlife Spot"
+    },
+    {
+      "question_id": "task1_ms_test_jakarta_2013_5640012",
+      "gold": "Professional & Other Places",
+      "pred": "Professional & Other Places"
+    },
+    {
+      "question_id": "task1_ms_test_tangerang_2013_5833341",
+      "gold": "Outdoors & Recreation",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_kuwait_city_2018_3605190",
+      "gold": "Event",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_petaling_jaya_2013_1640814",
+      "gold": "Arts & Entertainment",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_new_york_2013_5659087",
+      "gold": "Shop & Service",
+      "pred": "Shop & Service"
+    },
+    {
+      "question_id": "task1_ms_test_istanbul_2013_2270710",
+      "gold": "Residence",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_sydney_2013_1424547",
+      "gold": "College & University",
+      "pred": "Travel & Transport"
+    },
+    {
+      "question_id": "task1_ms_test_bandung_2013_4639728",
+      "gold": "Nightlife Spot",
+      "pred": "Food"
+    },
+    {
+      "question_id": "task1_ms_test_sao_paulo_2013_1701875",
+      "gold": "Food",
+      "pred": "Professional & Other Places"
     }
   ]
 }

@@ -1,14 +1,1 @@
 question_id,source_file,rejection_reason
-task1_001,data/examples/task1_sample_qa.csv,"task must equal task1_next_poi_category; city is required; difficulty must be easy, medium, or hard; source_dataset is required; reasoning is required"
-task1_002,data/examples/task1_sample_qa.csv,"task must equal task1_next_poi_category; city is required; difficulty must be easy, medium, or hard; source_dataset is required; reasoning is required"
-task1_003,data/examples/task1_sample_qa.csv,"task must equal task1_next_poi_category; city is required; difficulty must be easy, medium, or hard; source_dataset is required; reasoning is required"
-task1_004,data/examples/task1_sample_qa.csv,"task must equal task1_next_poi_category; city is required; difficulty must be easy, medium, or hard; source_dataset is required; reasoning is required"
-task1_005,data/examples/task1_sample_qa.csv,"task must equal task1_next_poi_category; city is required; difficulty must be easy, medium, or hard; source_dataset is required; reasoning is required"
-task1_001,data/examples/task1_sample_qa.jsonl,"difficulty must be easy, medium, or hard"
-task1_002,data/examples/task1_sample_qa.jsonl,"difficulty must be easy, medium, or hard"
-task1_003,data/examples/task1_sample_qa.jsonl,"difficulty must be easy, medium, or hard"
-task1_dhanesh_001,data/examples/task1_dhanesh_5_questions.jsonl,duplicate: identical question_id and normalized record already included
-task1_dhanesh_002,data/examples/task1_dhanesh_5_questions.jsonl,duplicate: identical question_id and normalized record already included
-task1_dhanesh_003,data/examples/task1_dhanesh_5_questions.jsonl,duplicate: identical question_id and normalized record already included
-task1_dhanesh_004,data/examples/task1_dhanesh_5_questions.jsonl,duplicate: identical question_id and normalized record already included
-task1_dhanesh_005,data/examples/task1_dhanesh_5_questions.jsonl,duplicate: identical question_id and normalized record already included
