@@ -21,8 +21,19 @@ def main():
     rows = res["rows"]
     n = len(rows)
 
+    if res.get("type") == "open" or res.get("accuracy") is None:
+        raise SystemExit(
+            f"{args.task} is an open (reasoning-scored) task, not a closed "
+            f"multiple-choice task. Use:  python -m src.check_open {args.task}"
+        )
+
     ks = [len(items[r["question_id"]]["choices"]) for r in rows
-          if r["question_id"] in items]
+          if r["question_id"] in items and items[r["question_id"]]["choices"]]
+    if not ks:
+        raise SystemExit(
+            f"{args.task}: no items with choices matched the result rows — "
+            f"nothing to score as multiple-choice."
+        )
     chance = sum(1.0 / k for k in ks) / len(ks)
     acc = res["accuracy"]
     se = math.sqrt(chance * (1 - chance) / n)

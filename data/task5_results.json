@@ -1,30 +1,31 @@
 {
   "task": "task5",
-  "n_items": 10,
+  "model": "gemini-2.5-flash",
+  "n_items": 385,
   "type": "closed",
-  "accuracy": 0.8,
-  "macro_f1": 0.85,
+  "accuracy": 0.6,
+  "macro_f1": 0.578,
   "reasoning": null,
   "rows": [
     {
       "question_id": "task5_001",
-      "gold": "Change to Coffee Shop",
-      "pred": "Change to Coffee Shop"
+      "gold": "Change to Music Store",
+      "pred": "Change to Music Store"
     },
     {
       "question_id": "task5_002",
+      "gold": "Change to College Academic Building",
+      "pred": "Change to College Classroom"
+    },
+    {
+      "question_id": "task5_003",
       "gold": "No change",
       "pred": "No change"
     },
     {
-      "question_id": "task5_003",
-      "gold": "Change to Boutique",
-      "pred": "Change to Miscellaneous Shop"
-    },
-    {
       "question_id": "task5_004",
-      "gold": "Change to Library",
-      "pred": "Change to Library"
+      "gold": "Change to Chinese Restaurant",
+      "pred": "Change to Doctor's Office"
     },
     {
       "question_id": "task5_005",
@@ -34,27 +35,1902 @@
     {
       "question_id": "task5_006",
       "gold": "No change",
-      "pred": "Change to Bus Line"
+      "pred": "Change to Food Court"
     },
     {
       "question_id": "task5_007",
+      "gold": "Change to Bookstore",
+      "pred": "Change to Bookstore"
+    },
+    {
+      "question_id": "task5_008",
+      "gold": "No change",
+      "pred": "Change to Resort"
+    },
+    {
+      "question_id": "task5_009",
+      "gold": "Change to Shopping Mall",
+      "pred": "Change to Shopping Mall"
+    },
+    {
+      "question_id": "task5_010",
+      "gold": "Change to Dessert Shop",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_011",
+      "gold": "No change",
+      "pred": "Change to Japanese Restaurant"
+    },
+    {
+      "question_id": "task5_012",
+      "gold": "Change to Art Gallery",
+      "pred": "Change to Theater"
+    },
+    {
+      "question_id": "task5_013",
+      "gold": "Change to Bookstore",
+      "pred": "Change to Indian Restaurant"
+    },
+    {
+      "question_id": "task5_014",
       "gold": "No change",
       "pred": "No change"
     },
     {
-      "question_id": "task5_008",
-      "gold": "Change to Cocktail Bar",
-      "pred": "Change to Cocktail Bar"
+      "question_id": "task5_015",
+      "gold": "Change to Clothing Store",
+      "pred": "Change to Clothing Store"
     },
     {
-      "question_id": "task5_009",
+      "question_id": "task5_016",
+      "gold": "Change to Café",
+      "pred": "Change to Café"
+    },
+    {
+      "question_id": "task5_017",
+      "gold": "Change to Clothing Store",
+      "pred": "Change to Clothing Store"
+    },
+    {
+      "question_id": "task5_018",
+      "gold": "Change to Men's Store",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_019",
+      "gold": "Change to Dessert Shop",
+      "pred": "Change to Dessert Shop"
+    },
+    {
+      "question_id": "task5_020",
+      "gold": "Change to Men's Store",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_021",
+      "gold": "Change to Accessories Store",
+      "pred": "Change to Accessories Store"
+    },
+    {
+      "question_id": "task5_022",
+      "gold": "Change to Coffee Shop",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_023",
+      "gold": "Change to Boutique",
+      "pred": "Change to Boutique"
+    },
+    {
+      "question_id": "task5_024",
+      "gold": "Change to Salon / Barbershop",
+      "pred": "Change to Salon / Barbershop"
+    },
+    {
+      "question_id": "task5_025",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_026",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_027",
+      "gold": "Change to Boutique",
+      "pred": "Change to Boutique"
+    },
+    {
+      "question_id": "task5_028",
+      "gold": "Change to Women's Store",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_029",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_030",
+      "gold": "Change to Department Store",
+      "pred": "Change to Department Store"
+    },
+    {
+      "question_id": "task5_031",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_032",
+      "gold": "Change to College Library",
+      "pred": "Change to College Library"
+    },
+    {
+      "question_id": "task5_033",
+      "gold": "Change to Clothing Store",
+      "pred": "Change to Clothing Store"
+    },
+    {
+      "question_id": "task5_034",
+      "gold": "No change",
+      "pred": "Change to Boutique"
+    },
+    {
+      "question_id": "task5_035",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_036",
+      "gold": "Change to Dim Sum Restaurant",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_037",
+      "gold": "Change to French Restaurant",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_038",
+      "gold": "Change to Kids Store",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_039",
+      "gold": "Change to Thai Restaurant",
+      "pred": "Change to Fast Food Restaurant"
+    },
+    {
+      "question_id": "task5_040",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_041",
+      "gold": "Change to Electronics Store",
+      "pred": "Change to Shopping Mall"
+    },
+    {
+      "question_id": "task5_042",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_043",
+      "gold": "Change to Dim Sum Restaurant",
+      "pred": "Change to Dim Sum Restaurant"
+    },
+    {
+      "question_id": "task5_044",
+      "gold": "No change",
+      "pred": "Change to Convenience Store"
+    },
+    {
+      "question_id": "task5_045",
+      "gold": "No change",
+      "pred": "Change to Italian Restaurant"
+    },
+    {
+      "question_id": "task5_046",
+      "gold": "Change to Dessert Shop",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_047",
+      "gold": "Change to Bakery",
+      "pred": "Change to Bakery"
+    },
+    {
+      "question_id": "task5_048",
+      "gold": "Change to Light Rail Station",
+      "pred": "Change to Light Rail Station"
+    },
+    {
+      "question_id": "task5_049",
+      "gold": "Change to Clothing Store",
+      "pred": "Change to Boutique"
+    },
+    {
+      "question_id": "task5_050",
+      "gold": "Change to Café",
+      "pred": "Change to Café"
+    },
+    {
+      "question_id": "task5_051",
+      "gold": "No change",
+      "pred": "Change to Food Court"
+    },
+    {
+      "question_id": "task5_052",
+      "gold": "Change to Malay Restaurant",
+      "pred": "Change to Restaurant"
+    },
+    {
+      "question_id": "task5_053",
+      "gold": "Change to Coffee Shop",
+      "pred": "Change to American Restaurant"
+    },
+    {
+      "question_id": "task5_054",
+      "gold": "Change to Burger Joint",
+      "pred": "Change to Burger Joint"
+    },
+    {
+      "question_id": "task5_055",
+      "gold": "Change to Sushi Restaurant",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_056",
+      "gold": "Change to Men's Store",
+      "pred": "Change to Men's Store"
+    },
+    {
+      "question_id": "task5_057",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_058",
+      "gold": "Change to Ski Trail",
+      "pred": "Change to Ski Trail"
+    },
+    {
+      "question_id": "task5_059",
+      "gold": "Change to Jewelry Store",
+      "pred": "Change to Jewelry Store"
+    },
+    {
+      "question_id": "task5_060",
+      "gold": "Change to Bookstore",
+      "pred": "Change to Bookstore"
+    },
+    {
+      "question_id": "task5_061",
+      "gold": "Change to Bookstore",
+      "pred": "Change to Bookstore"
+    },
+    {
+      "question_id": "task5_062",
+      "gold": "Change to Paper / Office Supplies Store",
+      "pred": "Change to Paper / Office Supplies Store"
+    },
+    {
+      "question_id": "task5_063",
+      "gold": "No change",
+      "pred": "Change to Shopping Mall"
+    },
+    {
+      "question_id": "task5_064",
+      "gold": "Change to Tea Room",
+      "pred": "Change to Café"
+    },
+    {
+      "question_id": "task5_065",
+      "gold": "Change to Bakery",
+      "pred": "Change to Bakery"
+    },
+    {
+      "question_id": "task5_066",
+      "gold": "Change to Women's Store",
+      "pred": "Change to Pub"
+    },
+    {
+      "question_id": "task5_067",
+      "gold": "Change to Clothing Store",
+      "pred": "Change to Clothing Store"
+    },
+    {
+      "question_id": "task5_068",
+      "gold": "Change to Bookstore",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_069",
+      "gold": "Change to Boutique",
+      "pred": "Change to Boutique"
+    },
+    {
+      "question_id": "task5_070",
+      "gold": "Change to Bookstore",
+      "pred": "Change to Bookstore"
+    },
+    {
+      "question_id": "task5_071",
+      "gold": "Change to Drugstore",
+      "pred": "Change to Bank"
+    },
+    {
+      "question_id": "task5_072",
+      "gold": "Change to Event Space",
+      "pred": "Change to Event Space"
+    },
+    {
+      "question_id": "task5_073",
+      "gold": "Change to Paper / Office Supplies Store",
+      "pred": "Change to Grocery Store"
+    },
+    {
+      "question_id": "task5_074",
+      "gold": "Change to Hardware Store",
+      "pred": "Change to Grocery Store"
+    },
+    {
+      "question_id": "task5_075",
+      "gold": "Change to Dessert Shop",
+      "pred": "Change to Dessert Shop"
+    },
+    {
+      "question_id": "task5_076",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_077",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_078",
+      "gold": "No change",
+      "pred": "Change to College Library"
+    },
+    {
+      "question_id": "task5_079",
+      "gold": "Change to Dog Run",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_080",
+      "gold": "Change to Pub",
+      "pred": "Change to Pub"
+    },
+    {
+      "question_id": "task5_081",
+      "gold": "Change to Coffee Shop",
+      "pred": "Change to Coffee Shop"
+    },
+    {
+      "question_id": "task5_082",
+      "gold": "Change to Bakery",
+      "pred": "Change to Bakery"
+    },
+    {
+      "question_id": "task5_083",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_084",
+      "gold": "Change to Indie Movie Theater",
+      "pred": "Change to Indie Movie Theater"
+    },
+    {
+      "question_id": "task5_085",
+      "gold": "Change to Grocery Store",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_086",
+      "gold": "Change to College Academic Building",
+      "pred": "Change to College Academic Building"
+    },
+    {
+      "question_id": "task5_087",
+      "gold": "Change to Hookah Bar",
+      "pred": "Change to Nightclub"
+    },
+    {
+      "question_id": "task5_088",
+      "gold": "Change to Juice Bar",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_089",
+      "gold": "No change",
+      "pred": "Change to Spa"
+    },
+    {
+      "question_id": "task5_090",
+      "gold": "Change to Doctor's Office",
+      "pred": "Change to Tech Startup"
+    },
+    {
+      "question_id": "task5_091",
+      "gold": "No change",
+      "pred": "Change to Scandinavian Restaurant"
+    },
+    {
+      "question_id": "task5_092",
+      "gold": "Change to Art Gallery",
+      "pred": "Change to Art Gallery"
+    },
+    {
+      "question_id": "task5_093",
+      "gold": "Change to Candy Store",
+      "pred": "Change to Candy Store"
+    },
+    {
+      "question_id": "task5_094",
+      "gold": "Change to Snack Place",
+      "pred": "Change to Café"
+    },
+    {
+      "question_id": "task5_095",
+      "gold": "Change to College Classroom",
+      "pred": "Change to College Classroom"
+    },
+    {
+      "question_id": "task5_096",
+      "gold": "Change to Dive Bar",
+      "pred": "Change to Candy Store"
+    },
+    {
+      "question_id": "task5_097",
+      "gold": "Change to Bar",
+      "pred": "Change to Nightclub"
+    },
+    {
+      "question_id": "task5_098",
+      "gold": "Change to Coffee Shop",
+      "pred": "Change to Coffee Shop"
+    },
+    {
+      "question_id": "task5_099",
+      "gold": "Change to Italian Restaurant",
+      "pred": "Change to Italian Restaurant"
+    },
+    {
+      "question_id": "task5_100",
+      "gold": "No change",
+      "pred": "Change to School"
+    },
+    {
+      "question_id": "task5_101",
+      "gold": "Change to Coffee Shop",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_102",
+      "gold": "No change",
+      "pred": "Change to Brazilian Restaurant"
+    },
+    {
+      "question_id": "task5_103",
+      "gold": "No change",
+      "pred": "Change to Park"
+    },
+    {
+      "question_id": "task5_104",
+      "gold": "Change to Café",
+      "pred": "Change to Café"
+    },
+    {
+      "question_id": "task5_105",
+      "gold": "Change to Coffee Shop",
+      "pred": "Change to Burger Joint"
+    },
+    {
+      "question_id": "task5_106",
+      "gold": "Change to Coffee Shop",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_107",
       "gold": "Change to Art Museum",
       "pred": "Change to Art Museum"
     },
     {
-      "question_id": "task5_010",
-      "gold": "Change to Train Station",
-      "pred": "Change to Train Station"
+      "question_id": "task5_108",
+      "gold": "No change",
+      "pred": "Change to Brazilian Restaurant"
+    },
+    {
+      "question_id": "task5_109",
+      "gold": "Change to Student Center",
+      "pred": "Change to Student Center"
+    },
+    {
+      "question_id": "task5_110",
+      "gold": "Change to Gay Bar",
+      "pred": "Change to Nightclub"
+    },
+    {
+      "question_id": "task5_111",
+      "gold": "Change to Shoe Store",
+      "pred": "Change to Shoe Store"
+    },
+    {
+      "question_id": "task5_112",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_113",
+      "gold": "Change to Indonesian Restaurant",
+      "pred": "Change to Indonesian Restaurant"
+    },
+    {
+      "question_id": "task5_114",
+      "gold": "Change to Coffee Shop",
+      "pred": "Change to Coffee Shop"
+    },
+    {
+      "question_id": "task5_115",
+      "gold": "Change to Bookstore",
+      "pred": "Change to Bookstore"
+    },
+    {
+      "question_id": "task5_116",
+      "gold": "Change to Coffee Shop",
+      "pred": "Change to Café"
+    },
+    {
+      "question_id": "task5_117",
+      "gold": "Change to Steakhouse",
+      "pred": "Change to Asian Restaurant"
+    },
+    {
+      "question_id": "task5_118",
+      "gold": "Change to Boutique",
+      "pred": "Change to Boutique"
+    },
+    {
+      "question_id": "task5_119",
+      "gold": "Change to Chinese Restaurant",
+      "pred": "Change to Chinese Restaurant"
+    },
+    {
+      "question_id": "task5_120",
+      "gold": "Change to Shoe Store",
+      "pred": "Change to Shoe Store"
+    },
+    {
+      "question_id": "task5_121",
+      "gold": "Change to Coffee Shop",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_122",
+      "gold": "Change to Cosmetics Shop",
+      "pred": "Change to Cosmetics Shop"
+    },
+    {
+      "question_id": "task5_123",
+      "gold": "Change to Coffee Shop",
+      "pred": "Change to Coffee Shop"
+    },
+    {
+      "question_id": "task5_124",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_125",
+      "gold": "Change to Bookstore",
+      "pred": "Change to Bookstore"
+    },
+    {
+      "question_id": "task5_126",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_127",
+      "gold": "Change to Indonesian Restaurant",
+      "pred": "Change to Indonesian Restaurant"
+    },
+    {
+      "question_id": "task5_128",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_129",
+      "gold": "Change to Coffee Shop",
+      "pred": "Change to Donut Shop"
+    },
+    {
+      "question_id": "task5_130",
+      "gold": "Change to Chinese Restaurant",
+      "pred": "Change to Chinese Restaurant"
+    },
+    {
+      "question_id": "task5_131",
+      "gold": "Change to Indonesian Restaurant",
+      "pred": "Change to Indonesian Restaurant"
+    },
+    {
+      "question_id": "task5_132",
+      "gold": "Change to Coffee Shop",
+      "pred": "Change to Coffee Shop"
+    },
+    {
+      "question_id": "task5_133",
+      "gold": "Change to Coffee Shop",
+      "pred": "Change to Café"
+    },
+    {
+      "question_id": "task5_134",
+      "gold": "Change to Food Truck",
+      "pred": "Change to Food Truck"
+    },
+    {
+      "question_id": "task5_135",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_136",
+      "gold": "Change to Coffee Shop",
+      "pred": "Change to Coffee Shop"
+    },
+    {
+      "question_id": "task5_137",
+      "gold": "Change to Chinese Restaurant",
+      "pred": "Change to Fast Food Restaurant"
+    },
+    {
+      "question_id": "task5_138",
+      "gold": "Change to Restaurant",
+      "pred": "Change to Restaurant"
+    },
+    {
+      "question_id": "task5_139",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_140",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_141",
+      "gold": "Change to Food Truck",
+      "pred": "Change to Food Truck"
+    },
+    {
+      "question_id": "task5_142",
+      "gold": "Change to Indonesian Restaurant",
+      "pred": "Change to Seafood Restaurant"
+    },
+    {
+      "question_id": "task5_143",
+      "gold": "Change to Coffee Shop",
+      "pred": "Change to Coffee Shop"
+    },
+    {
+      "question_id": "task5_144",
+      "gold": "Change to Ramen Restaurant",
+      "pred": "Change to Ramen Restaurant"
+    },
+    {
+      "question_id": "task5_145",
+      "gold": "Change to Chinese Restaurant",
+      "pred": "Change to Chinese Restaurant"
+    },
+    {
+      "question_id": "task5_146",
+      "gold": "Change to College Classroom",
+      "pred": "Change to College Classroom"
+    },
+    {
+      "question_id": "task5_147",
+      "gold": "Change to Coffee Shop",
+      "pred": "Change to Café"
+    },
+    {
+      "question_id": "task5_148",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_149",
+      "gold": "Change to Bookstore",
+      "pred": "Change to Bookstore"
+    },
+    {
+      "question_id": "task5_150",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_151",
+      "gold": "Change to Coffee Shop",
+      "pred": "Change to Café"
+    },
+    {
+      "question_id": "task5_152",
+      "gold": "Change to College Library",
+      "pred": "Change to College Library"
+    },
+    {
+      "question_id": "task5_153",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_154",
+      "gold": "Change to Indonesian Restaurant",
+      "pred": "Change to Fast Food Restaurant"
+    },
+    {
+      "question_id": "task5_155",
+      "gold": "Change to History Museum",
+      "pred": "Change to History Museum"
+    },
+    {
+      "question_id": "task5_156",
+      "gold": "Change to Coffee Shop",
+      "pred": "Change to Café"
+    },
+    {
+      "question_id": "task5_157",
+      "gold": "No change",
+      "pred": "Change to Restaurant"
+    },
+    {
+      "question_id": "task5_158",
+      "gold": "Change to Chinese Restaurant",
+      "pred": "Change to Chinese Restaurant"
+    },
+    {
+      "question_id": "task5_159",
+      "gold": "No change",
+      "pred": "Change to Steakhouse"
+    },
+    {
+      "question_id": "task5_160",
+      "gold": "Change to Indonesian Restaurant",
+      "pred": "Change to Seafood Restaurant"
+    },
+    {
+      "question_id": "task5_161",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_162",
+      "gold": "Change to Chinese Restaurant",
+      "pred": "Change to Fast Food Restaurant"
+    },
+    {
+      "question_id": "task5_163",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_164",
+      "gold": "Change to Bakery",
+      "pred": "Change to Bakery"
+    },
+    {
+      "question_id": "task5_165",
+      "gold": "No change",
+      "pred": "Change to Restaurant"
+    },
+    {
+      "question_id": "task5_166",
+      "gold": "Change to Drugstore",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_167",
+      "gold": "Change to Shoe Store",
+      "pred": "Change to Hotel"
+    },
+    {
+      "question_id": "task5_168",
+      "gold": "Change to History Museum",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_169",
+      "gold": "Change to Plaza",
+      "pred": "Change to Plaza"
+    },
+    {
+      "question_id": "task5_170",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_171",
+      "gold": "Change to Paper / Office Supplies Store",
+      "pred": "Change to Paper / Office Supplies Store"
+    },
+    {
+      "question_id": "task5_172",
+      "gold": "Change to Gay Bar",
+      "pred": "Change to Gay Bar"
+    },
+    {
+      "question_id": "task5_173",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_174",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_175",
+      "gold": "Change to French Restaurant",
+      "pred": "Change to Pub"
+    },
+    {
+      "question_id": "task5_176",
+      "gold": "Change to Italian Restaurant",
+      "pred": "Change to Italian Restaurant"
+    },
+    {
+      "question_id": "task5_177",
+      "gold": "Change to Clothing Store",
+      "pred": "Change to Art Museum"
+    },
+    {
+      "question_id": "task5_178",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_179",
+      "gold": "Change to Sculpture Garden",
+      "pred": "Change to Sculpture Garden"
+    },
+    {
+      "question_id": "task5_180",
+      "gold": "Change to Pizza Place",
+      "pred": "Change to Burger Joint"
+    },
+    {
+      "question_id": "task5_181",
+      "gold": "Change to Drugstore",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_182",
+      "gold": "No change",
+      "pred": "Change to Theater"
+    },
+    {
+      "question_id": "task5_183",
+      "gold": "Change to Park",
+      "pred": "Change to Park"
+    },
+    {
+      "question_id": "task5_184",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_185",
+      "gold": "Change to Rock Club",
+      "pred": "Change to Rock Club"
+    },
+    {
+      "question_id": "task5_186",
+      "gold": "Change to College Academic Building",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_187",
+      "gold": "No change",
+      "pred": "Change to Pub"
+    },
+    {
+      "question_id": "task5_188",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_189",
+      "gold": "Change to Grocery Store",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_190",
+      "gold": "Change to Gay Bar",
+      "pred": "Change to Sports Bar"
+    },
+    {
+      "question_id": "task5_191",
+      "gold": "No change",
+      "pred": "Change to College Library"
+    },
+    {
+      "question_id": "task5_192",
+      "gold": "Change to Shoe Store",
+      "pred": "Change to Boutique"
+    },
+    {
+      "question_id": "task5_193",
+      "gold": "Change to Movie Theater",
+      "pred": "Change to Movie Theater"
+    },
+    {
+      "question_id": "task5_194",
+      "gold": "Change to Bar",
+      "pred": "Change to New American Restaurant"
+    },
+    {
+      "question_id": "task5_195",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_196",
+      "gold": "Change to Grocery Store",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_197",
+      "gold": "Change to Theater",
+      "pred": "Change to Museum"
+    },
+    {
+      "question_id": "task5_198",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_199",
+      "gold": "Change to Coffee Shop",
+      "pred": "Change to Coffee Shop"
+    },
+    {
+      "question_id": "task5_200",
+      "gold": "Change to History Museum",
+      "pred": "Change to History Museum"
+    },
+    {
+      "question_id": "task5_201",
+      "gold": "Change to Gay Bar",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_202",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_203",
+      "gold": "Change to Event Space",
+      "pred": "Change to Event Space"
+    },
+    {
+      "question_id": "task5_204",
+      "gold": "Change to Vegetarian / Vegan Restaurant",
+      "pred": "Change to Vegetarian / Vegan Restaurant"
+    },
+    {
+      "question_id": "task5_205",
+      "gold": "No change",
+      "pred": "Change to Museum"
+    },
+    {
+      "question_id": "task5_206",
+      "gold": "Change to College Bookstore",
+      "pred": "Change to College Bookstore"
+    },
+    {
+      "question_id": "task5_207",
+      "gold": "Change to Boutique",
+      "pred": "Change to Boutique"
+    },
+    {
+      "question_id": "task5_208",
+      "gold": "Change to Clothing Store",
+      "pred": "Change to Art Museum"
+    },
+    {
+      "question_id": "task5_209",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_210",
+      "gold": "No change",
+      "pred": "Change to Nightclub"
+    },
+    {
+      "question_id": "task5_211",
+      "gold": "Change to Bar",
+      "pred": "Change to Gastropub"
+    },
+    {
+      "question_id": "task5_212",
+      "gold": "Change to Drugstore",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_213",
+      "gold": "Change to Indie Theater",
+      "pred": "Change to Art Gallery"
+    },
+    {
+      "question_id": "task5_214",
+      "gold": "Change to Science Museum",
+      "pred": "Change to Science Museum"
+    },
+    {
+      "question_id": "task5_215",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_216",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_217",
+      "gold": "Change to Theater",
+      "pred": "Change to Theater"
+    },
+    {
+      "question_id": "task5_218",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_219",
+      "gold": "Change to Grocery Store",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_220",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_221",
+      "gold": "Change to Department Store",
+      "pred": "Change to Department Store"
+    },
+    {
+      "question_id": "task5_222",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_223",
+      "gold": "Change to Park",
+      "pred": "Change to Park"
+    },
+    {
+      "question_id": "task5_224",
+      "gold": "No change",
+      "pred": "Change to Monument / Landmark"
+    },
+    {
+      "question_id": "task5_225",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_226",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_227",
+      "gold": "Change to Lighthouse",
+      "pred": "Change to Lighthouse"
+    },
+    {
+      "question_id": "task5_228",
+      "gold": "Change to College Engineering Building",
+      "pred": "Change to College Engineering Building"
+    },
+    {
+      "question_id": "task5_229",
+      "gold": "No change",
+      "pred": "Change to Café"
+    },
+    {
+      "question_id": "task5_230",
+      "gold": "Change to Department Store",
+      "pred": "Change to Department Store"
+    },
+    {
+      "question_id": "task5_231",
+      "gold": "Change to Coffee Shop",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_232",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_233",
+      "gold": "Change to Furniture / Home Store",
+      "pred": "Change to Furniture / Home Store"
+    },
+    {
+      "question_id": "task5_234",
+      "gold": "Change to Other Great Outdoors",
+      "pred": "Change to Other Great Outdoors"
+    },
+    {
+      "question_id": "task5_235",
+      "gold": "Change to Coffee Shop",
+      "pred": "Change to Coffee Shop"
+    },
+    {
+      "question_id": "task5_236",
+      "gold": "Change to Café",
+      "pred": "Change to Shopping Mall"
+    },
+    {
+      "question_id": "task5_237",
+      "gold": "Change to Park",
+      "pred": "Change to Park"
+    },
+    {
+      "question_id": "task5_238",
+      "gold": "No change",
+      "pred": "Change to Cocktail Bar"
+    },
+    {
+      "question_id": "task5_239",
+      "gold": "Change to Park",
+      "pred": "Change to Scenic Lookout"
+    },
+    {
+      "question_id": "task5_240",
+      "gold": "Change to History Museum",
+      "pred": "Change to History Museum"
+    },
+    {
+      "question_id": "task5_241",
+      "gold": "Change to History Museum",
+      "pred": "Change to Spa"
+    },
+    {
+      "question_id": "task5_242",
+      "gold": "Change to Tea Room",
+      "pred": "Change to Ice Cream Shop"
+    },
+    {
+      "question_id": "task5_243",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_244",
+      "gold": "Change to Café",
+      "pred": "Change to Café"
+    },
+    {
+      "question_id": "task5_245",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_246",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_247",
+      "gold": "Change to Art Gallery",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_248",
+      "gold": "Change to Men's Store",
+      "pred": "Change to Clothing Store"
+    },
+    {
+      "question_id": "task5_249",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_250",
+      "gold": "No change",
+      "pred": "Change to Tea Room"
+    },
+    {
+      "question_id": "task5_251",
+      "gold": "Change to Plaza",
+      "pred": "Change to Plaza"
+    },
+    {
+      "question_id": "task5_252",
+      "gold": "Change to Kids Store",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_253",
+      "gold": "Change to Café",
+      "pred": "Change to Café"
+    },
+    {
+      "question_id": "task5_254",
+      "gold": "Change to Plaza",
+      "pred": "Change to Plaza"
+    },
+    {
+      "question_id": "task5_255",
+      "gold": "Change to Coffee Shop",
+      "pred": "Change to Coffee Shop"
+    },
+    {
+      "question_id": "task5_256",
+      "gold": "Change to History Museum",
+      "pred": "Change to History Museum"
+    },
+    {
+      "question_id": "task5_257",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_258",
+      "gold": "No change",
+      "pred": "Change to Café"
+    },
+    {
+      "question_id": "task5_259",
+      "gold": "Change to College Classroom",
+      "pred": "Change to College Library"
+    },
+    {
+      "question_id": "task5_260",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_261",
+      "gold": "Change to Men's Store",
+      "pred": "Change to Men's Store"
+    },
+    {
+      "question_id": "task5_262",
+      "gold": "Change to Café",
+      "pred": "Change to Shopping Mall"
+    },
+    {
+      "question_id": "task5_263",
+      "gold": "Change to Coffee Shop",
+      "pred": "Change to Ice Cream Shop"
+    },
+    {
+      "question_id": "task5_264",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_265",
+      "gold": "Change to Plaza",
+      "pred": "Change to Plaza"
+    },
+    {
+      "question_id": "task5_266",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_267",
+      "gold": "Change to Department Store",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_268",
+      "gold": "Change to Tea Room",
+      "pred": "Change to Tea Room"
+    },
+    {
+      "question_id": "task5_269",
+      "gold": "Change to Coworking Space",
+      "pred": "Change to Coworking Space"
+    },
+    {
+      "question_id": "task5_270",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_271",
+      "gold": "Change to History Museum",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_272",
+      "gold": "Change to Kids Store",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_273",
+      "gold": "Change to Café",
+      "pred": "Change to Café"
+    },
+    {
+      "question_id": "task5_274",
+      "gold": "Change to Café",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_275",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_276",
+      "gold": "Change to Coffee Shop",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_277",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_278",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_279",
+      "gold": "Change to Convenience Store",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_280",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_281",
+      "gold": "Change to Café",
+      "pred": "Change to Café"
+    },
+    {
+      "question_id": "task5_282",
+      "gold": "Change to Bakery",
+      "pred": "Change to Bakery"
+    },
+    {
+      "question_id": "task5_283",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_284",
+      "gold": "Change to Coffee Shop",
+      "pred": "Change to Frozen Yogurt Shop"
+    },
+    {
+      "question_id": "task5_285",
+      "gold": "Change to High School",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_286",
+      "gold": "Change to Café",
+      "pred": "Change to Café"
+    },
+    {
+      "question_id": "task5_287",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_288",
+      "gold": "Change to Bank",
+      "pred": "Change to Bank"
+    },
+    {
+      "question_id": "task5_289",
+      "gold": "Change to Coffee Shop",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_290",
+      "gold": "Change to Plaza",
+      "pred": "Change to Plaza"
+    },
+    {
+      "question_id": "task5_291",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_292",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_293",
+      "gold": "Change to Performing Arts Venue",
+      "pred": "Change to Performing Arts Venue"
+    },
+    {
+      "question_id": "task5_294",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_295",
+      "gold": "Change to Coffee Shop",
+      "pred": "Change to Frozen Yogurt Shop"
+    },
+    {
+      "question_id": "task5_296",
+      "gold": "Change to High School",
+      "pred": "Change to High School"
+    },
+    {
+      "question_id": "task5_297",
+      "gold": "Change to Bakery",
+      "pred": "Change to Bakery"
+    },
+    {
+      "question_id": "task5_298",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_299",
+      "gold": "Change to Convenience Store",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_300",
+      "gold": "Change to Middle Eastern Restaurant",
+      "pred": "Change to Middle Eastern Restaurant"
+    },
+    {
+      "question_id": "task5_301",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_302",
+      "gold": "Change to Coffee Shop",
+      "pred": "Change to Coffee Shop"
+    },
+    {
+      "question_id": "task5_303",
+      "gold": "Change to Café",
+      "pred": "Change to Café"
+    },
+    {
+      "question_id": "task5_304",
+      "gold": "Change to School",
+      "pred": "Change to Community College"
+    },
+    {
+      "question_id": "task5_305",
+      "gold": "Change to Coffee Shop",
+      "pred": "Change to Coffee Shop"
+    },
+    {
+      "question_id": "task5_306",
+      "gold": "Change to Monument / Landmark",
+      "pred": "Change to Monument / Landmark"
+    },
+    {
+      "question_id": "task5_307",
+      "gold": "Change to Coffee Shop",
+      "pred": "Change to Student Center"
+    },
+    {
+      "question_id": "task5_308",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_309",
+      "gold": "Change to Café",
+      "pred": "Change to Café"
+    },
+    {
+      "question_id": "task5_310",
+      "gold": "Change to Coffee Shop",
+      "pred": "Change to Coffee Shop"
+    },
+    {
+      "question_id": "task5_311",
+      "gold": "Change to School",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_312",
+      "gold": "Change to Medical School",
+      "pred": "Change to Medical School"
+    },
+    {
+      "question_id": "task5_313",
+      "gold": "Change to Café",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_314",
+      "gold": "Change to High School",
+      "pred": "Change to Medical School"
+    },
+    {
+      "question_id": "task5_315",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_316",
+      "gold": "Change to National Park",
+      "pred": "Change to National Park"
+    },
+    {
+      "question_id": "task5_317",
+      "gold": "Change to Bank",
+      "pred": "Change to Bank"
+    },
+    {
+      "question_id": "task5_318",
+      "gold": "Change to Café",
+      "pred": "Change to Café"
+    },
+    {
+      "question_id": "task5_319",
+      "gold": "No change",
+      "pred": "Change to Community College"
+    },
+    {
+      "question_id": "task5_320",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_321",
+      "gold": "Change to Coffee Shop",
+      "pred": "Change to Coffee Shop"
+    },
+    {
+      "question_id": "task5_322",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_323",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_324",
+      "gold": "Change to Concert Hall",
+      "pred": "Change to Concert Hall"
+    },
+    {
+      "question_id": "task5_325",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_326",
+      "gold": "Change to American Restaurant",
+      "pred": "Change to American Restaurant"
+    },
+    {
+      "question_id": "task5_327",
+      "gold": "No change",
+      "pred": "Change to Community College"
+    },
+    {
+      "question_id": "task5_328",
+      "gold": "Change to Medical School",
+      "pred": "Change to Medical School"
+    },
+    {
+      "question_id": "task5_329",
+      "gold": "Change to Science Museum",
+      "pred": "Change to Science Museum"
+    },
+    {
+      "question_id": "task5_330",
+      "gold": "No change",
+      "pred": "Change to Community College"
+    },
+    {
+      "question_id": "task5_331",
+      "gold": "Change to Restaurant",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_332",
+      "gold": "Change to Department Store",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_333",
+      "gold": "Change to Café",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_334",
+      "gold": "No change",
+      "pred": "Change to Ramen Restaurant"
+    },
+    {
+      "question_id": "task5_335",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_336",
+      "gold": "Change to Snack Place",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_337",
+      "gold": "Change to Food Court",
+      "pred": "Change to Food Court"
+    },
+    {
+      "question_id": "task5_338",
+      "gold": "Change to Middle School",
+      "pred": "Change to Middle School"
+    },
+    {
+      "question_id": "task5_339",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_340",
+      "gold": "Change to Shopping Mall",
+      "pred": "Change to Shopping Mall"
+    },
+    {
+      "question_id": "task5_341",
+      "gold": "Change to Department Store",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_342",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_343",
+      "gold": "Change to Clothing Store",
+      "pred": "Change to Clothing Store"
+    },
+    {
+      "question_id": "task5_344",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_345",
+      "gold": "Change to Café",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_346",
+      "gold": "Change to Snack Place",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_347",
+      "gold": "No change",
+      "pred": "Change to Ice Cream Shop"
+    },
+    {
+      "question_id": "task5_348",
+      "gold": "Change to Hotel",
+      "pred": "Change to Hotel"
+    },
+    {
+      "question_id": "task5_349",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_350",
+      "gold": "Change to Fried Chicken Joint",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_351",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_352",
+      "gold": "Change to Restaurant",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_353",
+      "gold": "No change",
+      "pred": "Change to College Library"
+    },
+    {
+      "question_id": "task5_354",
+      "gold": "Change to Department Store",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_355",
+      "gold": "Change to College Academic Building",
+      "pred": "Change to College Academic Building"
+    },
+    {
+      "question_id": "task5_356",
+      "gold": "Change to Snack Place",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_357",
+      "gold": "Change to Indonesian Restaurant",
+      "pred": "Change to Indonesian Restaurant"
+    },
+    {
+      "question_id": "task5_358",
+      "gold": "Change to Assisted Living",
+      "pred": "Change to Assisted Living"
+    },
+    {
+      "question_id": "task5_359",
+      "gold": "Change to University",
+      "pred": "Change to University"
+    },
+    {
+      "question_id": "task5_360",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_361",
+      "gold": "Change to Bank",
+      "pred": "Change to Bank"
+    },
+    {
+      "question_id": "task5_362",
+      "gold": "Change to College Academic Building",
+      "pred": "Change to College Academic Building"
+    },
+    {
+      "question_id": "task5_363",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_364",
+      "gold": "No change",
+      "pred": "Change to Ramen Restaurant"
+    },
+    {
+      "question_id": "task5_365",
+      "gold": "Change to College Communications Building",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_366",
+      "gold": "Change to Asian Restaurant",
+      "pred": "Change to Seafood Restaurant"
+    },
+    {
+      "question_id": "task5_367",
+      "gold": "Change to Chinese Restaurant",
+      "pred": "Change to BBQ Joint"
+    },
+    {
+      "question_id": "task5_368",
+      "gold": "Change to Chinese Restaurant",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_369",
+      "gold": "Change to Indonesian Restaurant",
+      "pred": "Change to Indonesian Restaurant"
+    },
+    {
+      "question_id": "task5_370",
+      "gold": "Change to Antique Shop",
+      "pred": "Change to Restaurant"
+    },
+    {
+      "question_id": "task5_371",
+      "gold": "No change",
+      "pred": "Change to Ice Cream Shop"
+    },
+    {
+      "question_id": "task5_372",
+      "gold": "Change to College Communications Building",
+      "pred": "Change to College Communications Building"
+    },
+    {
+      "question_id": "task5_373",
+      "gold": "No change",
+      "pred": "Change to BBQ Joint"
+    },
+    {
+      "question_id": "task5_374",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_375",
+      "gold": "Change to Bakery",
+      "pred": "Change to Bakery"
+    },
+    {
+      "question_id": "task5_376",
+      "gold": "Change to Asian Restaurant",
+      "pred": "Change to Molecular Gastronomy Restaurant"
+    },
+    {
+      "question_id": "task5_377",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_378",
+      "gold": "Change to BBQ Joint",
+      "pred": "Change to Chinese Restaurant"
+    },
+    {
+      "question_id": "task5_379",
+      "gold": "Change to Office",
+      "pred": "Change to Office"
+    },
+    {
+      "question_id": "task5_380",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_381",
+      "gold": "Change to Food Court",
+      "pred": "Change to Food Court"
+    },
+    {
+      "question_id": "task5_382",
+      "gold": "Change to College Arts Building",
+      "pred": "Change to College Arts Building"
+    },
+    {
+      "question_id": "task5_383",
+      "gold": "No change",
+      "pred": "Change to Shopping Mall"
+    },
+    {
+      "question_id": "task5_384",
+      "gold": "No change",
+      "pred": "No change"
+    },
+    {
+      "question_id": "task5_385",
+      "gold": "Change to Restaurant",
+      "pred": "Change to Food Court"
     }
   ]
 }
